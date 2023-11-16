@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F733A7AE2B0493A600D5C054 /* Gujrati_ziyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7A92B0493A600D5C054 /* Gujrati_ziyarat.swift */; };
+		F733A7AF2B0493A600D5C054 /* English_ziyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7AA2B0493A600D5C054 /* English_ziyarat.swift */; };
+		F733A7B02B0493A600D5C054 /* ListOfZiyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7AB2B0493A600D5C054 /* ListOfZiyarat.swift */; };
+		F733A7B12B0493A600D5C054 /* Hindi_ziyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7AC2B0493A600D5C054 /* Hindi_ziyarat.swift */; };
+		F733A7B22B0493A600D5C054 /* Arabic_ziyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7AD2B0493A600D5C054 /* Arabic_ziyarat.swift */; };
+		F733A7B72B049B9100D5C054 /* LanguageChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7B62B049B9100D5C054 /* LanguageChangeVC.swift */; };
+		F733A7B92B049BA600D5C054 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7B82B049BA600D5C054 /* SettingsVC.swift */; };
+		F733A7BC2B04A31700D5C054 /* ListOfFavourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7BB2B04A31700D5C054 /* ListOfFavourite.swift */; };
+		F733A7BE2B04A3F500D5C054 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7BD2B04A3F500D5C054 /* FavouriteTableViewCell.swift */; };
+		F733A7C22B04CC5900D5C054 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7C12B04CC5900D5C054 /* SignupVC.swift */; };
+		F733A7C42B04DE8500D5C054 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7C32B04DE8500D5C054 /* SigninVC.swift */; };
+		F748E1582B03732D003556BB /* ListOfSurah.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1522B03732D003556BB /* ListOfSurah.swift */; };
+		F748E15C2B03732D003556BB /* Arabic_surah.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1562B03732D003556BB /* Arabic_surah.swift */; };
+		F748E1632B03A2A4003556BB /* ListOfDua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1622B03A2A4003556BB /* ListOfDua.swift */; };
+		F748E1672B03A302003556BB /* English_dua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1642B03A302003556BB /* English_dua.swift */; };
+		F748E1682B03A302003556BB /* Hindi_dua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1652B03A302003556BB /* Hindi_dua.swift */; };
+		F748E1692B03A302003556BB /* Gujrati_dua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1662B03A302003556BB /* Gujrati_dua.swift */; };
+		F748E16B2B03A309003556BB /* Arabic_dua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E16A2B03A309003556BB /* Arabic_dua.swift */; };
+		F797C99B2AFC9DB700B2506D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797C99A2AFC9DB700B2506D /* Constant.swift */; };
+		F797C99E2AFC9ECB00B2506D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F797C99D2AFC9ECB00B2506D /* SwiftyJSON */; };
+		F797C9A02AFCA2B000B2506D /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797C99F2AFCA2B000B2506D /* AlertMessage.swift */; };
+		F7B1BE882AFB58A700CDE492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BE872AFB58A700CDE492 /* AppDelegate.swift */; };
+		F7B1BE8A2AFB58A700CDE492 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BE892AFB58A700CDE492 /* SceneDelegate.swift */; };
+		F7B1BE8F2AFB58A700CDE492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B1BE8D2AFB58A700CDE492 /* Main.storyboard */; };
+		F7B1BE912AFB58A800CDE492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B1BE902AFB58A800CDE492 /* Assets.xcassets */; };
+		F7B1BE942AFB58A800CDE492 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B1BE922AFB58A800CDE492 /* LaunchScreen.storyboard */; };
+		F7B1BEAD2AFB606C00CDE492 /* DailyDuaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEAC2AFB606C00CDE492 /* DailyDuaVC.swift */; };
+		F7B1BEAF2AFB699000CDE492 /* DuaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEAE2AFB699000CDE492 /* DuaVC.swift */; };
+		F7B1BEB12AFB69B000CDE492 /* ZiyaratVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEB02AFB69B000CDE492 /* ZiyaratVC.swift */; };
+		F7B1BEB32AFB69C500CDE492 /* SurahVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEB22AFB69C500CDE492 /* SurahVC.swift */; };
+		F7B1BEB52AFB69DC00CDE492 /* MyFavouritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEB42AFB69DC00CDE492 /* MyFavouritesVC.swift */; };
+		F7B1BEB72AFB69F100CDE492 /* OurRadioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEB62AFB69F100CDE492 /* OurRadioVC.swift */; };
+		F7B1BEB92AFB6A2A00CDE492 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEB82AFB6A2A00CDE492 /* LoginVC.swift */; };
+		F7B1BEBB2AFB706700CDE492 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEBA2AFB706700CDE492 /* TabBarVC.swift */; };
+		F7B1BEDD2AFBB52800CDE492 /* DailyDuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEDC2AFBB52800CDE492 /* DailyDuaTableViewCell.swift */; };
+		F7B1BEDF2AFBB84800CDE492 /* SingletonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEDE2AFBB84800CDE492 /* SingletonAPI.swift */; };
+		F7B1BEE22AFBB8A600CDE492 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F7B1BEE12AFBB8A600CDE492 /* Alamofire */; };
+		F7E364AA2B01E7AD003EC48D /* DuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E364A92B01E7AD003EC48D /* DuaTableViewCell.swift */; };
+		F7E364AC2B02028E003EC48D /* ZiyaratTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E364AB2B02028E003EC48D /* ZiyaratTableViewCell.swift */; };
+		F7E364AE2B0217D6003EC48D /* SurahTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E364AD2B0217D6003EC48D /* SurahTableViewCell.swift */; };
+		F7E364B02B024901003EC48D /* CacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E364AF2B024901003EC48D /* CacheStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F733A7A92B0493A600D5C054 /* Gujrati_ziyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gujrati_ziyarat.swift; sourceTree = "<group>"; };
+		F733A7AA2B0493A600D5C054 /* English_ziyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = English_ziyarat.swift; sourceTree = "<group>"; };
+		F733A7AB2B0493A600D5C054 /* ListOfZiyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfZiyarat.swift; sourceTree = "<group>"; };
+		F733A7AC2B0493A600D5C054 /* Hindi_ziyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hindi_ziyarat.swift; sourceTree = "<group>"; };
+		F733A7AD2B0493A600D5C054 /* Arabic_ziyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arabic_ziyarat.swift; sourceTree = "<group>"; };
+		F733A7B62B049B9100D5C054 /* LanguageChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChangeVC.swift; sourceTree = "<group>"; };
+		F733A7B82B049BA600D5C054 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		F733A7BB2B04A31700D5C054 /* ListOfFavourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFavourite.swift; sourceTree = "<group>"; };
+		F733A7BD2B04A3F500D5C054 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		F733A7C12B04CC5900D5C054 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		F733A7C32B04DE8500D5C054 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		F748E1522B03732D003556BB /* ListOfSurah.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfSurah.swift; sourceTree = "<group>"; };
+		F748E1562B03732D003556BB /* Arabic_surah.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arabic_surah.swift; sourceTree = "<group>"; };
+		F748E1622B03A2A4003556BB /* ListOfDua.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfDua.swift; sourceTree = "<group>"; };
+		F748E1642B03A302003556BB /* English_dua.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = English_dua.swift; sourceTree = "<group>"; };
+		F748E1652B03A302003556BB /* Hindi_dua.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hindi_dua.swift; sourceTree = "<group>"; };
+		F748E1662B03A302003556BB /* Gujrati_dua.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gujrati_dua.swift; sourceTree = "<group>"; };
+		F748E16A2B03A309003556BB /* Arabic_dua.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arabic_dua.swift; sourceTree = "<group>"; };
+		F797C99A2AFC9DB700B2506D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F797C99F2AFCA2B000B2506D /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		F7B1BE842AFB58A700CDE492 /* MyDua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDua.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B1BE872AFB58A700CDE492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7B1BE892AFB58A700CDE492 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F7B1BE8E2AFB58A700CDE492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7B1BE902AFB58A800CDE492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7B1BE932AFB58A800CDE492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7B1BE952AFB58A800CDE492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B1BEAC2AFB606C00CDE492 /* DailyDuaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDuaVC.swift; sourceTree = "<group>"; };
+		F7B1BEAE2AFB699000CDE492 /* DuaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuaVC.swift; sourceTree = "<group>"; };
+		F7B1BEB02AFB69B000CDE492 /* ZiyaratVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZiyaratVC.swift; sourceTree = "<group>"; };
+		F7B1BEB22AFB69C500CDE492 /* SurahVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahVC.swift; sourceTree = "<group>"; };
+		F7B1BEB42AFB69DC00CDE492 /* MyFavouritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavouritesVC.swift; sourceTree = "<group>"; };
+		F7B1BEB62AFB69F100CDE492 /* OurRadioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurRadioVC.swift; sourceTree = "<group>"; };
+		F7B1BEB82AFB6A2A00CDE492 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F7B1BEBA2AFB706700CDE492 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		F7B1BEDC2AFBB52800CDE492 /* DailyDuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDuaTableViewCell.swift; sourceTree = "<group>"; };
+		F7B1BEDE2AFBB84800CDE492 /* SingletonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonAPI.swift; sourceTree = "<group>"; };
+		F7E364A92B01E7AD003EC48D /* DuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuaTableViewCell.swift; sourceTree = "<group>"; };
+		F7E364AB2B02028E003EC48D /* ZiyaratTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZiyaratTableViewCell.swift; sourceTree = "<group>"; };
+		F7E364AD2B0217D6003EC48D /* SurahTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahTableViewCell.swift; sourceTree = "<group>"; };
+		F7E364AF2B024901003EC48D /* CacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7B1BE812AFB58A700CDE492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F797C99E2AFC9ECB00B2506D /* SwiftyJSON in Frameworks */,
+				F7B1BEE22AFBB8A600CDE492 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F733A7B52B04941100D5C054 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		F733A7BA2B04A2FE00D5C054 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				F733A7BB2B04A31700D5C054 /* ListOfFavourite.swift */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		F733A7C02B04C96000D5C054 /* SignInOut */ = {
+			isa = PBXGroup;
+			children = (
+				F733A7C12B04CC5900D5C054 /* SignupVC.swift */,
+				F733A7C32B04DE8500D5C054 /* SigninVC.swift */,
+			);
+			name = SignInOut;
+			sourceTree = "<group>";
+		};
+		F748E15E2B03A1E4003556BB /* Surah */ = {
+			isa = PBXGroup;
+			children = (
+				F748E1562B03732D003556BB /* Arabic_surah.swift */,
+				F748E1522B03732D003556BB /* ListOfSurah.swift */,
+			);
+			path = Surah;
+			sourceTree = "<group>";
+		};
+		F748E15F2B03A200003556BB /* Dua */ = {
+			isa = PBXGroup;
+			children = (
+				F748E1622B03A2A4003556BB /* ListOfDua.swift */,
+				F748E16A2B03A309003556BB /* Arabic_dua.swift */,
+				F748E1642B03A302003556BB /* English_dua.swift */,
+				F748E1662B03A302003556BB /* Gujrati_dua.swift */,
+				F748E1652B03A302003556BB /* Hindi_dua.swift */,
+			);
+			path = Dua;
+			sourceTree = "<group>";
+		};
+		F748E1602B03A20E003556BB /* Ziyarat */ = {
+			isa = PBXGroup;
+			children = (
+				F733A7AD2B0493A600D5C054 /* Arabic_ziyarat.swift */,
+				F733A7AA2B0493A600D5C054 /* English_ziyarat.swift */,
+				F733A7A92B0493A600D5C054 /* Gujrati_ziyarat.swift */,
+				F733A7AC2B0493A600D5C054 /* Hindi_ziyarat.swift */,
+				F733A7AB2B0493A600D5C054 /* ListOfZiyarat.swift */,
+			);
+			path = Ziyarat;
+			sourceTree = "<group>";
+		};
+		F7B1BE7B2AFB58A700CDE492 = {
+			isa = PBXGroup;
+			children = (
+				F7B1BE862AFB58A700CDE492 /* MyDua */,
+				F7B1BE852AFB58A700CDE492 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7B1BE852AFB58A700CDE492 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7B1BE842AFB58A700CDE492 /* MyDua.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7B1BE862AFB58A700CDE492 /* MyDua */ = {
+			isa = PBXGroup;
+			children = (
+				F7B1BE9B2AFB592600CDE492 /* APIManager */,
+				F7B1BE9C2AFB593400CDE492 /* Model */,
+				F7B1BEA12AFB599700CDE492 /* View */,
+				F7B1BE9D2AFB593D00CDE492 /* Controller */,
+				F7B1BEA02AFB598A00CDE492 /* Utility */,
+				F7B1BE9F2AFB597A00CDE492 /* SupportingFiles */,
+				F7B1BE902AFB58A800CDE492 /* Assets.xcassets */,
+				F7B1BE922AFB58A800CDE492 /* LaunchScreen.storyboard */,
+				F7B1BE952AFB58A800CDE492 /* Info.plist */,
+			);
+			path = MyDua;
+			sourceTree = "<group>";
+		};
+		F7B1BE9B2AFB592600CDE492 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				F7B1BEDE2AFBB84800CDE492 /* SingletonAPI.swift */,
+			);
+			name = APIManager;
+			sourceTree = "<group>";
+		};
+		F7B1BE9C2AFB593400CDE492 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F733A7BA2B04A2FE00D5C054 /* Favourite */,
+				F733A7B52B04941100D5C054 /* Language */,
+				F748E1602B03A20E003556BB /* Ziyarat */,
+				F748E15F2B03A200003556BB /* Dua */,
+				F748E15E2B03A1E4003556BB /* Surah */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7B1BE9D2AFB593D00CDE492 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F733A7C02B04C96000D5C054 /* SignInOut */,
+				F7B1BEAB2AFB5B5900CDE492 /* Admin */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F7B1BE9F2AFB597A00CDE492 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F7B1BE872AFB58A700CDE492 /* AppDelegate.swift */,
+				F7B1BE892AFB58A700CDE492 /* SceneDelegate.swift */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F7B1BEA02AFB598A00CDE492 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F797C99A2AFC9DB700B2506D /* Constant.swift */,
+				F797C99F2AFCA2B000B2506D /* AlertMessage.swift */,
+				F7E364AF2B024901003EC48D /* CacheStore.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		F7B1BEA12AFB599700CDE492 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7B1BEA72AFB5A8C00CDE492 /* Admin */,
+				F7B1BEAA2AFB5B1500CDE492 /* TableView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F7B1BEA72AFB5A8C00CDE492 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				F7B1BEA82AFB5AA700CDE492 /* Storyboard */,
+			);
+			name = Admin;
+			sourceTree = "<group>";
+		};
+		F7B1BEA82AFB5AA700CDE492 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F7B1BE8D2AFB58A700CDE492 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		F7B1BEAA2AFB5B1500CDE492 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F7B1BEDC2AFBB52800CDE492 /* DailyDuaTableViewCell.swift */,
+				F7E364A92B01E7AD003EC48D /* DuaTableViewCell.swift */,
+				F7E364AB2B02028E003EC48D /* ZiyaratTableViewCell.swift */,
+				F7E364AD2B0217D6003EC48D /* SurahTableViewCell.swift */,
+				F733A7BD2B04A3F500D5C054 /* FavouriteTableViewCell.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		F7B1BEAB2AFB5B5900CDE492 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				F7B1BEBA2AFB706700CDE492 /* TabBarVC.swift */,
+				F7B1BEAC2AFB606C00CDE492 /* DailyDuaVC.swift */,
+				F7B1BEAE2AFB699000CDE492 /* DuaVC.swift */,
+				F7B1BEB02AFB69B000CDE492 /* ZiyaratVC.swift */,
+				F7B1BEB22AFB69C500CDE492 /* SurahVC.swift */,
+				F7B1BEB42AFB69DC00CDE492 /* MyFavouritesVC.swift */,
+				F7B1BEB62AFB69F100CDE492 /* OurRadioVC.swift */,
+				F7B1BEB82AFB6A2A00CDE492 /* LoginVC.swift */,
+				F733A7B62B049B9100D5C054 /* LanguageChangeVC.swift */,
+				F733A7B82B049BA600D5C054 /* SettingsVC.swift */,
+			);
+			name = Admin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7B1BE832AFB58A700CDE492 /* MyDua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B1BE982AFB58A800CDE492 /* Build configuration list for PBXNativeTarget "MyDua" */;
+			buildPhases = (
+				F7B1BE802AFB58A700CDE492 /* Sources */,
+				F7B1BE812AFB58A700CDE492 /* Frameworks */,
+				F7B1BE822AFB58A700CDE492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDua;
+			packageProductDependencies = (
+				F7B1BEE12AFBB8A600CDE492 /* Alamofire */,
+				F797C99D2AFC9ECB00B2506D /* SwiftyJSON */,
+			);
+			productName = MyDua;
+			productReference = F7B1BE842AFB58A700CDE492 /* MyDua.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7B1BE7C2AFB58A700CDE492 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F7B1BE832AFB58A700CDE492 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F7B1BE7F2AFB58A700CDE492 /* Build configuration list for PBXProject "MyDua" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7B1BE7B2AFB58A700CDE492;
+			packageReferences = (
+				F7B1BEE02AFBB8A600CDE492 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F797C99C2AFC9ECB00B2506D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = F7B1BE852AFB58A700CDE492 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7B1BE832AFB58A700CDE492 /* MyDua */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7B1BE822AFB58A700CDE492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B1BE942AFB58A800CDE492 /* LaunchScreen.storyboard in Resources */,
+				F7B1BE912AFB58A800CDE492 /* Assets.xcassets in Resources */,
+				F7B1BE8F2AFB58A700CDE492 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7B1BE802AFB58A700CDE492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F733A7B22B0493A600D5C054 /* Arabic_ziyarat.swift in Sources */,
+				F733A7C22B04CC5900D5C054 /* SignupVC.swift in Sources */,
+				F733A7BE2B04A3F500D5C054 /* FavouriteTableViewCell.swift in Sources */,
+				F733A7AF2B0493A600D5C054 /* English_ziyarat.swift in Sources */,
+				F7B1BEDD2AFBB52800CDE492 /* DailyDuaTableViewCell.swift in Sources */,
+				F7B1BEAF2AFB699000CDE492 /* DuaVC.swift in Sources */,
+				F7B1BEB72AFB69F100CDE492 /* OurRadioVC.swift in Sources */,
+				F7B1BEBB2AFB706700CDE492 /* TabBarVC.swift in Sources */,
+				F733A7BC2B04A31700D5C054 /* ListOfFavourite.swift in Sources */,
+				F7B1BEAD2AFB606C00CDE492 /* DailyDuaVC.swift in Sources */,
+				F733A7B72B049B9100D5C054 /* LanguageChangeVC.swift in Sources */,
+				F7E364AE2B0217D6003EC48D /* SurahTableViewCell.swift in Sources */,
+				F7B1BEB92AFB6A2A00CDE492 /* LoginVC.swift in Sources */,
+				F748E1632B03A2A4003556BB /* ListOfDua.swift in Sources */,
+				F797C9A02AFCA2B000B2506D /* AlertMessage.swift in Sources */,
+				F733A7AE2B0493A600D5C054 /* Gujrati_ziyarat.swift in Sources */,
+				F748E1682B03A302003556BB /* Hindi_dua.swift in Sources */,
+				F748E16B2B03A309003556BB /* Arabic_dua.swift in Sources */,
+				F748E1672B03A302003556BB /* English_dua.swift in Sources */,
+				F7B1BEDF2AFBB84800CDE492 /* SingletonAPI.swift in Sources */,
+				F7B1BE882AFB58A700CDE492 /* AppDelegate.swift in Sources */,
+				F7B1BEB32AFB69C500CDE492 /* SurahVC.swift in Sources */,
+				F733A7C42B04DE8500D5C054 /* SigninVC.swift in Sources */,
+				F797C99B2AFC9DB700B2506D /* Constant.swift in Sources */,
+				F733A7B12B0493A600D5C054 /* Hindi_ziyarat.swift in Sources */,
+				F733A7B92B049BA600D5C054 /* SettingsVC.swift in Sources */,
+				F7B1BE8A2AFB58A700CDE492 /* SceneDelegate.swift in Sources */,
+				F7E364AC2B02028E003EC48D /* ZiyaratTableViewCell.swift in Sources */,
+				F7E364AA2B01E7AD003EC48D /* DuaTableViewCell.swift in Sources */,
+				F7B1BEB52AFB69DC00CDE492 /* MyFavouritesVC.swift in Sources */,
+				F748E1692B03A302003556BB /* Gujrati_dua.swift in Sources */,
+				F733A7B02B0493A600D5C054 /* ListOfZiyarat.swift in Sources */,
+				F7E364B02B024901003EC48D /* CacheStore.swift in Sources */,
+				F748E1582B03732D003556BB /* ListOfSurah.swift in Sources */,
+				F748E15C2B03732D003556BB /* Arabic_surah.swift in Sources */,
+				F7B1BEB12AFB69B000CDE492 /* ZiyaratVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7B1BE8D2AFB58A700CDE492 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7B1BE8E2AFB58A700CDE492 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7B1BE922AFB58A800CDE492 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7B1BE932AFB58A800CDE492 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7B1BE962AFB58A800CDE492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7B1BE972AFB58A800CDE492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7B1BE992AFB58A800CDE492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UXA8PC8RG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyDua/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydua.MyDua;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7B1BE9A2AFB58A800CDE492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5UXA8PC8RG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyDua/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydua.MyDua;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7B1BE7F2AFB58A700CDE492 /* Build configuration list for PBXProject "MyDua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B1BE962AFB58A800CDE492 /* Debug */,
+				F7B1BE972AFB58A800CDE492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B1BE982AFB58A800CDE492 /* Build configuration list for PBXNativeTarget "MyDua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B1BE992AFB58A800CDE492 /* Debug */,
+				F7B1BE9A2AFB58A800CDE492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F797C99C2AFC9ECB00B2506D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		F7B1BEE02AFBB8A600CDE492 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F797C99D2AFC9ECB00B2506D /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F797C99C2AFC9ECB00B2506D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		F7B1BEE12AFBB8A600CDE492 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7B1BEE02AFBB8A600CDE492 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F7B1BE7C2AFB58A700CDE492 /* Project object */;
+}
