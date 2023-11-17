@@ -1,7 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "like.png",
+      "filename" : "favourite.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "heart.png",
       "idiom" : "universal"
     }
   ],

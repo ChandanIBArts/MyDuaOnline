@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "download-circular-button.png",
+      "filename" : "icons8-forward-10-50.png",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "download-circular-button copy.png",
+      "filename" : "icons8-forward-10-50-2.png",
       "idiom" : "universal"
     }
   ],
