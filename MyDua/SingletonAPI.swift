@@ -12,27 +12,30 @@ import SwiftyJSON
 class SingletonApi: NSObject {
     //MARK: - Daily Dua API
     func dailyDuaListAPI( onSuccess successBlock: ((JSON) -> Void)!, onError errorBlock: ((String?) -> Void)!){
-        
-        var request = URLRequest(url: URL(string: baseAPIUrl + "dailydua?day=wednesday")!,timeoutInterval: Double.infinity)
-        request.addValue("Bearer \(tokenID)", forHTTPHeaderField: "Authorization")
-        
-        request.httpMethod = "GET"
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data else {
-                print(String(describing: error))
-                return
+        if let day = UserDefaults.standard.value(forKey: "currentDay") {
+            print(day)
+            var request = URLRequest(url: URL(string: baseAPIUrl + "dailydua?day=\(day)")!,timeoutInterval: Double.infinity)
+            
+            request.addValue("Bearer \(tokenID)", forHTTPHeaderField: "Authorization")
+            
+            request.httpMethod = "GET"
+            
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data else {
+                    print(String(describing: error))
+                    return
+                }
+                print(String(data: data, encoding: .utf8)!)
+                // api
+                let json = JSON(data)
+                print(json)
+                
+                successBlock(json)
+                
             }
-            print(String(data: data, encoding: .utf8)!)
-            // api
-            let json = JSON(data)
-            print(json)
             
-            successBlock(json)
-            
+            task.resume()
         }
-        
-        task.resume()
         
     }
     
@@ -40,6 +43,33 @@ class SingletonApi: NSObject {
     func dua_List_API( onSuccess successBlock: ((ListOfDua) -> Void)!, onError errorBlock: ((String?) -> Void)!){
         
         var request = URLRequest(url: URL(string: baseAPIUrl + "dualist")!,timeoutInterval: Double.infinity)
+        request.addValue("Bearer \(tokenID)", forHTTPHeaderField: "Authorization")
+        
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            do{
+                guard let data = data else {
+                    print(String(describing: error))
+                    return
+                }
+                let decode = try JSONDecoder().decode(ListOfDua.self, from: data)
+                    successBlock(decode)
+                    print(decode)
+            } catch {
+                print(error)
+            }
+        }
+        
+        task.resume()
+        
+    }
+
+    //MARK: - Sahfia Sajjadia
+    
+    func sahfia_sajjadia_API( onSuccess successBlock: ((ListOfDua) -> Void)!, onError errorBlock: ((String?) -> Void)!){
+        
+        var request = URLRequest(url: URL(string: baseAPIUrl + "sahifalist")!,timeoutInterval: Double.infinity)
         request.addValue("Bearer \(tokenID)", forHTTPHeaderField: "Authorization")
         
         request.httpMethod = "GET"

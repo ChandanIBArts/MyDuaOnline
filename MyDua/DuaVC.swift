@@ -68,6 +68,22 @@ extension DuaVC: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = storyboard?.instantiateViewController(withIdentifier: "AudioDetailVC") as? AudioDetailVC {
+            self.navigationController?.pushViewController(cell, animated: true)
+            
+            if (!(searching ?? false)) {
+                let arr = duaList[indexPath.row]
+                cell.audioLbl = arr.name ?? ""
+                cell.audioUrl = arr.file ?? ""
+            } else {
+                let searchArr = searchArr[indexPath.row]
+                cell.audioLbl = searchArr.name ?? ""
+                cell.audioUrl = searchArr.file ?? ""
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return duaListCellHeight
     }

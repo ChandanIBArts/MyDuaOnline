@@ -8,7 +8,7 @@
 import UIKit
 
 class SettingsVC: UIViewController {
-    @IBOutlet weak var settings: UITabBarItem!{
+    @IBOutlet weak var settings: UITabBarItem! {
         didSet{
             settings.image = UIImage(named: "settings")?.withTintColor(.black, renderingMode: .alwaysOriginal)
         }
