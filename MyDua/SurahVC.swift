@@ -11,6 +11,12 @@ import SwiftyJSON
 class SurahVC: UIViewController {
     @IBOutlet weak var surahTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var surah: UITabBarItem! {
+        didSet{
+            surah.image = UIImage(named: "surah")?.withTintColor(.black, renderingMode: .alwaysOriginal)
+        }
+    }
+
     
     let surahListCellHeight = 90.0
     let objSingleton = SingletonApi()

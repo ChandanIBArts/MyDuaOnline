@@ -18,6 +18,9 @@
 		F733A7BE2B04A3F500D5C054 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7BD2B04A3F500D5C054 /* FavouriteTableViewCell.swift */; };
 		F733A7C22B04CC5900D5C054 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7C12B04CC5900D5C054 /* SignupVC.swift */; };
 		F733A7C42B04DE8500D5C054 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7C32B04DE8500D5C054 /* SigninVC.swift */; };
+		F73A06862B0B3148002B9536 /* SafhiaSajjadiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A06852B0B3148002B9536 /* SafhiaSajjadiaVC.swift */; };
+		F73A06882B0B34F9002B9536 /* SahifaSajjadiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A06872B0B34F9002B9536 /* SahifaSajjadiaTableViewCell.swift */; };
+		F73A06932B0B378F002B9536 /* List_of_sahfia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A068E2B0B378F002B9536 /* List_of_sahfia.swift */; };
 		F748E1582B03732D003556BB /* ListOfSurah.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1522B03732D003556BB /* ListOfSurah.swift */; };
 		F748E15C2B03732D003556BB /* Arabic_surah.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1562B03732D003556BB /* Arabic_surah.swift */; };
 		F748E1632B03A2A4003556BB /* ListOfDua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1622B03A2A4003556BB /* ListOfDua.swift */; };
@@ -28,6 +31,7 @@
 		F797C99B2AFC9DB700B2506D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797C99A2AFC9DB700B2506D /* Constant.swift */; };
 		F797C99E2AFC9ECB00B2506D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F797C99D2AFC9ECB00B2506D /* SwiftyJSON */; };
 		F797C9A02AFCA2B000B2506D /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797C99F2AFCA2B000B2506D /* AlertMessage.swift */; };
+		F7A168852B07291600B114AE /* AudioDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A168842B07291600B114AE /* AudioDetailVC.swift */; };
 		F7B1BE882AFB58A700CDE492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BE872AFB58A700CDE492 /* AppDelegate.swift */; };
 		F7B1BE8A2AFB58A700CDE492 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BE892AFB58A700CDE492 /* SceneDelegate.swift */; };
 		F7B1BE8F2AFB58A700CDE492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B1BE8D2AFB58A700CDE492 /* Main.storyboard */; };
@@ -62,6 +66,9 @@
 		F733A7BD2B04A3F500D5C054 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		F733A7C12B04CC5900D5C054 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		F733A7C32B04DE8500D5C054 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		F73A06852B0B3148002B9536 /* SafhiaSajjadiaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafhiaSajjadiaVC.swift; sourceTree = "<group>"; };
+		F73A06872B0B34F9002B9536 /* SahifaSajjadiaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahifaSajjadiaTableViewCell.swift; sourceTree = "<group>"; };
+		F73A068E2B0B378F002B9536 /* List_of_sahfia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List_of_sahfia.swift; sourceTree = "<group>"; };
 		F748E1522B03732D003556BB /* ListOfSurah.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfSurah.swift; sourceTree = "<group>"; };
 		F748E1562B03732D003556BB /* Arabic_surah.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arabic_surah.swift; sourceTree = "<group>"; };
 		F748E1622B03A2A4003556BB /* ListOfDua.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfDua.swift; sourceTree = "<group>"; };
@@ -71,6 +78,7 @@
 		F748E16A2B03A309003556BB /* Arabic_dua.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arabic_dua.swift; sourceTree = "<group>"; };
 		F797C99A2AFC9DB700B2506D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F797C99F2AFCA2B000B2506D /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		F7A168842B07291600B114AE /* AudioDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDetailVC.swift; sourceTree = "<group>"; };
 		F7B1BE842AFB58A700CDE492 /* MyDua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B1BE872AFB58A700CDE492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7B1BE892AFB58A700CDE492 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +137,14 @@
 				F733A7C32B04DE8500D5C054 /* SigninVC.swift */,
 			);
 			name = SignInOut;
+			sourceTree = "<group>";
+		};
+		F73A06892B0B3781002B9536 /* Sahfia */ = {
+			isa = PBXGroup;
+			children = (
+				F73A068E2B0B378F002B9536 /* List_of_sahfia.swift */,
+			);
+			path = Sahfia;
 			sourceTree = "<group>";
 		};
 		F748E15E2B03A1E4003556BB /* Surah */ = {
@@ -207,6 +223,7 @@
 		F7B1BE9C2AFB593400CDE492 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F73A06892B0B3781002B9536 /* Sahfia */,
 				F733A7BA2B04A2FE00D5C054 /* Favourite */,
 				F733A7B52B04941100D5C054 /* Language */,
 				F748E1602B03A20E003556BB /* Ziyarat */,
@@ -219,6 +236,7 @@
 		F7B1BE9D2AFB593D00CDE492 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F7A168842B07291600B114AE /* AudioDetailVC.swift */,
 				F733A7C02B04C96000D5C054 /* SignInOut */,
 				F7B1BEAB2AFB5B5900CDE492 /* Admin */,
 			);
@@ -274,6 +292,7 @@
 			children = (
 				F7B1BEDC2AFBB52800CDE492 /* DailyDuaTableViewCell.swift */,
 				F7E364A92B01E7AD003EC48D /* DuaTableViewCell.swift */,
+				F73A06872B0B34F9002B9536 /* SahifaSajjadiaTableViewCell.swift */,
 				F7E364AB2B02028E003EC48D /* ZiyaratTableViewCell.swift */,
 				F7E364AD2B0217D6003EC48D /* SurahTableViewCell.swift */,
 				F733A7BD2B04A3F500D5C054 /* FavouriteTableViewCell.swift */,
@@ -287,6 +306,7 @@
 				F7B1BEBA2AFB706700CDE492 /* TabBarVC.swift */,
 				F7B1BEAC2AFB606C00CDE492 /* DailyDuaVC.swift */,
 				F7B1BEAE2AFB699000CDE492 /* DuaVC.swift */,
+				F73A06852B0B3148002B9536 /* SafhiaSajjadiaVC.swift */,
 				F7B1BEB02AFB69B000CDE492 /* ZiyaratVC.swift */,
 				F7B1BEB22AFB69C500CDE492 /* SurahVC.swift */,
 				F7B1BEB42AFB69DC00CDE492 /* MyFavouritesVC.swift */,
@@ -391,8 +411,11 @@
 				F7E364AE2B0217D6003EC48D /* SurahTableViewCell.swift in Sources */,
 				F7B1BEB92AFB6A2A00CDE492 /* LoginVC.swift in Sources */,
 				F748E1632B03A2A4003556BB /* ListOfDua.swift in Sources */,
+				F7A168852B07291600B114AE /* AudioDetailVC.swift in Sources */,
 				F797C9A02AFCA2B000B2506D /* AlertMessage.swift in Sources */,
+				F73A06882B0B34F9002B9536 /* SahifaSajjadiaTableViewCell.swift in Sources */,
 				F733A7AE2B0493A600D5C054 /* Gujrati_ziyarat.swift in Sources */,
+				F73A06862B0B3148002B9536 /* SafhiaSajjadiaVC.swift in Sources */,
 				F748E1682B03A302003556BB /* Hindi_dua.swift in Sources */,
 				F748E16B2B03A309003556BB /* Arabic_dua.swift in Sources */,
 				F748E1672B03A302003556BB /* English_dua.swift in Sources */,
@@ -408,6 +431,7 @@
 				F7E364AA2B01E7AD003EC48D /* DuaTableViewCell.swift in Sources */,
 				F7B1BEB52AFB69DC00CDE492 /* MyFavouritesVC.swift in Sources */,
 				F748E1692B03A302003556BB /* Gujrati_dua.swift in Sources */,
+				F73A06932B0B378F002B9536 /* List_of_sahfia.swift in Sources */,
 				F733A7B02B0493A600D5C054 /* ListOfZiyarat.swift in Sources */,
 				F7E364B02B024901003EC48D /* CacheStore.swift in Sources */,
 				F748E1582B03732D003556BB /* ListOfSurah.swift in Sources */,

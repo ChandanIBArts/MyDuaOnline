@@ -12,11 +12,14 @@ import AVFoundation
 class DailyDuaVC: UIViewController {
     
     @IBOutlet weak var dailyDuaTableView: UITableView!
+    @IBOutlet weak var dayLbl: UILabel!
+
     let dailyDuaCellHeight = 90.0
     var englishDuaList : [JSON] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         // Daily Dua API Call
         let objSingleton = SingletonApi()
         objSingleton.dailyDuaListAPI(onSuccess: {response in
@@ -39,6 +42,12 @@ class DailyDuaVC: UIViewController {
         )
     }
     
+    
+    func setupUI() {
+        if let day = UserDefaults.standard.value(forKey: "currentDay") {
+            dayLbl.text = day as! String
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
     
     }
@@ -55,9 +64,7 @@ extension DailyDuaVC: UITableViewDelegate, UITableViewDataSource {
         if let cell = dailyDuaTableView.dequeueReusableCell(withIdentifier: "DailyDuaTableViewCell", for: indexPath) as? DailyDuaTableViewCell {
             
             cell.titleLbl.text = englishDuaList[indexPath.row]["audio"]["title"].stringValue
-            
-//            cell.audioFileNameLbl.text = englishDuaList[indexPath.row]["audio"]["filename"].stringValue
-            
+                        
             cell.audioUrl = englishDuaList[indexPath.row]["audio"]["url"].stringValue
             
             cell.selectionStyle = .none
@@ -65,6 +72,14 @@ extension DailyDuaVC: UITableViewDelegate, UITableViewDataSource {
         }
         
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = storyboard?.instantiateViewController(withIdentifier: "AudioDetailVC") as? AudioDetailVC {
+            self.navigationController?.pushViewController(cell, animated: true)
+            cell.audioLbl = englishDuaList[indexPath.row]["audio"]["title"].stringValue
+            cell.audioUrl = englishDuaList[indexPath.row]["audio"]["url"].stringValue
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
