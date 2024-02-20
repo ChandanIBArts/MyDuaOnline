@@ -1,7 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "cropped-lokokk.png",
+      "filename" : "my_dua_logo.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "my_dua_logo-removebg-preview.png",
       "idiom" : "universal"
     }
   ],
