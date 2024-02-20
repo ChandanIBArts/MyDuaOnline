@@ -13,6 +13,8 @@ class SurahTableViewCell: UITableViewCell {
     @IBOutlet weak var favourtiteImage: UIImageView!
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var sepratorView: UIView!
+    @IBOutlet weak var duration_Lbl: UILabel!
+
     var isTap = true
     var audioUrl = ""
     var audioPlayer: AVAudioPlayer?
@@ -48,6 +50,7 @@ class SurahTableViewCell: UITableViewCell {
     
     @IBAction func playBtnTapped(_ sender: UIButton) {
         print(audioUrl)
+        /*
         let req = URLRequest(url: URL(string:audioUrl)!)
         let task = URLSession.shared.dataTask(with: req) { data, _, err in
             DispatchQueue.main.async {
@@ -75,6 +78,7 @@ class SurahTableViewCell: UITableViewCell {
             
         }
         task.resume()
+        */
     }
     
     @IBAction func downloadBtnTapped(_ sender: UIButton) {

@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D513BFB2B1F160D0003C523 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5D513BFA2B1F160D0003C523 /* SDWebImage */; };
+		5D513BFD2B1F160D0003C523 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D513BFC2B1F160D0003C523 /* SDWebImageMapKit */; };
+		5D513C012B1F23780003C523 /* FavouriteDuaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D513C002B1F23780003C523 /* FavouriteDuaVC.swift */; };
+		5DCADAF62B16055A0082ED99 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCADAF52B16055A0082ED99 /* MyProfileVC.swift */; };
+		5DCADAF92B176ECB0082ED99 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCADAF82B176ECB0082ED99 /* ChangePasswordVC.swift */; };
+		5DCADAFB2B1890980082ED99 /* MyProfileButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCADAFA2B1890980082ED99 /* MyProfileButtonVC.swift */; };
+		5DCADAFE2B19B4C10082ED99 /* MarqueeLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 5DCADAFD2B19B4C10082ED99 /* MarqueeLabel */; };
+		5DCADB002B1DCA720082ED99 /* NewFavTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCADAFF2B1DCA720082ED99 /* NewFavTVC.swift */; };
+		B5BD4EA62B29AE920051B681 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD4EA52B29AE920051B681 /* MoreVC.swift */; };
+		B5BED0CB2B5F786200E3DB24 /* SahifaSajjadiaFavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BED0CA2B5F786200E3DB24 /* SahifaSajjadiaFavVC.swift */; };
+		B5BED0CE2B5F89A900E3DB24 /* MusicPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BED0CD2B5F89A900E3DB24 /* MusicPlay.swift */; };
+		B5BED0D12B5F961900E3DB24 /* ZiyaratFavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BED0D02B5F961900E3DB24 /* ZiyaratFavVC.swift */; };
+		B5BED0D32B5FB2AB00E3DB24 /* SurahFavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BED0D22B5FB2AB00E3DB24 /* SurahFavVC.swift */; };
+		B5BED0D52B5FDE2600E3DB24 /* AllFavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BED0D42B5FDE2600E3DB24 /* AllFavVC.swift */; };
+		DAD3959B2B602AED0064D028 /* WaqfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3959A2B602AED0064D028 /* WaqfVC.swift */; };
+		F709E2DE2B7A0107009DF749 /* AzanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F709E2DD2B7A0107009DF749 /* AzanVC.swift */; };
+		F71F79312B723EE600A20E89 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F71F79302B723EE600A20E89 /* SDWebImage */; };
+		F71F79332B723EE600A20E89 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F71F79322B723EE600A20E89 /* SDWebImageMapKit */; };
 		F733A7AE2B0493A600D5C054 /* Gujrati_ziyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7A92B0493A600D5C054 /* Gujrati_ziyarat.swift */; };
 		F733A7AF2B0493A600D5C054 /* English_ziyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7AA2B0493A600D5C054 /* English_ziyarat.swift */; };
 		F733A7B02B0493A600D5C054 /* ListOfZiyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7AB2B0493A600D5C054 /* ListOfZiyarat.swift */; };
@@ -17,10 +35,17 @@
 		F733A7BC2B04A31700D5C054 /* ListOfFavourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7BB2B04A31700D5C054 /* ListOfFavourite.swift */; };
 		F733A7BE2B04A3F500D5C054 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7BD2B04A3F500D5C054 /* FavouriteTableViewCell.swift */; };
 		F733A7C22B04CC5900D5C054 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7C12B04CC5900D5C054 /* SignupVC.swift */; };
-		F733A7C42B04DE8500D5C054 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7C32B04DE8500D5C054 /* SigninVC.swift */; };
+		F735D5882B6284770074040E /* TimerUpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735D5872B6284770074040E /* TimerUpdateVC.swift */; };
+		F738C4032B7E22E50085B940 /* azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F738C4022B7E22E50085B940 /* azan.mp3 */; };
 		F73A06862B0B3148002B9536 /* SafhiaSajjadiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A06852B0B3148002B9536 /* SafhiaSajjadiaVC.swift */; };
 		F73A06882B0B34F9002B9536 /* SahifaSajjadiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A06872B0B34F9002B9536 /* SahifaSajjadiaTableViewCell.swift */; };
 		F73A06932B0B378F002B9536 /* List_of_sahfia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A068E2B0B378F002B9536 /* List_of_sahfia.swift */; };
+		F73A06952B0B5AD0002B9536 /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A06942B0B5AD0002B9536 /* MarqueeLabel.swift */; };
+		F73A06992B0B6435002B9536 /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A06982B0B6435002B9536 /* DefaultValue.swift */; };
+		F73A069E2B0B766E002B9536 /* Floating_label.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A069B2B0B766E002B9536 /* Floating_label.swift */; };
+		F73A069F2B0B766E002B9536 /* Animatedtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A069C2B0B766E002B9536 /* Animatedtext.swift */; };
+		F73A06A02B0B766E002B9536 /* Messagess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A069D2B0B766E002B9536 /* Messagess.swift */; };
+		F73CBF982B69168C00D0693B /* QuotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CBF972B69168C00D0693B /* QuotesVC.swift */; };
 		F748E1582B03732D003556BB /* ListOfSurah.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1522B03732D003556BB /* ListOfSurah.swift */; };
 		F748E15C2B03732D003556BB /* Arabic_surah.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1562B03732D003556BB /* Arabic_surah.swift */; };
 		F748E1632B03A2A4003556BB /* ListOfDua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1622B03A2A4003556BB /* ListOfDua.swift */; };
@@ -28,10 +53,47 @@
 		F748E1682B03A302003556BB /* Hindi_dua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1652B03A302003556BB /* Hindi_dua.swift */; };
 		F748E1692B03A302003556BB /* Gujrati_dua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E1662B03A302003556BB /* Gujrati_dua.swift */; };
 		F748E16B2B03A309003556BB /* Arabic_dua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E16A2B03A309003556BB /* Arabic_dua.swift */; };
+		F75A9BA42B29A44300BA513A /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A9BA32B29A44300BA513A /* CustomVC.swift */; };
+		F75BA5FB2B28DDD100AD4568 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BA5FA2B28DDD100AD4568 /* ForgotPasswordVC.swift */; };
+		F75BA5FD2B291AF200AD4568 /* Fab_dua.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BA5FC2B291AF200AD4568 /* Fab_dua.swift */; };
+		F75BCDF62B846850008082FD /* Aamaal_And_NamazVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BCDF52B846850008082FD /* Aamaal_And_NamazVC.swift */; };
+		F75C1B552B60E17E008D24F5 /* SingletonRemotControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75C1B542B60E17E008D24F5 /* SingletonRemotControl.swift */; };
+		F75C1B582B61443F008D24F5 /* FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75C1B572B61443F008D24F5 /* FeedbackVC.swift */; };
+		F75CE4A82B7B6B3B00DEEA97 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75CE4A72B7B6B3B00DEEA97 /* TimeModel.swift */; };
+		F75CE4AA2B7B824A00DEEA97 /* DailyDuaAzanTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75CE4A92B7B824A00DEEA97 /* DailyDuaAzanTVCell.swift */; };
+		F78542E52B3EB72C00B4202C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F78542E42B3EB72C00B4202C /* GoogleService-Info.plist */; };
 		F797C99B2AFC9DB700B2506D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797C99A2AFC9DB700B2506D /* Constant.swift */; };
 		F797C99E2AFC9ECB00B2506D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F797C99D2AFC9ECB00B2506D /* SwiftyJSON */; };
 		F797C9A02AFCA2B000B2506D /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797C99F2AFCA2B000B2506D /* AlertMessage.swift */; };
 		F7A168852B07291600B114AE /* AudioDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A168842B07291600B114AE /* AudioDetailVC.swift */; };
+		F7AEC56D2B70B61A0019EE6F /* EventTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AEC56C2B70B61A0019EE6F /* EventTVCell.swift */; };
+		F7AF7B1A2B3D300E007793CB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B192B3D300E007793CB /* FirebaseAnalytics */; };
+		F7AF7B1C2B3D300E007793CB /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B1B2B3D300E007793CB /* FirebaseAnalyticsOnDeviceConversion */; };
+		F7AF7B1E2B3D300E007793CB /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B1D2B3D300E007793CB /* FirebaseAnalyticsSwift */; };
+		F7AF7B202B3D300E007793CB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B1F2B3D300E007793CB /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		F7AF7B222B3D300E007793CB /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B212B3D300E007793CB /* FirebaseAppCheck */; };
+		F7AF7B242B3D300E007793CB /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B232B3D300E007793CB /* FirebaseAppDistribution-Beta */; };
+		F7AF7B262B3D300E007793CB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B252B3D300E007793CB /* FirebaseAuth */; };
+		F7AF7B282B3D300E007793CB /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B272B3D300E007793CB /* FirebaseAuthCombine-Community */; };
+		F7AF7B2A2B3D300E007793CB /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B292B3D300E007793CB /* FirebaseCrashlytics */; };
+		F7AF7B2C2B3D300E007793CB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B2B2B3D300E007793CB /* FirebaseDatabase */; };
+		F7AF7B2E2B3D300E007793CB /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B2D2B3D300E007793CB /* FirebaseDatabaseSwift */; };
+		F7AF7B302B3D300E007793CB /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B2F2B3D300E007793CB /* FirebaseDynamicLinks */; };
+		F7AF7B322B3D300E007793CB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B312B3D300E007793CB /* FirebaseFirestore */; };
+		F7AF7B342B3D300E007793CB /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B332B3D300E007793CB /* FirebaseFirestoreCombine-Community */; };
+		F7AF7B362B3D300E007793CB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B352B3D300E007793CB /* FirebaseFirestoreSwift */; };
+		F7AF7B382B3D300E007793CB /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B372B3D300E007793CB /* FirebaseFunctions */; };
+		F7AF7B3A2B3D300E007793CB /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B392B3D300E007793CB /* FirebaseFunctionsCombine-Community */; };
+		F7AF7B3C2B3D300E007793CB /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B3B2B3D300E007793CB /* FirebaseInAppMessaging-Beta */; };
+		F7AF7B3E2B3D300E007793CB /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B3D2B3D300E007793CB /* FirebaseInAppMessagingSwift-Beta */; };
+		F7AF7B402B3D300E007793CB /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B3F2B3D300E007793CB /* FirebaseInstallations */; };
+		F7AF7B422B3D300E007793CB /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B412B3D300E007793CB /* FirebaseMLModelDownloader */; };
+		F7AF7B442B3D300E007793CB /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B432B3D300E007793CB /* FirebaseMessaging */; };
+		F7AF7B462B3D300E007793CB /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B452B3D300E007793CB /* FirebasePerformance */; };
+		F7AF7B482B3D300E007793CB /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B472B3D300E007793CB /* FirebaseRemoteConfig */; };
+		F7AF7B4A2B3D300E007793CB /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B492B3D300E007793CB /* FirebaseRemoteConfigSwift */; };
+		F7AF7B4C2B3D300E007793CB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B4B2B3D300E007793CB /* FirebaseStorage */; };
+		F7AF7B4E2B3D300E007793CB /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B4D2B3D300E007793CB /* FirebaseStorageCombine-Community */; };
 		F7B1BE882AFB58A700CDE492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BE872AFB58A700CDE492 /* AppDelegate.swift */; };
 		F7B1BE8A2AFB58A700CDE492 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BE892AFB58A700CDE492 /* SceneDelegate.swift */; };
 		F7B1BE8F2AFB58A700CDE492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B1BE8D2AFB58A700CDE492 /* Main.storyboard */; };
@@ -48,13 +110,31 @@
 		F7B1BEDD2AFBB52800CDE492 /* DailyDuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEDC2AFBB52800CDE492 /* DailyDuaTableViewCell.swift */; };
 		F7B1BEDF2AFBB84800CDE492 /* SingletonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B1BEDE2AFBB84800CDE492 /* SingletonAPI.swift */; };
 		F7B1BEE22AFBB8A600CDE492 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F7B1BEE12AFBB8A600CDE492 /* Alamofire */; };
+		F7C847AC2B7C78F600B7DF5B /* EventAzanTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C847AB2B7C78F600B7DF5B /* EventAzanTVCell.swift */; };
+		F7D5655C2B47E7E200AC0933 /* NewFavCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D5655B2B47E7E200AC0933 /* NewFavCVC.swift */; };
 		F7E364AA2B01E7AD003EC48D /* DuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E364A92B01E7AD003EC48D /* DuaTableViewCell.swift */; };
 		F7E364AC2B02028E003EC48D /* ZiyaratTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E364AB2B02028E003EC48D /* ZiyaratTableViewCell.swift */; };
 		F7E364AE2B0217D6003EC48D /* SurahTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E364AD2B0217D6003EC48D /* SurahTableViewCell.swift */; };
 		F7E364B02B024901003EC48D /* CacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E364AF2B024901003EC48D /* CacheStore.swift */; };
+		F7EACB972B6B632E007DB4DD /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EACB962B6B632E007DB4DD /* EventVC.swift */; };
+		F7ED177C2B4E5B1A006B6AB7 /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ED177B2B4E5B1A006B6AB7 /* SupportVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D513C002B1F23780003C523 /* FavouriteDuaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteDuaVC.swift; sourceTree = "<group>"; };
+		5DCADAF52B16055A0082ED99 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		5DCADAF82B176ECB0082ED99 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		5DCADAFA2B1890980082ED99 /* MyProfileButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileButtonVC.swift; sourceTree = "<group>"; };
+		5DCADAFF2B1DCA720082ED99 /* NewFavTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFavTVC.swift; sourceTree = "<group>"; };
+		B5BD4EA52B29AE920051B681 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		B5BED0CA2B5F786200E3DB24 /* SahifaSajjadiaFavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahifaSajjadiaFavVC.swift; sourceTree = "<group>"; };
+		B5BED0CD2B5F89A900E3DB24 /* MusicPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlay.swift; sourceTree = "<group>"; };
+		B5BED0D02B5F961900E3DB24 /* ZiyaratFavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZiyaratFavVC.swift; sourceTree = "<group>"; };
+		B5BED0D22B5FB2AB00E3DB24 /* SurahFavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahFavVC.swift; sourceTree = "<group>"; };
+		B5BED0D42B5FDE2600E3DB24 /* AllFavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFavVC.swift; sourceTree = "<group>"; };
+		DAD395992B5D79320064D028 /* MyDua.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDua.entitlements; sourceTree = "<group>"; };
+		DAD3959A2B602AED0064D028 /* WaqfVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaqfVC.swift; sourceTree = "<group>"; };
+		F709E2DD2B7A0107009DF749 /* AzanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzanVC.swift; sourceTree = "<group>"; };
 		F733A7A92B0493A600D5C054 /* Gujrati_ziyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gujrati_ziyarat.swift; sourceTree = "<group>"; };
 		F733A7AA2B0493A600D5C054 /* English_ziyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = English_ziyarat.swift; sourceTree = "<group>"; };
 		F733A7AB2B0493A600D5C054 /* ListOfZiyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfZiyarat.swift; sourceTree = "<group>"; };
@@ -65,10 +145,17 @@
 		F733A7BB2B04A31700D5C054 /* ListOfFavourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFavourite.swift; sourceTree = "<group>"; };
 		F733A7BD2B04A3F500D5C054 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		F733A7C12B04CC5900D5C054 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
-		F733A7C32B04DE8500D5C054 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		F735D5872B6284770074040E /* TimerUpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUpdateVC.swift; sourceTree = "<group>"; };
+		F738C4022B7E22E50085B940 /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
 		F73A06852B0B3148002B9536 /* SafhiaSajjadiaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafhiaSajjadiaVC.swift; sourceTree = "<group>"; };
 		F73A06872B0B34F9002B9536 /* SahifaSajjadiaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahifaSajjadiaTableViewCell.swift; sourceTree = "<group>"; };
 		F73A068E2B0B378F002B9536 /* List_of_sahfia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List_of_sahfia.swift; sourceTree = "<group>"; };
+		F73A06942B0B5AD0002B9536 /* MarqueeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeLabel.swift; sourceTree = "<group>"; };
+		F73A06982B0B6435002B9536 /* DefaultValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValue.swift; sourceTree = "<group>"; };
+		F73A069B2B0B766E002B9536 /* Floating_label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floating_label.swift; sourceTree = "<group>"; };
+		F73A069C2B0B766E002B9536 /* Animatedtext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatedtext.swift; sourceTree = "<group>"; };
+		F73A069D2B0B766E002B9536 /* Messagess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messagess.swift; sourceTree = "<group>"; };
+		F73CBF972B69168C00D0693B /* QuotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesVC.swift; sourceTree = "<group>"; };
 		F748E1522B03732D003556BB /* ListOfSurah.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfSurah.swift; sourceTree = "<group>"; };
 		F748E1562B03732D003556BB /* Arabic_surah.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arabic_surah.swift; sourceTree = "<group>"; };
 		F748E1622B03A2A4003556BB /* ListOfDua.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfDua.swift; sourceTree = "<group>"; };
@@ -76,9 +163,19 @@
 		F748E1652B03A302003556BB /* Hindi_dua.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hindi_dua.swift; sourceTree = "<group>"; };
 		F748E1662B03A302003556BB /* Gujrati_dua.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gujrati_dua.swift; sourceTree = "<group>"; };
 		F748E16A2B03A309003556BB /* Arabic_dua.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arabic_dua.swift; sourceTree = "<group>"; };
+		F75A9BA32B29A44300BA513A /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
+		F75BA5FA2B28DDD100AD4568 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		F75BA5FC2B291AF200AD4568 /* Fab_dua.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fab_dua.swift; sourceTree = "<group>"; };
+		F75BCDF52B846850008082FD /* Aamaal_And_NamazVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aamaal_And_NamazVC.swift; sourceTree = "<group>"; };
+		F75C1B542B60E17E008D24F5 /* SingletonRemotControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonRemotControl.swift; sourceTree = "<group>"; };
+		F75C1B572B61443F008D24F5 /* FeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
+		F75CE4A72B7B6B3B00DEEA97 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		F75CE4A92B7B824A00DEEA97 /* DailyDuaAzanTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDuaAzanTVCell.swift; sourceTree = "<group>"; };
+		F78542E42B3EB72C00B4202C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F797C99A2AFC9DB700B2506D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F797C99F2AFCA2B000B2506D /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		F7A168842B07291600B114AE /* AudioDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDetailVC.swift; sourceTree = "<group>"; };
+		F7AEC56C2B70B61A0019EE6F /* EventTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTVCell.swift; sourceTree = "<group>"; };
 		F7B1BE842AFB58A700CDE492 /* MyDua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B1BE872AFB58A700CDE492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7B1BE892AFB58A700CDE492 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,10 +193,14 @@
 		F7B1BEBA2AFB706700CDE492 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		F7B1BEDC2AFBB52800CDE492 /* DailyDuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDuaTableViewCell.swift; sourceTree = "<group>"; };
 		F7B1BEDE2AFBB84800CDE492 /* SingletonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonAPI.swift; sourceTree = "<group>"; };
+		F7C847AB2B7C78F600B7DF5B /* EventAzanTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAzanTVCell.swift; sourceTree = "<group>"; };
+		F7D5655B2B47E7E200AC0933 /* NewFavCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFavCVC.swift; sourceTree = "<group>"; };
 		F7E364A92B01E7AD003EC48D /* DuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuaTableViewCell.swift; sourceTree = "<group>"; };
 		F7E364AB2B02028E003EC48D /* ZiyaratTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZiyaratTableViewCell.swift; sourceTree = "<group>"; };
 		F7E364AD2B0217D6003EC48D /* SurahTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahTableViewCell.swift; sourceTree = "<group>"; };
 		F7E364AF2B024901003EC48D /* CacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheStore.swift; sourceTree = "<group>"; };
+		F7EACB962B6B632E007DB4DD /* EventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
+		F7ED177B2B4E5B1A006B6AB7 /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +208,84 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7AF7B442B3D300E007793CB /* FirebaseMessaging in Frameworks */,
+				F7AF7B342B3D300E007793CB /* FirebaseFirestoreCombine-Community in Frameworks */,
+				F7AF7B2C2B3D300E007793CB /* FirebaseDatabase in Frameworks */,
 				F797C99E2AFC9ECB00B2506D /* SwiftyJSON in Frameworks */,
+				F7AF7B4C2B3D300E007793CB /* FirebaseStorage in Frameworks */,
+				5D513BFD2B1F160D0003C523 /* SDWebImageMapKit in Frameworks */,
+				F7AF7B1A2B3D300E007793CB /* FirebaseAnalytics in Frameworks */,
+				F7AF7B2A2B3D300E007793CB /* FirebaseCrashlytics in Frameworks */,
+				F7AF7B322B3D300E007793CB /* FirebaseFirestore in Frameworks */,
+				F7AF7B302B3D300E007793CB /* FirebaseDynamicLinks in Frameworks */,
+				F7AF7B4E2B3D300E007793CB /* FirebaseStorageCombine-Community in Frameworks */,
+				F7AF7B1C2B3D300E007793CB /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				F7AF7B3A2B3D300E007793CB /* FirebaseFunctionsCombine-Community in Frameworks */,
+				F7AF7B3E2B3D300E007793CB /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				F7AF7B422B3D300E007793CB /* FirebaseMLModelDownloader in Frameworks */,
+				F7AF7B3C2B3D300E007793CB /* FirebaseInAppMessaging-Beta in Frameworks */,
+				F7AF7B462B3D300E007793CB /* FirebasePerformance in Frameworks */,
+				F7AF7B282B3D300E007793CB /* FirebaseAuthCombine-Community in Frameworks */,
+				F7AF7B1E2B3D300E007793CB /* FirebaseAnalyticsSwift in Frameworks */,
+				F7AF7B2E2B3D300E007793CB /* FirebaseDatabaseSwift in Frameworks */,
 				F7B1BEE22AFBB8A600CDE492 /* Alamofire in Frameworks */,
+				F7AF7B482B3D300E007793CB /* FirebaseRemoteConfig in Frameworks */,
+				5D513BFB2B1F160D0003C523 /* SDWebImage in Frameworks */,
+				F7AF7B262B3D300E007793CB /* FirebaseAuth in Frameworks */,
+				F7AF7B382B3D300E007793CB /* FirebaseFunctions in Frameworks */,
+				F7AF7B402B3D300E007793CB /* FirebaseInstallations in Frameworks */,
+				F71F79332B723EE600A20E89 /* SDWebImageMapKit in Frameworks */,
+				F7AF7B362B3D300E007793CB /* FirebaseFirestoreSwift in Frameworks */,
+				F7AF7B202B3D300E007793CB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				F7AF7B222B3D300E007793CB /* FirebaseAppCheck in Frameworks */,
+				F7AF7B4A2B3D300E007793CB /* FirebaseRemoteConfigSwift in Frameworks */,
+				F71F79312B723EE600A20E89 /* SDWebImage in Frameworks */,
+				F7AF7B242B3D300E007793CB /* FirebaseAppDistribution-Beta in Frameworks */,
+				5DCADAFE2B19B4C10082ED99 /* MarqueeLabel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DCADAF42B1605320082ED99 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5DCADAF52B16055A0082ED99 /* MyProfileVC.swift */,
+				5DCADAFA2B1890980082ED99 /* MyProfileButtonVC.swift */,
+			);
+			name = MyProfile;
+			sourceTree = "<group>";
+		};
+		5DCADAF72B176EA00082ED99 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				5DCADAF82B176ECB0082ED99 /* ChangePasswordVC.swift */,
+			);
+			name = ChangePassword;
+			sourceTree = "<group>";
+		};
+		B5BED0CC2B5F899800E3DB24 /* MusicManager */ = {
+			isa = PBXGroup;
+			children = (
+				B5BED0CD2B5F89A900E3DB24 /* MusicPlay.swift */,
+				F75C1B542B60E17E008D24F5 /* SingletonRemotControl.swift */,
+			);
+			name = MusicManager;
+			sourceTree = "<group>";
+		};
+		B5BED0CF2B5F960400E3DB24 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				5D513C002B1F23780003C523 /* FavouriteDuaVC.swift */,
+				B5BED0CA2B5F786200E3DB24 /* SahifaSajjadiaFavVC.swift */,
+				B5BED0D02B5F961900E3DB24 /* ZiyaratFavVC.swift */,
+				B5BED0D22B5FB2AB00E3DB24 /* SurahFavVC.swift */,
+				B5BED0D42B5FDE2600E3DB24 /* AllFavVC.swift */,
+			);
+			name = Favourite;
+			sourceTree = "<group>";
+		};
 		F733A7B52B04941100D5C054 /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +305,6 @@
 			isa = PBXGroup;
 			children = (
 				F733A7C12B04CC5900D5C054 /* SignupVC.swift */,
-				F733A7C32B04DE8500D5C054 /* SigninVC.swift */,
 			);
 			name = SignInOut;
 			sourceTree = "<group>";
@@ -145,6 +315,16 @@
 				F73A068E2B0B378F002B9536 /* List_of_sahfia.swift */,
 			);
 			path = Sahfia;
+			sourceTree = "<group>";
+		};
+		F73A069A2B0B764A002B9536 /* FloatingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F73A069C2B0B766E002B9536 /* Animatedtext.swift */,
+				F73A069B2B0B766E002B9536 /* Floating_label.swift */,
+				F73A069D2B0B766E002B9536 /* Messagess.swift */,
+			);
+			path = FloatingLabel;
 			sourceTree = "<group>";
 		};
 		F748E15E2B03A1E4003556BB /* Surah */ = {
@@ -164,6 +344,7 @@
 				F748E1642B03A302003556BB /* English_dua.swift */,
 				F748E1662B03A302003556BB /* Gujrati_dua.swift */,
 				F748E1652B03A302003556BB /* Hindi_dua.swift */,
+				F75BA5FC2B291AF200AD4568 /* Fab_dua.swift */,
 			);
 			path = Dua;
 			sourceTree = "<group>";
@@ -178,6 +359,22 @@
 				F733A7AB2B0493A600D5C054 /* ListOfZiyarat.swift */,
 			);
 			path = Ziyarat;
+			sourceTree = "<group>";
+		};
+		F75C1B562B60EF95008D24F5 /* AzanMusic */ = {
+			isa = PBXGroup;
+			children = (
+				F738C4022B7E22E50085B940 /* azan.mp3 */,
+			);
+			name = AzanMusic;
+			sourceTree = "<group>";
+		};
+		F75CE4A62B7B6B0800DEEA97 /* AzanTimeDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F75CE4A72B7B6B3B00DEEA97 /* TimeModel.swift */,
+			);
+			path = AzanTimeDataModel;
 			sourceTree = "<group>";
 		};
 		F7B1BE7B2AFB58A700CDE492 = {
@@ -199,6 +396,9 @@
 		F7B1BE862AFB58A700CDE492 /* MyDua */ = {
 			isa = PBXGroup;
 			children = (
+				F75C1B562B60EF95008D24F5 /* AzanMusic */,
+				B5BED0CC2B5F899800E3DB24 /* MusicManager */,
+				DAD395992B5D79320064D028 /* MyDua.entitlements */,
 				F7B1BE9B2AFB592600CDE492 /* APIManager */,
 				F7B1BE9C2AFB593400CDE492 /* Model */,
 				F7B1BEA12AFB599700CDE492 /* View */,
@@ -223,12 +423,14 @@
 		F7B1BE9C2AFB593400CDE492 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F75CE4A62B7B6B0800DEEA97 /* AzanTimeDataModel */,
+				F73A069A2B0B764A002B9536 /* FloatingLabel */,
+				F748E15F2B03A200003556BB /* Dua */,
 				F73A06892B0B3781002B9536 /* Sahfia */,
+				F748E1602B03A20E003556BB /* Ziyarat */,
+				F748E15E2B03A1E4003556BB /* Surah */,
 				F733A7BA2B04A2FE00D5C054 /* Favourite */,
 				F733A7B52B04941100D5C054 /* Language */,
-				F748E1602B03A20E003556BB /* Ziyarat */,
-				F748E15F2B03A200003556BB /* Dua */,
-				F748E15E2B03A1E4003556BB /* Surah */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,7 +438,10 @@
 		F7B1BE9D2AFB593D00CDE492 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B5BED0CF2B5F960400E3DB24 /* Favourite */,
 				F7A168842B07291600B114AE /* AudioDetailVC.swift */,
+				5DCADAF72B176EA00082ED99 /* ChangePassword */,
+				5DCADAF42B1605320082ED99 /* MyProfile */,
 				F733A7C02B04C96000D5C054 /* SignInOut */,
 				F7B1BEAB2AFB5B5900CDE492 /* Admin */,
 			);
@@ -246,6 +451,7 @@
 		F7B1BE9F2AFB597A00CDE492 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				F78542E42B3EB72C00B4202C /* GoogleService-Info.plist */,
 				F7B1BE872AFB58A700CDE492 /* AppDelegate.swift */,
 				F7B1BE892AFB58A700CDE492 /* SceneDelegate.swift */,
 			);
@@ -258,6 +464,8 @@
 				F797C99A2AFC9DB700B2506D /* Constant.swift */,
 				F797C99F2AFCA2B000B2506D /* AlertMessage.swift */,
 				F7E364AF2B024901003EC48D /* CacheStore.swift */,
+				F73A06942B0B5AD0002B9536 /* MarqueeLabel.swift */,
+				F73A06982B0B6435002B9536 /* DefaultValue.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -275,6 +483,7 @@
 			isa = PBXGroup;
 			children = (
 				F7B1BEA82AFB5AA700CDE492 /* Storyboard */,
+				F7D5655A2B47E6FE00AC0933 /* CollectionViewCell */,
 			);
 			name = Admin;
 			sourceTree = "<group>";
@@ -291,11 +500,15 @@
 			isa = PBXGroup;
 			children = (
 				F7B1BEDC2AFBB52800CDE492 /* DailyDuaTableViewCell.swift */,
+				F75CE4A92B7B824A00DEEA97 /* DailyDuaAzanTVCell.swift */,
 				F7E364A92B01E7AD003EC48D /* DuaTableViewCell.swift */,
 				F73A06872B0B34F9002B9536 /* SahifaSajjadiaTableViewCell.swift */,
 				F7E364AB2B02028E003EC48D /* ZiyaratTableViewCell.swift */,
 				F7E364AD2B0217D6003EC48D /* SurahTableViewCell.swift */,
+				5DCADAFF2B1DCA720082ED99 /* NewFavTVC.swift */,
 				F733A7BD2B04A3F500D5C054 /* FavouriteTableViewCell.swift */,
+				F7AEC56C2B70B61A0019EE6F /* EventTVCell.swift */,
+				F7C847AB2B7C78F600B7DF5B /* EventAzanTVCell.swift */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -306,16 +519,35 @@
 				F7B1BEBA2AFB706700CDE492 /* TabBarVC.swift */,
 				F7B1BEAC2AFB606C00CDE492 /* DailyDuaVC.swift */,
 				F7B1BEAE2AFB699000CDE492 /* DuaVC.swift */,
-				F73A06852B0B3148002B9536 /* SafhiaSajjadiaVC.swift */,
+				F7EACB962B6B632E007DB4DD /* EventVC.swift */,
 				F7B1BEB02AFB69B000CDE492 /* ZiyaratVC.swift */,
 				F7B1BEB22AFB69C500CDE492 /* SurahVC.swift */,
+				F73A06852B0B3148002B9536 /* SafhiaSajjadiaVC.swift */,
 				F7B1BEB42AFB69DC00CDE492 /* MyFavouritesVC.swift */,
 				F7B1BEB62AFB69F100CDE492 /* OurRadioVC.swift */,
 				F7B1BEB82AFB6A2A00CDE492 /* LoginVC.swift */,
 				F733A7B62B049B9100D5C054 /* LanguageChangeVC.swift */,
 				F733A7B82B049BA600D5C054 /* SettingsVC.swift */,
+				F75BA5FA2B28DDD100AD4568 /* ForgotPasswordVC.swift */,
+				F75A9BA32B29A44300BA513A /* CustomVC.swift */,
+				B5BD4EA52B29AE920051B681 /* MoreVC.swift */,
+				F7ED177B2B4E5B1A006B6AB7 /* SupportVC.swift */,
+				DAD3959A2B602AED0064D028 /* WaqfVC.swift */,
+				F75C1B572B61443F008D24F5 /* FeedbackVC.swift */,
+				F735D5872B6284770074040E /* TimerUpdateVC.swift */,
+				F73CBF972B69168C00D0693B /* QuotesVC.swift */,
+				F709E2DD2B7A0107009DF749 /* AzanVC.swift */,
+				F75BCDF52B846850008082FD /* Aamaal_And_NamazVC.swift */,
 			);
 			name = Admin;
+			sourceTree = "<group>";
+		};
+		F7D5655A2B47E6FE00AC0933 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F7D5655B2B47E7E200AC0933 /* NewFavCVC.swift */,
+			);
+			name = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +569,38 @@
 			packageProductDependencies = (
 				F7B1BEE12AFBB8A600CDE492 /* Alamofire */,
 				F797C99D2AFC9ECB00B2506D /* SwiftyJSON */,
+				5DCADAFD2B19B4C10082ED99 /* MarqueeLabel */,
+				5D513BFA2B1F160D0003C523 /* SDWebImage */,
+				5D513BFC2B1F160D0003C523 /* SDWebImageMapKit */,
+				F7AF7B192B3D300E007793CB /* FirebaseAnalytics */,
+				F7AF7B1B2B3D300E007793CB /* FirebaseAnalyticsOnDeviceConversion */,
+				F7AF7B1D2B3D300E007793CB /* FirebaseAnalyticsSwift */,
+				F7AF7B1F2B3D300E007793CB /* FirebaseAnalyticsWithoutAdIdSupport */,
+				F7AF7B212B3D300E007793CB /* FirebaseAppCheck */,
+				F7AF7B232B3D300E007793CB /* FirebaseAppDistribution-Beta */,
+				F7AF7B252B3D300E007793CB /* FirebaseAuth */,
+				F7AF7B272B3D300E007793CB /* FirebaseAuthCombine-Community */,
+				F7AF7B292B3D300E007793CB /* FirebaseCrashlytics */,
+				F7AF7B2B2B3D300E007793CB /* FirebaseDatabase */,
+				F7AF7B2D2B3D300E007793CB /* FirebaseDatabaseSwift */,
+				F7AF7B2F2B3D300E007793CB /* FirebaseDynamicLinks */,
+				F7AF7B312B3D300E007793CB /* FirebaseFirestore */,
+				F7AF7B332B3D300E007793CB /* FirebaseFirestoreCombine-Community */,
+				F7AF7B352B3D300E007793CB /* FirebaseFirestoreSwift */,
+				F7AF7B372B3D300E007793CB /* FirebaseFunctions */,
+				F7AF7B392B3D300E007793CB /* FirebaseFunctionsCombine-Community */,
+				F7AF7B3B2B3D300E007793CB /* FirebaseInAppMessaging-Beta */,
+				F7AF7B3D2B3D300E007793CB /* FirebaseInAppMessagingSwift-Beta */,
+				F7AF7B3F2B3D300E007793CB /* FirebaseInstallations */,
+				F7AF7B412B3D300E007793CB /* FirebaseMLModelDownloader */,
+				F7AF7B432B3D300E007793CB /* FirebaseMessaging */,
+				F7AF7B452B3D300E007793CB /* FirebasePerformance */,
+				F7AF7B472B3D300E007793CB /* FirebaseRemoteConfig */,
+				F7AF7B492B3D300E007793CB /* FirebaseRemoteConfigSwift */,
+				F7AF7B4B2B3D300E007793CB /* FirebaseStorage */,
+				F7AF7B4D2B3D300E007793CB /* FirebaseStorageCombine-Community */,
+				F71F79302B723EE600A20E89 /* SDWebImage */,
+				F71F79322B723EE600A20E89 /* SDWebImageMapKit */,
 			);
 			productName = MyDua;
 			productReference = F7B1BE842AFB58A700CDE492 /* MyDua.app */;
@@ -369,6 +633,9 @@
 			packageReferences = (
 				F7B1BEE02AFBB8A600CDE492 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F797C99C2AFC9ECB00B2506D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				5DCADAFC2B19B4C10082ED99 /* XCRemoteSwiftPackageReference "MarqueeLabel" */,
+				5D513BF92B1F160D0003C523 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = F7B1BE852AFB58A700CDE492 /* Products */;
 			projectDirPath = "";
@@ -385,6 +652,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7B1BE942AFB58A800CDE492 /* LaunchScreen.storyboard in Resources */,
+				F738C4032B7E22E50085B940 /* azan.mp3 in Resources */,
+				F78542E52B3EB72C00B4202C /* GoogleService-Info.plist in Resources */,
 				F7B1BE912AFB58A800CDE492 /* Assets.xcassets in Resources */,
 				F7B1BE8F2AFB58A700CDE492 /* Main.storyboard in Resources */,
 			);
@@ -398,43 +667,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				F733A7B22B0493A600D5C054 /* Arabic_ziyarat.swift in Sources */,
+				B5BD4EA62B29AE920051B681 /* MoreVC.swift in Sources */,
 				F733A7C22B04CC5900D5C054 /* SignupVC.swift in Sources */,
+				F7AEC56D2B70B61A0019EE6F /* EventTVCell.swift in Sources */,
+				F75CE4A82B7B6B3B00DEEA97 /* TimeModel.swift in Sources */,
 				F733A7BE2B04A3F500D5C054 /* FavouriteTableViewCell.swift in Sources */,
+				B5BED0CE2B5F89A900E3DB24 /* MusicPlay.swift in Sources */,
 				F733A7AF2B0493A600D5C054 /* English_ziyarat.swift in Sources */,
 				F7B1BEDD2AFBB52800CDE492 /* DailyDuaTableViewCell.swift in Sources */,
+				F73A06992B0B6435002B9536 /* DefaultValue.swift in Sources */,
+				F7D5655C2B47E7E200AC0933 /* NewFavCVC.swift in Sources */,
 				F7B1BEAF2AFB699000CDE492 /* DuaVC.swift in Sources */,
 				F7B1BEB72AFB69F100CDE492 /* OurRadioVC.swift in Sources */,
 				F7B1BEBB2AFB706700CDE492 /* TabBarVC.swift in Sources */,
+				F75A9BA42B29A44300BA513A /* CustomVC.swift in Sources */,
+				F709E2DE2B7A0107009DF749 /* AzanVC.swift in Sources */,
 				F733A7BC2B04A31700D5C054 /* ListOfFavourite.swift in Sources */,
 				F7B1BEAD2AFB606C00CDE492 /* DailyDuaVC.swift in Sources */,
+				F73CBF982B69168C00D0693B /* QuotesVC.swift in Sources */,
 				F733A7B72B049B9100D5C054 /* LanguageChangeVC.swift in Sources */,
+				F73A06A02B0B766E002B9536 /* Messagess.swift in Sources */,
+				B5BED0D32B5FB2AB00E3DB24 /* SurahFavVC.swift in Sources */,
 				F7E364AE2B0217D6003EC48D /* SurahTableViewCell.swift in Sources */,
+				F7ED177C2B4E5B1A006B6AB7 /* SupportVC.swift in Sources */,
+				F7EACB972B6B632E007DB4DD /* EventVC.swift in Sources */,
+				5DCADAFB2B1890980082ED99 /* MyProfileButtonVC.swift in Sources */,
 				F7B1BEB92AFB6A2A00CDE492 /* LoginVC.swift in Sources */,
 				F748E1632B03A2A4003556BB /* ListOfDua.swift in Sources */,
+				F75CE4AA2B7B824A00DEEA97 /* DailyDuaAzanTVCell.swift in Sources */,
+				F75C1B552B60E17E008D24F5 /* SingletonRemotControl.swift in Sources */,
+				B5BED0CB2B5F786200E3DB24 /* SahifaSajjadiaFavVC.swift in Sources */,
+				B5BED0D12B5F961900E3DB24 /* ZiyaratFavVC.swift in Sources */,
 				F7A168852B07291600B114AE /* AudioDetailVC.swift in Sources */,
 				F797C9A02AFCA2B000B2506D /* AlertMessage.swift in Sources */,
 				F73A06882B0B34F9002B9536 /* SahifaSajjadiaTableViewCell.swift in Sources */,
 				F733A7AE2B0493A600D5C054 /* Gujrati_ziyarat.swift in Sources */,
 				F73A06862B0B3148002B9536 /* SafhiaSajjadiaVC.swift in Sources */,
 				F748E1682B03A302003556BB /* Hindi_dua.swift in Sources */,
+				F75C1B582B61443F008D24F5 /* FeedbackVC.swift in Sources */,
+				F75BA5FD2B291AF200AD4568 /* Fab_dua.swift in Sources */,
 				F748E16B2B03A309003556BB /* Arabic_dua.swift in Sources */,
 				F748E1672B03A302003556BB /* English_dua.swift in Sources */,
+				5DCADAF92B176ECB0082ED99 /* ChangePasswordVC.swift in Sources */,
 				F7B1BEDF2AFBB84800CDE492 /* SingletonAPI.swift in Sources */,
 				F7B1BE882AFB58A700CDE492 /* AppDelegate.swift in Sources */,
 				F7B1BEB32AFB69C500CDE492 /* SurahVC.swift in Sources */,
-				F733A7C42B04DE8500D5C054 /* SigninVC.swift in Sources */,
 				F797C99B2AFC9DB700B2506D /* Constant.swift in Sources */,
+				5D513C012B1F23780003C523 /* FavouriteDuaVC.swift in Sources */,
+				B5BED0D52B5FDE2600E3DB24 /* AllFavVC.swift in Sources */,
+				F735D5882B6284770074040E /* TimerUpdateVC.swift in Sources */,
+				5DCADB002B1DCA720082ED99 /* NewFavTVC.swift in Sources */,
 				F733A7B12B0493A600D5C054 /* Hindi_ziyarat.swift in Sources */,
+				5DCADAF62B16055A0082ED99 /* MyProfileVC.swift in Sources */,
+				F73A069F2B0B766E002B9536 /* Animatedtext.swift in Sources */,
+				F73A069E2B0B766E002B9536 /* Floating_label.swift in Sources */,
 				F733A7B92B049BA600D5C054 /* SettingsVC.swift in Sources */,
 				F7B1BE8A2AFB58A700CDE492 /* SceneDelegate.swift in Sources */,
 				F7E364AC2B02028E003EC48D /* ZiyaratTableViewCell.swift in Sources */,
+				F73A06952B0B5AD0002B9536 /* MarqueeLabel.swift in Sources */,
 				F7E364AA2B01E7AD003EC48D /* DuaTableViewCell.swift in Sources */,
 				F7B1BEB52AFB69DC00CDE492 /* MyFavouritesVC.swift in Sources */,
 				F748E1692B03A302003556BB /* Gujrati_dua.swift in Sources */,
 				F73A06932B0B378F002B9536 /* List_of_sahfia.swift in Sources */,
+				F75BA5FB2B28DDD100AD4568 /* ForgotPasswordVC.swift in Sources */,
 				F733A7B02B0493A600D5C054 /* ListOfZiyarat.swift in Sources */,
+				F75BCDF62B846850008082FD /* Aamaal_And_NamazVC.swift in Sources */,
+				F7C847AC2B7C78F600B7DF5B /* EventAzanTVCell.swift in Sources */,
 				F7E364B02B024901003EC48D /* CacheStore.swift in Sources */,
 				F748E1582B03732D003556BB /* ListOfSurah.swift in Sources */,
+				DAD3959B2B602AED0064D028 /* WaqfVC.swift in Sources */,
 				F748E15C2B03732D003556BB /* Arabic_surah.swift in Sources */,
 				F7B1BEB12AFB69B000CDE492 /* ZiyaratVC.swift in Sources */,
 			);
@@ -514,7 +815,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -571,7 +872,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -586,28 +887,40 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyDua/MyDua.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5UXA8PC8RG;
+				CURRENT_PROJECT_VERSION = 1.5;
+				DEVELOPMENT_TEAM = JFNBL45B7W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyDua/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My dua online";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "My app need to access it.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "My app need to access it.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "My app need to access it.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "My app need to access it.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mydua.MyDua;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -616,28 +929,40 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyDua/MyDua.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5UXA8PC8RG;
+				CURRENT_PROJECT_VERSION = 1.5;
+				DEVELOPMENT_TEAM = JFNBL45B7W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyDua/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My dua online";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "My app need to access it.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "My app need to access it.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "My app need to access it.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "My app need to access it.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mydua.MyDua;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -665,12 +990,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5D513BF92B1F160D0003C523 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rs/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		5DCADAFC2B19B4C10082ED99 /* XCRemoteSwiftPackageReference "MarqueeLabel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cbpowell/MarqueeLabel.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		F797C99C2AFC9ECB00B2506D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.1;
+			};
+		};
+		F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
 			};
 		};
 		F7B1BEE02AFBB8A600CDE492 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -684,10 +1033,168 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5D513BFA2B1F160D0003C523 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D513BF92B1F160D0003C523 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		5D513BFC2B1F160D0003C523 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D513BF92B1F160D0003C523 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		5DCADAFD2B19B4C10082ED99 /* MarqueeLabel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DCADAFC2B19B4C10082ED99 /* XCRemoteSwiftPackageReference "MarqueeLabel" */;
+			productName = MarqueeLabel;
+		};
+		F71F79302B723EE600A20E89 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SDWebImage;
+		};
+		F71F79322B723EE600A20E89 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SDWebImageMapKit;
+		};
 		F797C99D2AFC9ECB00B2506D /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F797C99C2AFC9ECB00B2506D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		F7AF7B192B3D300E007793CB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F7AF7B1B2B3D300E007793CB /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		F7AF7B1D2B3D300E007793CB /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		F7AF7B1F2B3D300E007793CB /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		F7AF7B212B3D300E007793CB /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		F7AF7B232B3D300E007793CB /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		F7AF7B252B3D300E007793CB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F7AF7B272B3D300E007793CB /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		F7AF7B292B3D300E007793CB /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		F7AF7B2B2B3D300E007793CB /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		F7AF7B2D2B3D300E007793CB /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		F7AF7B2F2B3D300E007793CB /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		F7AF7B312B3D300E007793CB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F7AF7B332B3D300E007793CB /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		F7AF7B352B3D300E007793CB /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		F7AF7B372B3D300E007793CB /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		F7AF7B392B3D300E007793CB /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		F7AF7B3B2B3D300E007793CB /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		F7AF7B3D2B3D300E007793CB /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		F7AF7B3F2B3D300E007793CB /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		F7AF7B412B3D300E007793CB /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		F7AF7B432B3D300E007793CB /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		F7AF7B452B3D300E007793CB /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		F7AF7B472B3D300E007793CB /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		F7AF7B492B3D300E007793CB /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		F7AF7B4B2B3D300E007793CB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		F7AF7B4D2B3D300E007793CB /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7AF7B182B3D300E007793CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
 		};
 		F7B1BEE12AFBB8A600CDE492 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

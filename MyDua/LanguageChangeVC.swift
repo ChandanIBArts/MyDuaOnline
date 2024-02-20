@@ -12,6 +12,7 @@ class LanguageChangeVC: UIViewController {
     @IBOutlet weak var langView : UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIApplication.shared.isIdleTimerDisabled = true
         setupUI()
     }
     
@@ -19,6 +20,12 @@ class LanguageChangeVC: UIViewController {
         didSet{
             changeLang.image = UIImage(named: "language")?.withTintColor(.black, renderingMode: .alwaysOriginal)
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+       
+        UIApplication.shared.isIdleTimerDisabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {

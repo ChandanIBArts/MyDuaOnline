@@ -16,6 +16,7 @@ class DailyDuaTableViewCell: UITableViewCell, AVAudioPlayerDelegate {
     @IBOutlet weak var sepratorView: UIView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var downloadButton: UIButton!
+    @IBOutlet weak var durationLbl: UILabel!
     
     var audioUrl = ""
     var audioPlayer: AVAudioPlayer?
@@ -23,12 +24,17 @@ class DailyDuaTableViewCell: UITableViewCell, AVAudioPlayerDelegate {
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUI()
+//        if UITraitCollection.current.userInterfaceStyle == .dark{
+//            self.sepratorView.layer.borderColor = UIColor.white.cgColor
+//        }
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
     }
+    
+    
     
     func setupUI() {
         sepratorView.layer.cornerRadius = 20.0
@@ -38,6 +44,7 @@ class DailyDuaTableViewCell: UITableViewCell, AVAudioPlayerDelegate {
     
     @IBAction func playBtnTapped(_ sender: UIButton) {
         print(audioUrl)
+        /*
         let req = URLRequest(url: URL(string:audioUrl)!)
         let task = URLSession.shared.dataTask(with: req) { data, _, err in
             DispatchQueue.main.async {
@@ -65,10 +72,16 @@ class DailyDuaTableViewCell: UITableViewCell, AVAudioPlayerDelegate {
             
         }
         task.resume()
+        */
     }
     
     @IBAction func downloadBtnTapped(_ sender: UIButton) {
-        print("Download Tapped")
+        print(audioUrl)
+        if let mp3URL = URL(string: audioUrl) {
+            downloadMP3AndSave(url: mp3URL)
+        }
+
+      /*
         if let audioUrl = URL(string: audioUrl) {
             
             let documentsDirectoryURL =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -90,6 +103,83 @@ class DailyDuaTableViewCell: UITableViewCell, AVAudioPlayerDelegate {
                 }.resume()
             }
         }
+        */
         
     }
+}
+
+
+/*
+func downloadFile(url: URL, completion: @escaping (URL?, Error?) -> Void) {
+    let task = URLSession.shared.downloadTask(with: url) { (tempURL, response, error) in
+        if let error = error {
+            completion(nil, error)
+            return
+        }
+
+        // Check if the response is an HTTP response with a status code indicating success
+        guard let httpResponse = response as? HTTPURLResponse,
+              (200...299).contains(httpResponse.statusCode) else {
+            let statusCode = (response as? HTTPURLResponse)?.statusCode ?? -1
+            let error = NSError(domain: "HTTPError", code: statusCode, userInfo: nil)
+            completion(nil, error)
+            return
+        }
+
+        // Move the temporary file to a permanent location if successful
+        if let tempURL = tempURL {
+            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let destinationURL = documentsDirectory.appendingPathComponent(url.lastPathComponent)
+
+            do {
+                try FileManager.default.moveItem(at: tempURL, to: destinationURL)
+                completion(destinationURL, nil)
+            } catch {
+                completion(nil, error)
+            }
+        }
+    }
+
+    task.resume()
+}
+
+func saveMP3ToDocumentsDirectory(fileURL: URL, completion: @escaping (Error?) -> Void) {
+    let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    let destinationURL = documentsDirectory.appendingPathComponent(fileURL.lastPathComponent)
+
+    do {
+        try FileManager.default.copyItem(at: fileURL, to: destinationURL)
+        completion(nil)
+    } catch {
+        completion(error)
+    }
+}
+
+// Example usage:
+*/
+func downloadMP3AndSave(url: URL) {
+    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        if let error = error {
+            print("Error downloading MP3: \(error.localizedDescription)")
+            return
+        }
+        
+        guard let data = data else {
+            print("No data received")
+            return
+        }
+        
+        // Replace "YourSong.mp3" with the desired name for the saved MP3 file
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let destinationURL = documentsDirectory.appendingPathComponent("YourSong.mp3")
+        
+        do {
+            try data.write(to: destinationURL)
+            print("MP3 file saved successfully at: \(destinationURL)")
+        } catch {
+            print("Error saving MP3 file: \(error.localizedDescription)")
+        }
+    }
+    
+    task.resume()
 }

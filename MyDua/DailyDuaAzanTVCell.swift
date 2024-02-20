@@ -8,16 +8,59 @@
 import UIKit
 
 class DailyDuaAzanTVCell: UITableViewCell {
-
+    
+    @IBOutlet weak var day_Lbl: UILabel!
+    
+    @IBOutlet weak var fajrView: UIView!
+    @IBOutlet weak var fajrImg: UIImageView!
+    @IBOutlet weak var fajrTitle: UILabel!
+    @IBOutlet weak var fajrTime: UILabel!
+    
+    
+    @IBOutlet weak var sunriseView: UIView!
+    @IBOutlet weak var sunriseImg: UIImageView!
+    @IBOutlet weak var sunriseTitle: UILabel!
+    @IBOutlet weak var sunriseTime: UILabel!
+    
+    
+    @IBOutlet weak var dhuhrView: UIView!
+    @IBOutlet weak var dhuhrImg: UIImageView!
+    @IBOutlet weak var dhuhrTitle: UILabel!
+    @IBOutlet weak var dhuhrTime: UILabel!
+    
+    
+    @IBOutlet weak var sunsetView: UIView!
+    @IBOutlet weak var sunsetImg: UIImageView!
+    @IBOutlet weak var sunsetTitle: UILabel!
+    @IBOutlet weak var sunsetTime: UILabel!
+    
+    
+    @IBOutlet weak var maghribView: UIView!
+    @IBOutlet weak var maghribImg: UIImageView!
+    @IBOutlet weak var maghribTitle: UILabel!
+    @IBOutlet weak var maghribTime: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        customView(view: fajrView)
+        customView(view: sunriseView)
+        customView(view: dhuhrView)
+        customView(view: sunsetView)
+        customView(view: maghribView)
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func customView(view: UIView){
+        
+        view.layer.cornerRadius = 10
+        view.layer.borderColor = UIColor.green.cgColor
+        view.layer.borderWidth = 1
+        view.clipsToBounds = true
+        
+        
     }
 
+    
+    
 }

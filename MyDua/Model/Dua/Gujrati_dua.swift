@@ -19,6 +19,7 @@ struct Gujrati_dua : Codable {
 	let id : Int?
 	let caption : String?
 	let fav : String?
+    let duration : String?
 
 	enum CodingKeys: String, CodingKey {
 
@@ -28,16 +29,18 @@ struct Gujrati_dua : Codable {
 		case id = "id"
 		case caption = "caption"
 		case fav = "fav"
+        case duration = "duration"
 	}
 
-	init(from decoder: Decoder) throws {
-		let values = try decoder.container(keyedBy: CodingKeys.self)
-		track = try values.decodeIfPresent(Int.self, forKey: .track)
-		name = try values.decodeIfPresent(String.self, forKey: .name)
-		file = try values.decodeIfPresent(String.self, forKey: .file)
-		id = try values.decodeIfPresent(Int.self, forKey: .id)
-		caption = try values.decodeIfPresent(String.self, forKey: .caption)
-		fav = try values.decodeIfPresent(String.self, forKey: .fav)
-	}
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.track = try container.decodeIfPresent(Int.self, forKey: .track)
+        self.name = try container.decodeIfPresent(String.self, forKey: .name)
+        self.file = try container.decodeIfPresent(String.self, forKey: .file)
+        self.id = try container.decodeIfPresent(Int.self, forKey: .id)
+        self.caption = try container.decodeIfPresent(String.self, forKey: .caption)
+        self.fav = try container.decodeIfPresent(String.self, forKey: .fav)
+        self.duration = try container.decodeIfPresent(String.self, forKey: .duration)
+    }
 
 }

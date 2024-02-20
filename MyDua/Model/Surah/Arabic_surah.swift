@@ -19,6 +19,7 @@ struct Arabic_surah : Codable {
 	let id : Int?
 	let caption : String?
 	let fav : String?
+    let duration : String?
 
 	enum CodingKeys: String, CodingKey {
 
@@ -28,6 +29,8 @@ struct Arabic_surah : Codable {
 		case id = "id"
 		case caption = "caption"
 		case fav = "fav"
+        case duration = "duration"
+
 	}
 
 	init(from decoder: Decoder) throws {
@@ -38,6 +41,8 @@ struct Arabic_surah : Codable {
 		id = try values.decodeIfPresent(Int.self, forKey: .id)
 		caption = try values.decodeIfPresent(String.self, forKey: .caption)
 		fav = try values.decodeIfPresent(String.self, forKey: .fav)
+        duration = try values.decodeIfPresent(String.self, forKey: .duration)
+
 	}
 
 }

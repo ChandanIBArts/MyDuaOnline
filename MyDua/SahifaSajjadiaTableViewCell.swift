@@ -14,6 +14,8 @@ class SahifaSajjadiaTableViewCell: UITableViewCell {
     @IBOutlet weak var favourtiteImage: UIImageView!
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var sepratorView: UIView!
+    @IBOutlet weak var duration_Lbl: UILabel!
+    
     var isTap = true
     var audioUrl = ""
     var audioPlayer: AVAudioPlayer?
@@ -34,7 +36,7 @@ class SahifaSajjadiaTableViewCell: UITableViewCell {
         sepratorView.layer.borderColor = UIColor(.black).cgColor
         favourtiteImage.image = UIImage(named: "unFavourite")
         favourtiteImage.isUserInteractionEnabled = true
-        favourtiteImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(addToFav)))
+//        favourtiteImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(addToFav)))
     }
     
     @objc func addToFav() {

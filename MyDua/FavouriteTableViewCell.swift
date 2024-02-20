@@ -14,6 +14,9 @@ class FavouriteTableViewCell: UITableViewCell {
     @IBOutlet weak var favourtiteImage: UIImageView!
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var sepratorView: UIView!
+    @IBOutlet weak var duration_Lbl: UILabel!
+
+    
     var isTap = true
     var audioUrl = ""
     var audioPlayer: AVAudioPlayer?
@@ -31,19 +34,19 @@ class FavouriteTableViewCell: UITableViewCell {
         sepratorView.layer.cornerRadius = 20.0
         sepratorView.layer.borderWidth = 0.7
         sepratorView.layer.borderColor = UIColor(.black).cgColor
-        favourtiteImage.image = UIImage(named: "unFavourite")
+        favourtiteImage.image = UIImage(named: "favourite")?.withTintColor(UIColor.green)
         favourtiteImage.isUserInteractionEnabled = true
         favourtiteImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(addToFav)))
     }
     
     @objc func addToFav(){
-         if isTap == false {
-            favourtiteImage.image = UIImage(named: "unFavourite")
-            isTap = true
-        } else if isTap == true {
-            favourtiteImage.image = UIImage(named: "favourite")?.withTintColor(UIColor.green)
-            isTap = false
-        }
+        if isTap == false {
+           favourtiteImage.image = UIImage(named: "unFavourite")
+           isTap = true
+       } else if isTap == true {
+           favourtiteImage.image = UIImage(named: "favourite")?.withTintColor(UIColor.green)
+           isTap = false
+       }
         
     }
     

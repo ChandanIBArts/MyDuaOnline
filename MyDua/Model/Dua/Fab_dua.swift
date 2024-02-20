@@ -6,3 +6,21 @@
 //
 
 import Foundation
+
+//struct Fab_dua : Codable {
+//    let fav: String?
+//    let type: String?
+//    
+//    enum CodingKeys: String, CodingKeys {
+//        case fav = "fav"
+//        case type = "type"
+//    }
+//    
+//    init(from decoder: Decoder) throws {
+//        let values = try decoder.container(keyedBy: CodingKeys.self)
+//        fav = try values.decodeIfPresent(String.self, forKey: .fav)
+//        type = try values.decodeIfPresent(String.self, forKey: .type)
+//    }
+//}
+
+

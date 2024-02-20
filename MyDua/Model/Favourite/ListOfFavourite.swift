@@ -12,6 +12,7 @@ struct ListOfFavourite : Codable {
     let file : String?
     let id : String?
     let fav : String?
+    let duration : String?
 
     enum CodingKeys: String, CodingKey {
 
@@ -20,6 +21,8 @@ struct ListOfFavourite : Codable {
         case file = "file"
         case id = "id"
         case fav = "fav"
+        case duration = "duration"
+
     }
 
     init(from decoder: Decoder) throws {
@@ -29,6 +32,8 @@ struct ListOfFavourite : Codable {
         file = try values.decodeIfPresent(String.self, forKey: .file)
         id = try values.decodeIfPresent(String.self, forKey: .id)
         fav = try values.decodeIfPresent(String.self, forKey: .fav)
+        duration = try values.decodeIfPresent(String.self, forKey: .duration)
+
     }
 
 }

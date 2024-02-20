@@ -14,6 +14,8 @@ class DuaTableViewCell: UITableViewCell {
     @IBOutlet weak var favourtiteImage: UIImageView!
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var sepratorView: UIView!
+    @IBOutlet weak var duration_Lbl: UILabel!
+
     var isTap = true
     var audioUrl = ""
     var audioPlayer: AVAudioPlayer?

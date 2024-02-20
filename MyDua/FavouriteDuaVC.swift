@@ -29,6 +29,7 @@ class FavouriteDuaVC: UIViewController {
     @IBOutlet weak var audioSpeedPicker: UIPickerView!
     @IBOutlet weak var btnPlay: UIButton!
     @IBOutlet weak var spiner: UIActivityIndicatorView!
+    
     var shareds = MusicPlay.shared
     let audioSpeed = ["0.5x", "0.75x", "normal", "1.25x", "1.5x", "1.75x", "2x", "4x"]
     var speed:Float = 1
@@ -37,7 +38,7 @@ class FavouriteDuaVC: UIViewController {
     var playerItem: AVPlayerItem?
     var audioUrl = ""
     var isTapSound = true
-  var musicIdx = 0
+    var musicIdx = 0
     var isPlayingOutside = true
     var isCellMusicPlaying = false
     var flag: Bool = true
@@ -49,6 +50,9 @@ class FavouriteDuaVC: UIViewController {
     var timer = Timer()
     var isphonecallRunning = false
     var isPlaying = true
+    var shared = SingletonRemotControl.shareAPIdata
+    var audio_Name: String?
+    
     
     //MARK: View Life Cycle
     override func viewDidLoad() {
@@ -60,34 +64,6 @@ class FavouriteDuaVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(observeValue(_:)), name: NSNotification.Name("sendValue"), object: nil)
         musicViewBackground()
         shareds.vc1 = self
-        /*
-        spiner.isHidden = false
-        spiner.startAnimating()
-        if strStatus == "Listen your favorite Dua" {
-            
-            self.favDuaListDetailsApi()
-            
-        } else if strStatus == "Listen your favorite Sahifa Sajjadia" {
-            
-            self.favSahifaListDetailsApi()
-            
-            
-        } else if strStatus == "Listen your favorite Ziyarat" {
-            self.favZiyaratListDetailsApi()
-           
-            
-        } else if strStatus == "Listen your favorite Surah" {
-            self.favSurahListDetailsApi()
-           
-            
-        } else {
-            self.favAllListDetailsApi()
-            player?.pause()
-        }
-        */
-        
-       // btnPlay.setImage(UIImage(named: "audio_play"), for: UIControl.State.normal)
-        
         audioSpeedPicker.isHidden = true
         audioSpeedPicker.dataSource = self
         audioSpeedPicker.delegate = self
@@ -117,7 +93,8 @@ class FavouriteDuaVC: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
         modeCheck()
-        setupRemoteCommandCenter()
+        globalControlerName = "FavouriteDuaVC"
+        shared.setupRemoteTransportControls()
         
     }
     
@@ -136,34 +113,8 @@ class FavouriteDuaVC: UIViewController {
     
     
     @IBAction func btnTapBack(_ sender: UIButton) {
-        print("Back")
-        DispatchQueue.main.async { [self] in
-            self.spiner.isHidden = false
-            self.spiner.startAnimating()
-            self.index -= 1
-            if self.index >= 0{
-//                self.spiner.isHidden = true
-                self.isTapSound = true
-                self.isPlayingOutside = true
-                shareds.fetchMusicUrl(tblView: tblView, strStat: self.strStatus, idx: index){
-                    str in
-                    self.spiner.isHidden = true
-                         self.spiner.stopAnimating()
-                         self.isPlayingOutside = true
-                         self.isCellMusicPlaying = true
-                         self.audioTrackLbl.text = str
-                    btnPlay.setImage(UIImage(named: "audio_pause"), for: UIControl.State.normal)
-                }
-               
-            }else{
-                self.spiner.isHidden = true
-                self.isPlayingOutside = true
-                self.isTapSound = true
-                self.index = 0
-                print("Less than Zero")
-            }
-            
-        }
+        
+        playBack()
     }
     
     @IBAction func btnTapMusicPlay(_ sender: UIButton) {
@@ -455,9 +406,10 @@ class FavouriteDuaVC: UIViewController {
     func setupMusicUI(url:String,str:String) {
      //  player = nil
        var fetchedUrl = url
-       guard let url = URL(string: fetchedUrl) else {return}
+       guard let url = URL(string: fetchedUrl) else { return } 
        let playerItem:AVPlayerItem = AVPlayerItem(url: url)
        player = AVPlayer(playerItem: playerItem)
+        audio_Name = str
        player?.playImmediately(atRate: globalSpeed)
        tblView.reloadData()
        self.spiner.isHidden = true
@@ -475,9 +427,6 @@ class FavouriteDuaVC: UIViewController {
        duration = playerItem.asset.duration
        let seconds : Float64 = CMTimeGetSeconds(duration)
         
-     //  setupNowPlaying(strTitle: str, strDuration: Float(seconds))
-       
-        
        let duration1 : CMTime = playerItem.currentTime()
        let seconds1 : Float64 = CMTimeGetSeconds(duration1)
        audioDurationLbl.text = self.stringFromTimeInterval(interval: seconds1)
@@ -488,6 +437,9 @@ class FavouriteDuaVC: UIViewController {
            if self.player?.currentItem?.status == .readyToPlay {
                let time : Float64 = CMTimeGetSeconds(self.player!.currentTime());
                self.audioSlaider.value = Float ( time );
+               
+               shared.updateNowPlayingInfo(strTitle: str, duration: duration, playbackTime: time)
+               
                var reverseTime = CMTimeGetSeconds(duration) - time
                self.audioDurationLbl.text = self.stringFromTimeInterval(interval: reverseTime)
            }
@@ -531,6 +483,38 @@ class FavouriteDuaVC: UIViewController {
             }
       }
     
+    func playBack(){
+        
+        DispatchQueue.main.async { [self] in
+            self.spiner.isHidden = false
+            self.spiner.startAnimating()
+            self.index -= 1
+            if self.index >= 0{
+//                self.spiner.isHidden = true
+                self.isTapSound = true
+                self.isPlayingOutside = true
+                shareds.fetchMusicUrl(tblView: tblView, strStat: self.strStatus, idx: index){
+                    str in
+                    self.spiner.isHidden = true
+                         self.spiner.stopAnimating()
+                         self.isPlayingOutside = true
+                         self.isCellMusicPlaying = true
+                         self.audioTrackLbl.text = str
+                    btnPlay.setImage(UIImage(named: "audio_pause"), for: UIControl.State.normal)
+                }
+               
+            }else{
+                self.spiner.isHidden = true
+                self.isPlayingOutside = true
+                self.isTapSound = true
+                self.index = 0
+                print("Less than Zero")
+            }
+            
+        }
+        
+    }
+    
     
     
     
@@ -562,67 +546,7 @@ class FavouriteDuaVC: UIViewController {
         return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
     }
     
-    
-    func setupNowPlaying(strTitle: String, strDuration: Float) {
-        // Set metadata for lock screen display
-        var nowPlayingInfo = [String : Any]()
-        nowPlayingInfo[MPMediaItemPropertyTitle] = strTitle
-       // nowPlayingInfo[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(image: albumArtImage) // Optional artwork
-        nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = strDuration
-        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
-        player?.play()
-    }
-    
-    
-    func setupRemoteCommandCenter() {
-        let commandCenter = MPRemoteCommandCenter.shared()
-            commandCenter.playCommand.addTarget { [unowned self] event in
-                self.player?.play()
-                return .success
-            }
-            commandCenter.pauseCommand.addTarget { [unowned self] event in
-                self.player?.pause()
-                return .success
-            }
-            commandCenter.nextTrackCommand.addTarget { [unowned self] event in
-               // self.playNextSong() // Implement your song switching logic here
-                DispatchQueue.main.async {
-                    self.isTapSound = true
-                    self.isPlayingOutside = true
-                    self.musicIdx += 1
-                    self.fetchMusicUrl(with: self.musicIdx)
-                }
-                return .success
-            }
-            commandCenter.previousTrackCommand.addTarget { [unowned self] event in
-               // self.playPreviousSong() // Implement your song switching logic here
-                DispatchQueue.main.async {
-                    self.musicIdx -= 1
-                    if self.musicIdx >= 0{
-                        self.isTapSound = true
-                        self.isPlayingOutside = true
-                        self.fetchMusicUrl(with: self.musicIdx)
-                       
-                    }else{
-                        self.isPlayingOutside = true
-                        self.isTapSound = true
-                        self.musicIdx = 0
-                        print("Less than Zero")
-                    }
-                    
-                }
-                return .success
-            }
-    }
-    
-//    func playMusic(at index: Int) {
-//        if let player = players[safe: index] {
-//            player.play()
-//        } else {
-//            print("Invalid track index!")
-//        }
-//    }
-    
+
 }
 
 extension FavouriteDuaVC: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {

@@ -8,22 +8,215 @@
 import UIKit
 
 class MoreVC: UIViewController {
-
+    @IBOutlet var imgBack: [UIImageView]!
+    @IBOutlet weak var viewSurah: UIView!
+    @IBOutlet weak var viewMyFav: UIView!
+    @IBOutlet weak var viewRadio: UIView!
+    @IBOutlet weak var viewSettings: UIView!
+    @IBOutlet weak var viewLogin: UIView!
+    @IBOutlet weak var viewProfile: UIView!
+    @IBOutlet weak var viewSupport: UIView!
+    @IBOutlet weak var viewWaqf: UIView!
+    @IBOutlet weak var viewFeedback: UIView!
+    @IBOutlet weak var viewTimerUpdate: UIView!
+    @IBOutlet weak var viewQuotes: UIView!
+    @IBOutlet weak var viewSahifaSajjadia: UIView!
+    @IBOutlet weak var azanView: UIView!
+    @IBOutlet weak var aamaalAndNamazView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        UIApplication.shared.isIdleTimerDisabled = true
+        designView()
+        //setupImageColor()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        
+        UIApplication.shared.isIdleTimerDisabled = false
     }
-    */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        modeCheck()
+        var userID = UserDefaults.standard.value(forKey: "UserID") as? String ?? ""
+        if userID.isEmpty{
+            viewProfile.isHidden = true
+            viewLogin.isHidden = false
+        }else{
+            viewProfile.isHidden = false
+            viewLogin.isHidden = true
+        }
+//
+    }
+    
+    func modeCheck(){
+        if  SettingsVC.viewMode == "Dark" {
+            overrideUserInterfaceStyle = .dark
+        } else {
+            overrideUserInterfaceStyle = .light
+        }
+    }
+    
+    
+    @IBAction func tapSupport(_ sender: UIButton) {
+        // "https://azadar.media"
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SupportVC") as! SupportVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+       /*
+        if let url = URL(string: "https://mydua.online/our-supporter/") {
+                if UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                } else {
+                    print("Cannot open the URL")
+                    // Handle the case where the URL cannot be opened, e.g., show an alert
+                }
+            }
+        */
+        
+    }
+    
+    
+    
+    @IBAction func tapSahifaSajjadia(_ sender: UIButton) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SafhiaSajjadiaVC") as! SafhiaSajjadiaVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    
+    @IBAction func tapQuotes(_ sender: UIButton) {
+     
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "QuotesVC") as! QuotesVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    @IBAction func tapWaqf(_ sender: UIButton) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "WaqtVC") as! WaqfVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    @IBAction func btnFeedback(_ sender: UIButton) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "FeedbackVC") as! FeedbackVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    @IBAction func btnTimerUpdate(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TimerUpdateVC") as! TimerUpdateVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func tapSurah(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SurahVC") as! SurahVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func tapFav(_ sender: Any){
+        let token = UserDefaults.standard.integer(forKey: "UserID")
+        if token >= 1 {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyFavouritesVC") as! MyFavouritesVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            
+            let validation = 1
+            
+            UserDefaults.standard.setValue(validation, forKey: "validation")
+            
+            let alert = UIAlertController(title: AppName, message: "Please login", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "Ok", style: .default, handler: {_ in
+            let signInStoryboard = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            self.navigationController?.pushViewController(signInStoryboard, animated: true)
+            })
+            alert.addAction(ok)
+            present(alert, animated: true)
+            
+        }
+    }
+    @IBAction func tapRadio(_ sender: Any){
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "OurRadioVC") as! OurRadioVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    @IBAction func tapSettings(_ sender: Any){
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    @IBAction func tapLogin(_ sender: Any){
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    @IBAction func tapMyProfile(_ sender: Any){
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyProfileButtonVC") as! MyProfileButtonVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    @IBAction func btnTapAzan(_ sender: UIButton) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AzanVC") as! AzanVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    @IBAction func btnTapAamaalAndNamaz(_ sender: UIButton) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Aamaal_And_NamazVC") as! Aamaal_And_NamazVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+    }
+    
+    
 
+}
+extension MoreVC{
+    private func designView(){
+        viewSurah.layer.cornerRadius = 8.0
+        viewSurah.layer.borderWidth = 1.0
+        viewMyFav.layer.cornerRadius = 8.0
+        viewMyFav.layer.borderWidth = 1.0
+        viewRadio.layer.cornerRadius = 8.0
+        viewRadio.layer.borderWidth = 1.0
+        viewSettings.layer.cornerRadius = 8.0
+        viewSettings.layer.borderWidth = 1.0
+        viewLogin.layer.cornerRadius = 8.0
+        viewLogin.layer.borderWidth = 1.0
+        viewProfile.layer.cornerRadius = 8.0
+        viewProfile.layer.borderWidth = 1.0
+        viewSupport.layer.cornerRadius = 8.0
+        viewSupport.layer.borderWidth = 1.0
+        viewWaqf.layer.cornerRadius = 8.0
+        viewWaqf.layer.borderWidth = 1.0
+        viewFeedback.layer.cornerRadius = 8.0
+        viewFeedback.layer.borderWidth = 1.0
+        viewTimerUpdate.layer.cornerRadius = 8.0
+        viewTimerUpdate.layer.borderWidth = 1.0
+        viewQuotes.layer.cornerRadius = 8.0
+        viewQuotes.layer.borderWidth = 1.0
+        viewSahifaSajjadia.layer.cornerRadius = 8.0
+        viewSahifaSajjadia.layer.borderWidth = 1.0
+        azanView.layer.cornerRadius = 8.0
+        azanView.layer.borderWidth = 1.0
+        aamaalAndNamazView.layer.cornerRadius = 8.0
+        aamaalAndNamazView.layer.borderWidth = 1.0
+    }
+    private func setupImageColor(){
+        imgBack.forEach{
+            $0.image = UIImage(named: "right-arrow")
+            $0.image?.withTintColor(.black, renderingMode: .alwaysOriginal)
+        }
+    }
 }
