@@ -13,9 +13,16 @@ class Aamaal_And_NamazVC: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var spiner: UIActivityIndicatorView!
     
+    var aamaalLanguage: String!
+    var currentTimeZone: String!
+    var currentDate: String!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fetchURLsupportData()
+        
         UIApplication.shared.isIdleTimerDisabled = true
         spiner.isHidden = false
         spiner.startAnimating()
@@ -55,12 +62,38 @@ class Aamaal_And_NamazVC: UIViewController {
 
     
     private func performSupportURL(){
-        let url = URL(string: "https://mydua.online/aamaal-and-namaz/")!
+        let url = URL(string: "https://mydua.online/amaal-namaz-app-page/?dd=\(currentDate!)&tz=\(currentTimeZone!)&lang=\(aamaalLanguage!)")!
+        //let url = URL(string: "https://mydua.online/aamaal-and-namaz/")!
         webView.load(URLRequest(url: url))
         spiner.isHidden = true
         spiner.stopAnimating()
     }
     
     
-   
+    func fetchURLsupportData(){
+        
+        let timeZone = TimeZone.current
+        currentTimeZone = timeZone.identifier
+     
+        
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy.MM.dd"
+        let formattedDate = dateFormatter.string(from: date)
+        currentDate = String(formattedDate)
+        
+        
+        let language = UserDefaults.standard.string(forKey: "GlobalStrLang")
+        if language == "English" {
+            aamaalLanguage = "english"
+        } else if language == "हिंदी" {
+            aamaalLanguage = "hindi"
+        } else if language == "ગુજરાતી" {
+            aamaalLanguage = "gujrati"
+        } else {
+            aamaalLanguage = "arabic"
+        }
+ 
+    }
+    
 }

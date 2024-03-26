@@ -29,6 +29,8 @@ class ZiyaratVC: UIViewController {
     @IBOutlet weak var spiner: UIActivityIndicatorView!
     @IBOutlet weak var tfLang: UITextField!
     @IBOutlet weak var customAirPlayView: UIView!
+    @IBOutlet weak var btnQR: UIButton!
+    @IBOutlet weak var floatingView: UIView!
     
     let langPicker = UIPickerView()
     var arrLang = ["عربي","English","हिंदी","ગુજરાતી"]
@@ -118,6 +120,7 @@ class ZiyaratVC: UIViewController {
         musicViewBackground()
         hide_Keyboard()
         airplaybtnSet()
+        customizeQRbtn()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -128,6 +131,88 @@ class ZiyaratVC: UIViewController {
         player = nil
        
     }
+    
+    
+    
+    
+    
+    @IBAction func btnTapQr(_ sender: UIButton) {
+        view.addSubview(qrView)
+        qrView.addSubview(btnCancel)
+        qrView.addSubview(qrImg)
+        addConstant()
+        qrView.isHidden = false
+        btnCancel.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+    }
+    
+    
+    var qrView: UIView = {
+       let view = UIView()
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 10
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.black.cgColor
+        view.clipsToBounds = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    var qrImg: UIImageView = {
+        let imgView = UIImageView()
+        imgView.contentMode = .scaleAspectFit
+        let img = UIImage(named: "MyDuaQR")
+        imgView.image = img
+        imgView.translatesAutoresizingMaskIntoConstraints = false
+        return imgView
+    }()
+    
+    
+    @objc var btnCancel: UIButton = {
+        let btn = UIButton()
+        //btn.backgroundColor = .yellow
+        btn.setImage(UIImage(named: "X1"), for: .normal)
+        btn.tintColor = .black
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        return btn
+    }()
+    
+    
+    @objc func buttonTapped(_ sender: UIButton) {
+        
+        qrView.isHidden = true
+    }
+    
+    func addConstant(){
+        var constant = [NSLayoutConstraint]()
+        constant.append(qrView.topAnchor.constraint(equalTo: floatingView.topAnchor, constant: 0 ))
+        constant.append(qrView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0))
+        constant.append(qrView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0))
+        constant.append(qrView.bottomAnchor.constraint(equalTo: pickerView.bottomAnchor, constant: 0))
+        
+        constant.append(btnCancel.topAnchor.constraint(equalTo: qrView.topAnchor, constant: 8))
+        constant.append(btnCancel.trailingAnchor.constraint(equalTo: qrView.trailingAnchor, constant: -8))
+        constant.append(btnCancel.heightAnchor.constraint(equalToConstant: 40))
+        constant.append(btnCancel.widthAnchor.constraint(equalToConstant: 40))
+        
+        constant.append(qrImg.topAnchor.constraint(equalTo: qrView.topAnchor, constant: 20))
+        constant.append(qrImg.leadingAnchor.constraint(equalTo: qrView.leadingAnchor, constant: 10))
+        constant.append(qrImg.trailingAnchor.constraint(equalTo: qrView.trailingAnchor, constant: -10))
+        constant.append(qrImg.bottomAnchor.constraint(equalTo: qrView.bottomAnchor, constant: -20))
+        
+        NSLayoutConstraint.activate(constant)
+    }
+    
+    
+    func customizeQRbtn(){
+        btnQR.layer.cornerRadius = 4
+        btnQR.clipsToBounds = true
+    }
+    
+    
+    
+    
+    
+    
 
     func airplaybtnSet(){
         let buttonView  = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))

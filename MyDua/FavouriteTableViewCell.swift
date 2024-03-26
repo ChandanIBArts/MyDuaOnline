@@ -31,7 +31,7 @@ class FavouriteTableViewCell: UITableViewCell {
     }
 
     func setupUI() {
-        sepratorView.layer.cornerRadius = 20.0
+        sepratorView.layer.cornerRadius = 20
         sepratorView.layer.borderWidth = 0.7
         sepratorView.layer.borderColor = UIColor(.black).cgColor
         favourtiteImage.image = UIImage(named: "favourite")?.withTintColor(UIColor.green)

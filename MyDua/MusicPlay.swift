@@ -9,6 +9,7 @@ import Foundation
 import AVFoundation
 import UIKit
 
+/*
 class MusicPlay{
     
     static var shared = MusicPlay()
@@ -589,3 +590,4 @@ extension MusicPlay{
     
 }
 
+*/

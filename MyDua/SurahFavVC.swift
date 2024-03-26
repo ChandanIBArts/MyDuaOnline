@@ -11,6 +11,8 @@ import Foundation
 import AVFoundation
 import MediaPlayer
 
+
+/*
 class SurahFavVC: UIViewController {
     var strStatus = ""
     var arrFavList  : [JSON] = []
@@ -906,4 +908,4 @@ extension SurahFavVC: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
 }
-
+*/

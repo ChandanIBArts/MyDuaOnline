@@ -196,7 +196,7 @@ extension LoginVC {
                              var checkValidation = UserDefaults.standard.integer(forKey: "validation")
                              if checkValidation == 1 {
                                  
-                                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyFavouritesVC") as! MyFavouritesVC
+                                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "FavouriteVC") as! FavouriteVC
                                  self.navigationController?.pushViewController(vc, animated: true)
                                  
                                  UserDefaults.standard.setValue(0, forKey: "validation")

@@ -29,6 +29,8 @@ class EventVC: UIViewController {
     @IBOutlet weak var tfLang: UITextField!
     @IBOutlet weak var spiner: UIActivityIndicatorView!
     @IBOutlet weak var eventImgView: UIImageView!
+    @IBOutlet weak var btnQR: UIButton!
+    @IBOutlet weak var floatingView: UIView!
     
     
     let langPicker = UIPickerView()
@@ -92,6 +94,7 @@ class EventVC: UIViewController {
         musicViewBackground()
         airplaybtnSet()
         startTimer()
+        customizeQRbtn()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -125,6 +128,91 @@ class EventVC: UIViewController {
         btnPlay.setImage(UIImage(named: "audio_play"), for: UIControl.State.normal)
         player = nil
     }
+    
+    
+    
+    
+    
+    @IBAction func btnTapQr(_ sender: UIButton) {
+        view.addSubview(qrView)
+        qrView.addSubview(btnCancel)
+        qrView.addSubview(qrImg)
+        addConstant()
+        qrView.isHidden = false
+        btnCancel.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+    }
+    
+    
+    var qrView: UIView = {
+       let view = UIView()
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 10
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.black.cgColor
+        view.clipsToBounds = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    var qrImg: UIImageView = {
+        let imgView = UIImageView()
+        imgView.contentMode = .scaleAspectFit
+        let img = UIImage(named: "MyDuaQR")
+        imgView.image = img
+        imgView.translatesAutoresizingMaskIntoConstraints = false
+        return imgView
+    }()
+    
+    
+    @objc var btnCancel: UIButton = {
+        let btn = UIButton()
+        //btn.backgroundColor = .yellow
+        btn.setImage(UIImage(named: "X1"), for: .normal)
+        btn.tintColor = .black
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        return btn
+    }()
+    
+    
+    @objc func buttonTapped(_ sender: UIButton) {
+        
+        qrView.isHidden = true
+    }
+    
+    func addConstant(){
+        var constant = [NSLayoutConstraint]()
+        constant.append(qrView.topAnchor.constraint(equalTo: floatingView.topAnchor, constant: 0 ))
+        constant.append(qrView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0))
+        constant.append(qrView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0))
+        constant.append(qrView.bottomAnchor.constraint(equalTo: pickerView.bottomAnchor, constant: 0))
+        
+        constant.append(btnCancel.topAnchor.constraint(equalTo: qrView.topAnchor, constant: 8))
+        constant.append(btnCancel.trailingAnchor.constraint(equalTo: qrView.trailingAnchor, constant: -8))
+        constant.append(btnCancel.heightAnchor.constraint(equalToConstant: 40))
+        constant.append(btnCancel.widthAnchor.constraint(equalToConstant: 40))
+        
+        constant.append(qrImg.topAnchor.constraint(equalTo: qrView.topAnchor, constant: 20))
+        constant.append(qrImg.leadingAnchor.constraint(equalTo: qrView.leadingAnchor, constant: 10))
+        constant.append(qrImg.trailingAnchor.constraint(equalTo: qrView.trailingAnchor, constant: -10))
+        constant.append(qrImg.bottomAnchor.constraint(equalTo: qrView.bottomAnchor, constant: -20))
+        
+        NSLayoutConstraint.activate(constant)
+    }
+    
+    
+    func customizeQRbtn(){
+        btnQR.layer.cornerRadius = 4
+        btnQR.clipsToBounds = true
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     @IBAction func btnPlay(_ sender: UIButton) {
         
@@ -496,6 +584,16 @@ extension EventVC {
                 } else {
                     self.imgCheck()
                 }
+            } else {
+                if  !(response["arabic_dua"].arrayValue.isEmpty ){
+                    self.arabicDuaList = response["arabic_dua"].arrayValue
+                    self.listOfDua = self.arabicDuaList
+                    self.eventTableView.reloadData()
+                    self.eventImgView.isHidden = true
+                    self.fetchMusicUrl(dualist: self.arabicDuaList, musicIdx: self.musicIdx)
+                } else {
+                    self.imgCheck()
+                }
             }
             }
         }, onError: { message in
@@ -618,9 +716,9 @@ extension EventVC: UITableViewDataSource, UITableViewDelegate {
         
         var isPlay = true
         if isPlayingOutside == true{
-            let tag = sender.tag as? Int ?? 0
+            let tag = sender.tag
             musicIdx = tag
-            let idx = IndexPath(row: tag, section: 0)
+            let idx = IndexPath(row: tag, section: 1)
             let cell = eventTableView.cellForRow(at: idx) as! EventTVCell
             cell.btnPlay.setImage(UIImage(named: "play"), for: .normal)
             isPlayingOutside = false
@@ -630,9 +728,9 @@ extension EventVC: UITableViewDataSource, UITableViewDelegate {
             
         }
         else {
-            let tag = sender.tag as? Int ?? 0
+            let tag = sender.tag
             musicIdx = tag
-            let idx = IndexPath(row: tag, section: 0)
+            let idx = IndexPath(row: tag, section: 1)
             let cell = eventTableView.cellForRow(at: idx) as! EventTVCell
             spiner.isHidden = false
             spiner.startAnimating()

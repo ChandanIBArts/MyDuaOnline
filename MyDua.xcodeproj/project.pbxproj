@@ -25,6 +25,8 @@
 		F709E2DE2B7A0107009DF749 /* AzanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F709E2DD2B7A0107009DF749 /* AzanVC.swift */; };
 		F71F79312B723EE600A20E89 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F71F79302B723EE600A20E89 /* SDWebImage */; };
 		F71F79332B723EE600A20E89 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F71F79322B723EE600A20E89 /* SDWebImageMapKit */; };
+		F72A96332BABF8F500A81028 /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A96322BABF8F500A81028 /* FavouriteVC.swift */; };
+		F72A96352BAC021A00A81028 /* FavouriteTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A96342BAC021A00A81028 /* FavouriteTVCell.swift */; };
 		F733A7AE2B0493A600D5C054 /* Gujrati_ziyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7A92B0493A600D5C054 /* Gujrati_ziyarat.swift */; };
 		F733A7AF2B0493A600D5C054 /* English_ziyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7AA2B0493A600D5C054 /* English_ziyarat.swift */; };
 		F733A7B02B0493A600D5C054 /* ListOfZiyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7AB2B0493A600D5C054 /* ListOfZiyarat.swift */; };
@@ -65,6 +67,9 @@
 		F797C99B2AFC9DB700B2506D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797C99A2AFC9DB700B2506D /* Constant.swift */; };
 		F797C99E2AFC9ECB00B2506D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F797C99D2AFC9ECB00B2506D /* SwiftyJSON */; };
 		F797C9A02AFCA2B000B2506D /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797C99F2AFCA2B000B2506D /* AlertMessage.swift */; };
+		F79BA4D82BAD675E008B9365 /* DetailsFabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BA4D72BAD675E008B9365 /* DetailsFabVC.swift */; };
+		F79BA4DA2BAD7C29008B9365 /* DetailsFavTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BA4D92BAD7C29008B9365 /* DetailsFavTVCell.swift */; };
+		F79BA4DD2BAD94B1008B9365 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F79BA4DC2BAD94B1008B9365 /* Alamofire */; };
 		F7A168852B07291600B114AE /* AudioDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A168842B07291600B114AE /* AudioDetailVC.swift */; };
 		F7AEC56D2B70B61A0019EE6F /* EventTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AEC56C2B70B61A0019EE6F /* EventTVCell.swift */; };
 		F7AF7B1A2B3D300E007793CB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F7AF7B192B3D300E007793CB /* FirebaseAnalytics */; };
@@ -135,6 +140,9 @@
 		DAD395992B5D79320064D028 /* MyDua.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDua.entitlements; sourceTree = "<group>"; };
 		DAD3959A2B602AED0064D028 /* WaqfVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaqfVC.swift; sourceTree = "<group>"; };
 		F709E2DD2B7A0107009DF749 /* AzanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzanVC.swift; sourceTree = "<group>"; };
+		F72A96322BABF8F500A81028 /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
+		F72A96342BAC021A00A81028 /* FavouriteTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTVCell.swift; sourceTree = "<group>"; };
+		F72A96362BAC532C00A81028 /* MyDuaRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDuaRelease.entitlements; sourceTree = "<group>"; };
 		F733A7A92B0493A600D5C054 /* Gujrati_ziyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gujrati_ziyarat.swift; sourceTree = "<group>"; };
 		F733A7AA2B0493A600D5C054 /* English_ziyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = English_ziyarat.swift; sourceTree = "<group>"; };
 		F733A7AB2B0493A600D5C054 /* ListOfZiyarat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfZiyarat.swift; sourceTree = "<group>"; };
@@ -174,6 +182,8 @@
 		F78542E42B3EB72C00B4202C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F797C99A2AFC9DB700B2506D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F797C99F2AFCA2B000B2506D /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		F79BA4D72BAD675E008B9365 /* DetailsFabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFabVC.swift; sourceTree = "<group>"; };
+		F79BA4D92BAD7C29008B9365 /* DetailsFavTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFavTVCell.swift; sourceTree = "<group>"; };
 		F7A168842B07291600B114AE /* AudioDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDetailVC.swift; sourceTree = "<group>"; };
 		F7AEC56C2B70B61A0019EE6F /* EventTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTVCell.swift; sourceTree = "<group>"; };
 		F7B1BE842AFB58A700CDE492 /* MyDua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDua.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +233,7 @@
 				F7AF7B3A2B3D300E007793CB /* FirebaseFunctionsCombine-Community in Frameworks */,
 				F7AF7B3E2B3D300E007793CB /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				F7AF7B422B3D300E007793CB /* FirebaseMLModelDownloader in Frameworks */,
+				F79BA4DD2BAD94B1008B9365 /* Alamofire in Frameworks */,
 				F7AF7B3C2B3D300E007793CB /* FirebaseInAppMessaging-Beta in Frameworks */,
 				F7AF7B462B3D300E007793CB /* FirebasePerformance in Frameworks */,
 				F7AF7B282B3D300E007793CB /* FirebaseAuthCombine-Community in Frameworks */,
@@ -277,6 +288,7 @@
 		B5BED0CF2B5F960400E3DB24 /* Favourite */ = {
 			isa = PBXGroup;
 			children = (
+				F7B1BEB42AFB69DC00CDE492 /* MyFavouritesVC.swift */,
 				5D513C002B1F23780003C523 /* FavouriteDuaVC.swift */,
 				B5BED0CA2B5F786200E3DB24 /* SahifaSajjadiaFavVC.swift */,
 				B5BED0D02B5F961900E3DB24 /* ZiyaratFavVC.swift */,
@@ -396,6 +408,7 @@
 		F7B1BE862AFB58A700CDE492 /* MyDua */ = {
 			isa = PBXGroup;
 			children = (
+				F72A96362BAC532C00A81028 /* MyDuaRelease.entitlements */,
 				F75C1B562B60EF95008D24F5 /* AzanMusic */,
 				B5BED0CC2B5F899800E3DB24 /* MusicManager */,
 				DAD395992B5D79320064D028 /* MyDua.entitlements */,
@@ -509,6 +522,8 @@
 				F733A7BD2B04A3F500D5C054 /* FavouriteTableViewCell.swift */,
 				F7AEC56C2B70B61A0019EE6F /* EventTVCell.swift */,
 				F7C847AB2B7C78F600B7DF5B /* EventAzanTVCell.swift */,
+				F72A96342BAC021A00A81028 /* FavouriteTVCell.swift */,
+				F79BA4D92BAD7C29008B9365 /* DetailsFavTVCell.swift */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -523,7 +538,8 @@
 				F7B1BEB02AFB69B000CDE492 /* ZiyaratVC.swift */,
 				F7B1BEB22AFB69C500CDE492 /* SurahVC.swift */,
 				F73A06852B0B3148002B9536 /* SafhiaSajjadiaVC.swift */,
-				F7B1BEB42AFB69DC00CDE492 /* MyFavouritesVC.swift */,
+				F72A96322BABF8F500A81028 /* FavouriteVC.swift */,
+				F79BA4D72BAD675E008B9365 /* DetailsFabVC.swift */,
 				F7B1BEB62AFB69F100CDE492 /* OurRadioVC.swift */,
 				F7B1BEB82AFB6A2A00CDE492 /* LoginVC.swift */,
 				F733A7B62B049B9100D5C054 /* LanguageChangeVC.swift */,
@@ -601,6 +617,7 @@
 				F7AF7B4D2B3D300E007793CB /* FirebaseStorageCombine-Community */,
 				F71F79302B723EE600A20E89 /* SDWebImage */,
 				F71F79322B723EE600A20E89 /* SDWebImageMapKit */,
+				F79BA4DC2BAD94B1008B9365 /* Alamofire */,
 			);
 			productName = MyDua;
 			productReference = F7B1BE842AFB58A700CDE492 /* MyDua.app */;
@@ -668,6 +685,7 @@
 			files = (
 				F733A7B22B0493A600D5C054 /* Arabic_ziyarat.swift in Sources */,
 				B5BD4EA62B29AE920051B681 /* MoreVC.swift in Sources */,
+				F72A96332BABF8F500A81028 /* FavouriteVC.swift in Sources */,
 				F733A7C22B04CC5900D5C054 /* SignupVC.swift in Sources */,
 				F7AEC56D2B70B61A0019EE6F /* EventTVCell.swift in Sources */,
 				F75CE4A82B7B6B3B00DEEA97 /* TimeModel.swift in Sources */,
@@ -676,6 +694,7 @@
 				F733A7AF2B0493A600D5C054 /* English_ziyarat.swift in Sources */,
 				F7B1BEDD2AFBB52800CDE492 /* DailyDuaTableViewCell.swift in Sources */,
 				F73A06992B0B6435002B9536 /* DefaultValue.swift in Sources */,
+				F79BA4D82BAD675E008B9365 /* DetailsFabVC.swift in Sources */,
 				F7D5655C2B47E7E200AC0933 /* NewFavCVC.swift in Sources */,
 				F7B1BEAF2AFB699000CDE492 /* DuaVC.swift in Sources */,
 				F7B1BEB72AFB69F100CDE492 /* OurRadioVC.swift in Sources */,
@@ -686,6 +705,7 @@
 				F7B1BEAD2AFB606C00CDE492 /* DailyDuaVC.swift in Sources */,
 				F73CBF982B69168C00D0693B /* QuotesVC.swift in Sources */,
 				F733A7B72B049B9100D5C054 /* LanguageChangeVC.swift in Sources */,
+				F72A96352BAC021A00A81028 /* FavouriteTVCell.swift in Sources */,
 				F73A06A02B0B766E002B9536 /* Messagess.swift in Sources */,
 				B5BED0D32B5FB2AB00E3DB24 /* SurahFavVC.swift in Sources */,
 				F7E364AE2B0217D6003EC48D /* SurahTableViewCell.swift in Sources */,
@@ -729,6 +749,7 @@
 				F7B1BEB52AFB69DC00CDE492 /* MyFavouritesVC.swift in Sources */,
 				F748E1692B03A302003556BB /* Gujrati_dua.swift in Sources */,
 				F73A06932B0B378F002B9536 /* List_of_sahfia.swift in Sources */,
+				F79BA4DA2BAD7C29008B9365 /* DetailsFavTVCell.swift in Sources */,
 				F75BA5FB2B28DDD100AD4568 /* ForgotPasswordVC.swift in Sources */,
 				F733A7B02B0493A600D5C054 /* ListOfZiyarat.swift in Sources */,
 				F75BCDF62B846850008082FD /* Aamaal_And_NamazVC.swift in Sources */,
@@ -888,33 +909,36 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MyDua/MyDua.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.5;
-				DEVELOPMENT_TEAM = JFNBL45B7W;
+				CODE_SIGN_IDENTITY = "Apple Development: sanjay kumar (P2AMB39N87)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: sanjay kumar (P2AMB39N87)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.8;
+				DEVELOPMENT_TEAM = P2AMB39N87;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3YQPP47SUL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyDua/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "My dua online";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "My app need to access it.";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "My app need to access it.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "MyDua need to access location to show events.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "MyDua need to access location to show events.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "My app need to access it.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "My app need to access it.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "MyDua need to access location to show events.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mydua;
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wt.apns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Sanjay WtApns Dev V1.7";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Sanjay WtApns Dev V1.7";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -929,34 +953,37 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MyDua/MyDua.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.5;
-				DEVELOPMENT_TEAM = JFNBL45B7W;
+				CODE_SIGN_ENTITLEMENTS = MyDua/MyDuaRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development: sanjay kumar (P2AMB39N87)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: sanjay kumar (P2AMB39N87)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.8;
+				DEVELOPMENT_TEAM = P2AMB39N87;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3YQPP47SUL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyDua/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "My dua online";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "My app need to access it.";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "My app need to access it.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "MyDua need to access location to show events.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "MyDua need to access location to show events.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "My app need to access it.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "My app need to access it.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "MyDua need to access location to show events.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mydua;
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wt.apns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Sanjay WtApns Dev V1.7";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Sanjay WtApns Dev V1.7";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1060,6 +1087,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F797C99C2AFC9ECB00B2506D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		F79BA4DC2BAD94B1008B9365 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7B1BEE02AFBB8A600CDE492 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		F7AF7B192B3D300E007793CB /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;

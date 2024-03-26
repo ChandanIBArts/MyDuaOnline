@@ -9,6 +9,7 @@ import UIKit
 import SwiftyJSON
 import SDWebImage
 
+/*
 class MyFavouritesVC: UIViewController {
     
     @IBOutlet weak var favouriteCollectionView: UICollectionView!
@@ -395,3 +396,4 @@ extension MyFavouritesVC {
     
     
 }
+*/

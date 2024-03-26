@@ -23,6 +23,7 @@ class MoreVC: UIViewController {
     @IBOutlet weak var viewSahifaSajjadia: UIView!
     @IBOutlet weak var azanView: UIView!
     @IBOutlet weak var aamaalAndNamazView: UIView!
+    @IBOutlet weak var shareView: UIView!
     
     
     override func viewDidLoad() {
@@ -125,7 +126,7 @@ class MoreVC: UIViewController {
     @IBAction func tapFav(_ sender: Any){
         let token = UserDefaults.standard.integer(forKey: "UserID")
         if token >= 1 {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyFavouritesVC") as! MyFavouritesVC
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "FavouriteVC") as! FavouriteVC
             self.navigationController?.pushViewController(vc, animated: true)
         } else {
             
@@ -179,8 +180,42 @@ class MoreVC: UIViewController {
         
     }
     
-    
+    @IBAction func btnTapShare(_ sender: UIButton) {
+        
+        shareApp()
 
+    }
+    
+    func shareApp(){
+        
+        guard let url = URL(string: "https://mydua.page.link/dua") else {
+                    return
+        }
+
+        let imageToShare = UIImage(named: "MyDuaQR")
+
+        guard let image = imageToShare else {
+            return
+        }
+        
+        let text = "Check out this link!"
+
+        let items: [Any] = [text, url, image]
+        
+
+        let activityViewController = UIActivityViewController(activityItems: items, applicationActivities: nil)
+
+        activityViewController.excludedActivityTypes = [
+            .postToFacebook,
+            .postToTwitter,
+            .postToWeibo,
+            .message,
+            .mail
+        ]
+
+        present(activityViewController, animated: true, completion: nil)
+    }
+    
 }
 extension MoreVC{
     private func designView(){
@@ -212,6 +247,8 @@ extension MoreVC{
         azanView.layer.borderWidth = 1.0
         aamaalAndNamazView.layer.cornerRadius = 8.0
         aamaalAndNamazView.layer.borderWidth = 1.0
+        shareView.layer.cornerRadius = 8.0
+        shareView.layer.borderWidth = 1.0
     }
     private func setupImageColor(){
         imgBack.forEach{

@@ -10,6 +10,8 @@ import AVFoundation
 import SwiftyJSON
 import MediaPlayer
 
+
+/*
 class AllFavVC: UIViewController {
     var strStatus = ""
     var arrFavList  : [JSON] = []
@@ -935,4 +937,4 @@ extension AllFavVC: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
 }
-
+*/

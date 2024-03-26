@@ -18,13 +18,13 @@ class SingletonRemotControl {
     weak var safhiasajjadiaVC: SafhiaSajjadiaVC?
     weak var ziyaratVC: ZiyaratVC?
     weak var surahaVC: SurahVC?
+    weak var favDetailsVC: DetailsFabVC?
     
-    
-    weak var myFavDuaVC: FavouriteDuaVC?
-    weak var myFavSahifaSajjadiaVC:SahifaSajjadiaFavVC?
-    weak var myFavZiyarat:ZiyaratFavVC?
-    weak var myFavSurah:SurahFavVC?
-    weak var myFavAllFav:AllFavVC?
+//    weak var myFavDuaVC: FavouriteDuaVC?
+//    weak var myFavSahifaSajjadiaVC:SahifaSajjadiaFavVC?
+//    weak var myFavZiyarat:ZiyaratFavVC?
+//    weak var myFavSurah:SurahFavVC?
+//    weak var myFavAllFav:AllFavVC?
     
     
     
@@ -168,6 +168,31 @@ class SingletonRemotControl {
             // Set the now playing info
             MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
         }
+        
+        else if globalControlerName == "DetailsFabVC" {
+            
+            var nowPlayingInfo = [String: Any]()
+            print(globalName)
+            // Set the title
+            nowPlayingInfo[MPMediaItemPropertyTitle] = favDetailsVC?.audio_Name
+            
+            let durationInSeconds =  CMTimeGetSeconds(duration)
+            print(durationInSeconds)
+            nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = durationInSeconds
+            
+            
+            nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = playbackTime
+            
+            
+            // Set the playback rate
+            nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = favDetailsVC?.player?.rate
+            
+            // Set the now playing info
+            MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
+            
+        }
+      
+        /*
         else if globalControlerName == "FavouriteDuaVC" {
             
             var nowPlayingInfo = [String: Any]()
@@ -192,6 +217,7 @@ class SingletonRemotControl {
             
         }
         
+        */
         
     }
     
@@ -262,6 +288,20 @@ class SingletonRemotControl {
                 eventVC?.eventTableView.reloadData()
                         
             }
+            else if globalControlerName == "DetailsFabVC" {
+                
+                favDetailsVC?.player?.rate = globalSpeed
+                favDetailsVC?.player?.play()
+                favDetailsVC?.isPlayingOutside = true
+                favDetailsVC?.btnPlay.isHidden = true
+                favDetailsVC?.flag = true
+                favDetailsVC?.btnPlay.setImage(UIImage(named: "audio_pause"), for: UIControl.State.normal)
+                //UserDefaults.standard.setValue(true, forKey: "isPlaying")
+                favDetailsVC?.tblView.reloadData()
+                
+            }
+            
+            /*
             else if globalControlerName == "FavouriteDuaVC"{
                 myFavDuaVC?.player?.rate = globalSpeed
                 myFavDuaVC?.player?.play()
@@ -273,7 +313,7 @@ class SingletonRemotControl {
                 myFavDuaVC?.tblView.reloadData()
             }
             
-            
+            */
             return .success
             return .commandFailed
         }
@@ -342,6 +382,18 @@ class SingletonRemotControl {
                 eventVC?.eventTableView.reloadData()
                         
             }
+            else if globalControlerName == "DetailsFabVC" {
+                
+                favDetailsVC?.player?.rate = globalSpeed
+                favDetailsVC?.player?.pause()
+                favDetailsVC?.btnPlay.setImage(UIImage(named: "audio_play"), for: UIControl.State.normal)
+                favDetailsVC?.isPlayingOutside = false
+                favDetailsVC?.flag = false
+                favDetailsVC?.tblView.reloadData()
+                
+            }
+            
+            /*
             else if globalControlerName == "FavouriteDuaVC"{
                 myFavDuaVC?.player?.rate = globalSpeed
                 myFavDuaVC?.player?.pause()
@@ -350,6 +402,7 @@ class SingletonRemotControl {
                 myFavDuaVC?.flag = false
                 myFavDuaVC?.tblView.reloadData()
             }
+            */
             return .success
             return .commandFailed
            
@@ -375,9 +428,16 @@ class SingletonRemotControl {
             else if globalControlerName == "EventVC" {
                 eventVC?.playNext()
             }
+            else if globalControlerName == "DetailsFabVC" {
+                
+                favDetailsVC?.playNext()
+                
+            }
+            /*
             else if globalControlerName == "FavouriteDuaVC"{
                 myFavDuaVC?.playNext()
             }
+             */
             return .success
         }
 
@@ -402,11 +462,19 @@ class SingletonRemotControl {
                         
                 eventVC?.playBack()
             }
+            else if globalControlerName == "DetailsFabVC" {
+                
+                favDetailsVC?.plaxBack()
+                
+            }
+            /*
             else if globalControlerName == "FavouriteDuaVC"{
                 myFavDuaVC?.playBack()
             }
+             */
             return .success
         }
     }
     
 }
+

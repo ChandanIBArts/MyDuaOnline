@@ -206,10 +206,10 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "289"
-            endingLineNumber = "289"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "365"
+            endingLineNumber = "365"
+            landmarkName = "DuaVC"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -222,8 +222,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "292"
-            endingLineNumber = "292"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
             <Locations>
@@ -270,8 +270,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "295"
-            endingLineNumber = "295"
+            startingLineNumber = "371"
+            endingLineNumber = "371"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
             <Locations>
@@ -318,8 +318,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
+            startingLineNumber = "374"
+            endingLineNumber = "374"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
             <Locations>
@@ -366,10 +366,10 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "782"
-            endingLineNumber = "782"
-            landmarkName = "makeFav(_:)"
-            landmarkType = "7">
+            startingLineNumber = "858"
+            endingLineNumber = "858"
+            landmarkName = "DuaVC"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "6D94E1A7-7163-4CD4-A185-855436F81615 - 9b541c1639862828"
@@ -747,10 +747,10 @@
             filePath = "MyDua/MyFavouritesVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "300"
-            endingLineNumber = "300"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "F9AA4108-FF72-4C99-B495-A8C212F420D5 - 5d974048cbe42fbf"
@@ -1657,8 +1657,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2836"
-            endingLineNumber = "2836"
+            startingLineNumber = "2912"
+            endingLineNumber = "2912"
             landmarkName = "playBack()"
             landmarkType = "7">
             <Locations>
@@ -1930,8 +1930,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2838"
-            endingLineNumber = "2838"
+            startingLineNumber = "2914"
+            endingLineNumber = "2914"
             landmarkName = "playBack()"
             landmarkType = "7">
             <Locations>
@@ -2203,8 +2203,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2718"
-            endingLineNumber = "2718"
+            startingLineNumber = "2794"
+            endingLineNumber = "2794"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>
@@ -2416,8 +2416,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2721"
-            endingLineNumber = "2721"
+            startingLineNumber = "2797"
+            endingLineNumber = "2797"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>
@@ -2659,8 +2659,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2730"
-            endingLineNumber = "2730"
+            startingLineNumber = "2806"
+            endingLineNumber = "2806"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>
@@ -3073,8 +3073,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3095"
-            endingLineNumber = "3095"
+            startingLineNumber = "3180"
+            endingLineNumber = "3180"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -3151,8 +3151,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3088"
-            endingLineNumber = "3088"
+            startingLineNumber = "3173"
+            endingLineNumber = "3173"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -3229,8 +3229,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2753"
-            endingLineNumber = "2753"
+            startingLineNumber = "2838"
+            endingLineNumber = "2838"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>
@@ -3367,8 +3367,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2764"
-            endingLineNumber = "2764"
+            startingLineNumber = "2849"
+            endingLineNumber = "2849"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>
@@ -3599,8 +3599,8 @@
             filePath = "MyDua/SingletonRemotControl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
+            startingLineNumber = "327"
+            endingLineNumber = "327"
             landmarkName = "setupRemoteTransportControls()"
             landmarkType = "7">
             <Locations>
@@ -3707,8 +3707,8 @@
             filePath = "MyDua/SingletonRemotControl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "300"
-            endingLineNumber = "300"
+            startingLineNumber = "340"
+            endingLineNumber = "340"
             landmarkName = "setupRemoteTransportControls()"
             landmarkType = "7">
             <Locations>
@@ -3830,8 +3830,8 @@
             filePath = "MyDua/SingletonRemotControl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "308"
-            endingLineNumber = "308"
+            startingLineNumber = "348"
+            endingLineNumber = "348"
             landmarkName = "setupRemoteTransportControls()"
             landmarkType = "7">
             <Locations>
@@ -3923,8 +3923,8 @@
             filePath = "MyDua/SingletonRemotControl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "318"
-            endingLineNumber = "318"
+            startingLineNumber = "358"
+            endingLineNumber = "358"
             landmarkName = "setupRemoteTransportControls()"
             landmarkType = "7">
             <Locations>
@@ -4016,8 +4016,8 @@
             filePath = "MyDua/SingletonRemotControl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "328"
-            endingLineNumber = "328"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
             landmarkName = "setupRemoteTransportControls()"
             landmarkType = "7">
             <Locations>
@@ -4109,8 +4109,8 @@
             filePath = "MyDua/SingletonRemotControl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
             landmarkName = "setupRemoteTransportControls()"
             landmarkType = "7">
             <Locations>
@@ -4202,8 +4202,8 @@
             filePath = "MyDua/SingletonRemotControl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
             landmarkName = "setupRemoteTransportControls()"
             landmarkType = "7">
             <Locations>
@@ -4295,8 +4295,8 @@
             filePath = "MyDua/SingletonRemotControl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
             landmarkName = "setupRemoteTransportControls()"
             landmarkType = "7">
             <Locations>
@@ -4403,8 +4403,8 @@
             filePath = "MyDua/SingletonRemotControl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "249"
-            endingLineNumber = "249"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
             landmarkName = "setupRemoteTransportControls()"
             landmarkType = "7">
             <Locations>
@@ -4511,8 +4511,8 @@
             filePath = "MyDua/SingletonRemotControl.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
             landmarkName = "setupRemoteTransportControls()"
             landmarkType = "7">
             <Locations>
@@ -4620,8 +4620,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2643"
-            endingLineNumber = "2643"
+            startingLineNumber = "2719"
+            endingLineNumber = "2719"
             landmarkName = "setupMusicUI(url:str:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4715,10 +4715,10 @@
             filePath = "MyDua/MusicPlay.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
-            landmarkName = "setupMusicUI(url:str:tblView:strStat:idx:compl:)"
-            landmarkType = "7">
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "C1989544-4A7F-4864-BA2A-CE87B9BA6F76 - 89a8c69a84c0b689"
@@ -4812,6 +4812,102 @@
             startingLineNumber = "918"
             endingLineNumber = "918"
             landmarkName = "eventAPIcall(day:timeZone:onSuccess:onError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AD1C0B9-9272-4142-883D-EDEA50DF0381"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyDua/FavouriteDuaVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
+            landmarkName = "favDuaListDetailsApi()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4AD1C0B9-9272-4142-883D-EDEA50DF0381 - 4ffcf9c4d299d053"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in MyDua.FavouriteDuaVC.favDuaListDetailsApi() -&gt; ()"
+                  moduleName = "MyDua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/subhanjanamajumder/Downloads/MyDuaOnline%202/MyDua/FavouriteDuaVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "4AD1C0B9-9272-4142-883D-EDEA50DF0381 - 4ffcf9c4d299d053"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in MyDua.FavouriteDuaVC.favDuaListDetailsApi() -&gt; ()"
+                  moduleName = "MyDua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/subhanjanamajumder/Downloads/MyDuaOnline%202/MyDua/FavouriteDuaVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B21A34E-7F14-4EDA-B9B0-A936362E0354"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyDua/FavouriteDuaVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
+            landmarkName = "playNext()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EEE32C1E-7077-4A93-8B90-91F4258A4E61"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyDua/DetailsFabVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "270"
+            endingLineNumber = "270"
+            landmarkName = "playMusicfromUrl(url:str:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23006623-9BE9-4620-99B5-FD757FCB03E4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyDua/DetailsFabVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
+            landmarkName = "playMusicfromUrl(url:str:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

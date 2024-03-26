@@ -10,6 +10,7 @@ import SwiftyJSON
 import AVFoundation
 import MediaPlayer
 
+/*
 class SahifaSajjadiaFavVC: UIViewController {
     var strStatus = ""
     var arrFavList  : [JSON] = []
@@ -902,3 +903,4 @@ extension SahifaSajjadiaFavVC: UIPickerViewDelegate, UIPickerViewDataSource {
     
 }
 
+*/

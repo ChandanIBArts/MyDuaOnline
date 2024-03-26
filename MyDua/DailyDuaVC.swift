@@ -34,7 +34,9 @@ class DailyDuaVC: UIViewController {
     @IBOutlet weak var spiner: UIActivityIndicatorView!
     @IBOutlet weak var tfLang: UITextField!
     @IBOutlet weak var customAirPlayView: UIView!
-   
+    @IBOutlet weak var btnQR: UIButton!
+    @IBOutlet weak var floatingView: UIView!
+    
     let langPicker = UIPickerView()
     var arrLang = ["عربي","English","हिंदी","ગુજરાતી"]
     let dailyDuaCellHeight = 90.0
@@ -101,6 +103,7 @@ class DailyDuaVC: UIViewController {
       
         fetchMusicUrl(with: musicIdx)
         shared.setupRemoteTransportControls()
+        customizeQRbtn()
         
     }
     
@@ -203,6 +206,83 @@ class DailyDuaVC: UIViewController {
         let que = OperationQueue()
         que.addOperations([op,op1], waitUntilFinished: true)
     }
+    
+    
+    @IBAction func btnTapQr(_ sender: UIButton) {
+        view.addSubview(qrView)
+        qrView.addSubview(btnCancel)
+        qrView.addSubview(qrImg)
+        addConstant()
+        qrView.isHidden = false
+        btnCancel.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+    }
+    
+    
+    var qrView: UIView = {
+       let view = UIView()
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 10
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.black.cgColor
+        view.clipsToBounds = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    var qrImg: UIImageView = {
+        let imgView = UIImageView()
+        imgView.contentMode = .scaleAspectFit
+        let img = UIImage(named: "MyDuaQR")
+        imgView.image = img
+        imgView.translatesAutoresizingMaskIntoConstraints = false
+        return imgView
+    }()
+    
+    
+    @objc var btnCancel: UIButton = {
+        let btn = UIButton()
+        //btn.backgroundColor = .yellow
+        btn.setImage(UIImage(named: "X1"), for: .normal)
+        btn.tintColor = .black
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        return btn
+    }()
+    
+    
+    @objc func buttonTapped(_ sender: UIButton) {
+        
+        qrView.isHidden = true
+    }
+    
+    func addConstant(){
+        var constant = [NSLayoutConstraint]()
+        constant.append(qrView.topAnchor.constraint(equalTo: floatingView.topAnchor, constant: 0 ))
+        constant.append(qrView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0))
+        constant.append(qrView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0))
+        constant.append(qrView.bottomAnchor.constraint(equalTo: pickerView.bottomAnchor, constant: 0))
+        
+        constant.append(btnCancel.topAnchor.constraint(equalTo: qrView.topAnchor, constant: 8))
+        constant.append(btnCancel.trailingAnchor.constraint(equalTo: qrView.trailingAnchor, constant: -8))
+        constant.append(btnCancel.heightAnchor.constraint(equalToConstant: 40))
+        constant.append(btnCancel.widthAnchor.constraint(equalToConstant: 40))
+        
+        constant.append(qrImg.topAnchor.constraint(equalTo: qrView.topAnchor, constant: 20))
+        constant.append(qrImg.leadingAnchor.constraint(equalTo: qrView.leadingAnchor, constant: 10))
+        constant.append(qrImg.trailingAnchor.constraint(equalTo: qrView.trailingAnchor, constant: -10))
+        constant.append(qrImg.bottomAnchor.constraint(equalTo: qrView.bottomAnchor, constant: -20))
+        
+        NSLayoutConstraint.activate(constant)
+    }
+    
+    
+    func customizeQRbtn(){
+        btnQR.layer.cornerRadius = 4
+        btnQR.clipsToBounds = true
+    }
+    
+    
+    
+    
     @IBAction func ButtonPlay(_ sender: Any) {
         print(audio_Url)
         if player?.rate == 0
@@ -334,10 +414,8 @@ extension DailyDuaVC: UITableViewDelegate, UITableViewDataSource {
             cell.dhuhrTime.text = dhuhrTm
             cell.sunsetTime.text = sunsetTm
             cell.maghribTime.text = maghribTm
-            
-            
+
             cell.selectionStyle = .none
-           
             return cell
            
             
@@ -405,7 +483,7 @@ extension DailyDuaVC: UITableViewDelegate, UITableViewDataSource {
         if isPlayingOutside == true{
             let tag = sender.tag as? Int ?? 0
             musicIdx = tag
-            let idx = IndexPath(row: tag, section: 0)
+            let idx = IndexPath(row: tag, section: 1)
             let cell = dailyDuaTableView.cellForRow(at: idx) as! DailyDuaTableViewCell
             cell.playButton.setImage(UIImage(named: "play"), for: UIControl.State.normal)
             isPlayingOutside = false
@@ -416,7 +494,7 @@ extension DailyDuaVC: UITableViewDelegate, UITableViewDataSource {
             let tag = sender.tag as? Int ?? 0
             musicIdx = tag
             UserDefaults.standard.set(musicIdx, forKey: "DailyDuaIndex")
-            let idx = IndexPath(row: tag, section: 0)
+            let idx = IndexPath(row: tag, section: 1)
             let cell = dailyDuaTableView.cellForRow(at: idx) as! DailyDuaTableViewCell
             spiner.isHidden = false
             spiner.startAnimating()
@@ -439,7 +517,7 @@ extension DailyDuaVC{
        let val = UserDefaults.standard.value(forKey: "speedUpadte") as? Float ?? 0.0
        player?.playImmediately(atRate: globalSpeed)
        audio_Name = str
-        globalName = str
+       globalName = str
        dailyDuaTableView.reloadData()
        self.spiner.isHidden = true
        self.spiner.stopAnimating()
@@ -497,6 +575,11 @@ extension DailyDuaVC{
             print(response)
             DispatchQueue.main.async {
                 if !(response.isEmpty){
+                    if self.musicIdx < 0 {
+                        self.musicIdx = 0
+                    } else {
+                        self.musicIdx
+                    }
                     if self.strLang == "English"{
                          url = response["english_dua"].arrayValue[self.musicIdx]["file"].stringValue
                         let txt  = response["english_dua"].arrayValue[self.musicIdx]["name"].stringValue as? String ?? ""
@@ -1357,7 +1440,7 @@ extension DailyDuaVC : CLLocationManagerDelegate {
         
         musicPause()
         
-        let alertController = UIAlertController(title: "Location Access Denied", message: "Please enable location services for this app in Settings.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Location Access Denied", message: "Please enable location services to get latest events.", preferredStyle: .alert)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {_ in
             self.showLocationPermissionDeniedAlert()

@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         let id = response.notification.request.identifier
         print("Received notification with ID = \(id)")
         let userInfo = response.notification.request.content.userInfo
-        playMusic()
+        //playMusic()
         // Print full message.
         print(userInfo)
     
