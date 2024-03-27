@@ -4724,21 +4724,6 @@
             </objects>
             <point key="canvasLocation" x="10715" y="-238"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="eZK-i0-ma4">
-            <objects>
-                <viewController id="0k6-1C-pFr" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1wC-Eq-c2m">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="u81-qy-aDr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JWF-SD-Ydf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="11572" y="-238"/>
-        </scene>
         <!--My Favourites-->
         <scene sceneID="gW1-Jf-rAm">
             <objects>
@@ -7706,16 +7691,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fJc-vS-sgI">
-                                <rect key="frame" x="96" y="64" width="200" height="50"/>
+                                <rect key="frame" x="121.66666666666669" y="64" width="150" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="F16-AG-y6z"/>
+                                    <constraint firstAttribute="height" constant="40" id="F16-AG-y6z"/>
+                                    <constraint firstAttribute="width" constant="150" id="ZGt-Y1-Ln4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhU-Ki-p53">
-                                <rect key="frame" x="8" y="64" width="50" height="50"/>
+                                <rect key="frame" x="8" y="64" width="50" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="9zB-oR-2ZN"/>
-                                    <constraint firstAttribute="height" constant="50" id="UMj-gR-gSN"/>
+                                    <constraint firstAttribute="height" constant="40" id="UMj-gR-gSN"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="backBtn"/>
@@ -7725,42 +7711,59 @@
                                 </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CV9-AG-uqX">
-                                <rect key="frame" x="0.0" y="119" width="393" height="699"/>
+                                <rect key="frame" x="0.0" y="109" width="393" height="709"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="oE6-r9-iJu">
-                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
-                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iF3-dW-Pzu">
+                                <rect key="frame" x="305.33333333333331" y="67" width="77.666666666666686" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" English">
+                                    <imageReference key="image" image="arrowtriangle.down.fill" catalog="system" symbolScale="small"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="10"/>
+                                    <color key="baseForegroundColor" red="0.88994600260000001" green="0.96689492460000004" blue="0.95194077200000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnTapLanguageChange:" destination="zym-cz-WCv" eventType="touchUpInside" id="LjA-M1-1pg"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOO-yR-cIK">
+                                <rect key="frame" x="0.0" y="109" width="393" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="tOP-7x-Rk5"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mUP-od-QWO"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="YhU-Ki-p53" firstAttribute="top" secondItem="mUP-od-QWO" secondAttribute="top" constant="5" id="267-2q-nWl"/>
                             <constraint firstItem="YhU-Ki-p53" firstAttribute="leading" secondItem="mUP-od-QWO" secondAttribute="leading" constant="8" id="47V-4M-pJM"/>
+                            <constraint firstItem="uOO-yR-cIK" firstAttribute="trailing" secondItem="mUP-od-QWO" secondAttribute="trailing" id="71j-RI-mai"/>
                             <constraint firstItem="fJc-vS-sgI" firstAttribute="top" secondItem="mUP-od-QWO" secondAttribute="top" constant="5" id="8gi-IE-0Wr"/>
                             <constraint firstItem="mUP-od-QWO" firstAttribute="trailing" secondItem="CV9-AG-uqX" secondAttribute="trailing" id="97J-pw-C5V"/>
-                            <constraint firstItem="mUP-od-QWO" firstAttribute="trailing" secondItem="fJc-vS-sgI" secondAttribute="trailing" constant="97" id="AQT-Or-Qdc"/>
+                            <constraint firstItem="uOO-yR-cIK" firstAttribute="leading" secondItem="mUP-od-QWO" secondAttribute="leading" id="IX7-io-N67"/>
+                            <constraint firstItem="fJc-vS-sgI" firstAttribute="centerX" secondItem="3oc-Zu-jIf" secondAttribute="centerX" id="IYx-aQ-yys"/>
+                            <constraint firstItem="uOO-yR-cIK" firstAttribute="top" secondItem="iF3-dW-Pzu" secondAttribute="bottom" constant="7.6666666666666714" id="MT9-TY-K2m"/>
                             <constraint firstItem="CV9-AG-uqX" firstAttribute="leading" secondItem="mUP-od-QWO" secondAttribute="leading" id="PAS-BJ-rjP"/>
+                            <constraint firstItem="mUP-od-QWO" firstAttribute="trailing" secondItem="iF3-dW-Pzu" secondAttribute="trailing" constant="10" id="QII-g5-2C0"/>
                             <constraint firstItem="CV9-AG-uqX" firstAttribute="top" secondItem="fJc-vS-sgI" secondAttribute="bottom" constant="5" id="Wwk-OQ-EcV"/>
                             <constraint firstItem="CV9-AG-uqX" firstAttribute="bottom" secondItem="mUP-od-QWO" secondAttribute="bottom" id="XF7-PL-hKl"/>
-                            <constraint firstItem="oE6-r9-iJu" firstAttribute="centerX" secondItem="3oc-Zu-jIf" secondAttribute="centerX" id="a5p-ma-Uy8"/>
-                            <constraint firstItem="fJc-vS-sgI" firstAttribute="leading" secondItem="YhU-Ki-p53" secondAttribute="trailing" constant="38" id="bxx-oT-EX3"/>
-                            <constraint firstItem="oE6-r9-iJu" firstAttribute="centerY" secondItem="3oc-Zu-jIf" secondAttribute="centerY" id="lpm-7X-R8T"/>
+                            <constraint firstItem="CV9-AG-uqX" firstAttribute="top" secondItem="iF3-dW-Pzu" secondAttribute="bottom" constant="7.6666666666666714" id="liK-1X-aTf"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="spiner" destination="oE6-r9-iJu" id="qps-Kr-sWM"/>
+                        <outlet property="languageChangeBtn" destination="iF3-dW-Pzu" id="wRJ-p1-H0t"/>
+                        <outlet property="pickerView" destination="uOO-yR-cIK" id="0pe-yM-o1a"/>
                         <outlet property="webView" destination="CV9-AG-uqX" id="ebf-gs-WhI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Gg-Sz-pLX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2511" y="-238"/>
+            <point key="canvasLocation" x="2510.6870229007632" y="-238.02816901408451"/>
         </scene>
         <!--FavouriteVC-->
         <scene sceneID="zAD-YD-ph7">
@@ -8248,7 +8251,7 @@
         <image name="dua" width="25" height="25"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="envelope" catalog="system" width="128" height="85"/>
-        <image name="favourite" width="20" height="20"/>
+        <image name="favourite" width="30" height="30"/>
         <image name="forward" catalog="system" width="128" height="77"/>
         <image name="forward_sec" width="30" height="30"/>
         <image name="ic_orchadio_bacward_sec" width="34" height="34"/>

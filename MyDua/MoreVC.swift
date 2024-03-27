@@ -198,9 +198,10 @@ class MoreVC: UIViewController {
             return
         }
         
+        let app = AppName
         let text = "Check out this link!"
 
-        let items: [Any] = [text, url, image]
+        let items: [Any] = [app, text, url, image]
         
 
         let activityViewController = UIActivityViewController(activityItems: items, applicationActivities: nil)

@@ -208,8 +208,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "365"
             endingLineNumber = "365"
-            landmarkName = "DuaVC"
-            landmarkType = "21">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -368,8 +368,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "858"
             endingLineNumber = "858"
-            landmarkName = "DuaVC"
-            landmarkType = "21">
+            landmarkName = "makeFav(_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "6D94E1A7-7163-4CD4-A185-855436F81615 - 9b541c1639862828"

@@ -11,23 +11,24 @@ import WebKit
 class Aamaal_And_NamazVC: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var spiner: UIActivityIndicatorView!
+    @IBOutlet weak var languageChangeBtn: UIButton!
+    @IBOutlet weak var pickerView: UIPickerView!
     
     var aamaalLanguage: String!
     var currentTimeZone: String!
     var currentDate: String!
-    
+    var arrLang = ["عربي","English","हिंदी","ગુજરાતી"]
+    var pickerIsOn = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fetchURLsupportData()
-        
         UIApplication.shared.isIdleTimerDisabled = true
-        spiner.isHidden = false
-        spiner.startAnimating()
         performSupportURL()
         modeCheck()
+        pickerviewModifi()
+        let language = UserDefaults.standard.string(forKey: "GlobalStrLang")
+        languageChangeBtn.setTitle("  \(language!)", for: .normal)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,6 +53,31 @@ class Aamaal_And_NamazVC: UIViewController {
         
     }
     
+    
+    @IBAction func btnTapLanguageChange(_ sender: UIButton) {
+        
+       // let language = UserDefaults.standard.string(forKey: "GlobalStrLang")
+        if pickerIsOn == false {
+            pickerView.isHidden = false
+            pickerIsOn = true
+        } else {
+            pickerView.isHidden = true
+            pickerIsOn = false
+        }
+        
+        
+    }
+    
+    
+    func pickerviewModifi(){
+        pickerView.backgroundColor = .systemGreen
+        pickerView.dataSource = self
+        pickerView.delegate = self
+        pickerView.isHidden = true
+        
+    }
+    
+
     func modeCheck(){
         if  SettingsVC.viewMode == "Dark" {
             overrideUserInterfaceStyle = .dark
@@ -65,8 +91,6 @@ class Aamaal_And_NamazVC: UIViewController {
         let url = URL(string: "https://mydua.online/amaal-namaz-app-page/?dd=\(currentDate!)&tz=\(currentTimeZone!)&lang=\(aamaalLanguage!)")!
         //let url = URL(string: "https://mydua.online/aamaal-and-namaz/")!
         webView.load(URLRequest(url: url))
-        spiner.isHidden = true
-        spiner.stopAnimating()
     }
     
     
@@ -94,6 +118,30 @@ class Aamaal_And_NamazVC: UIViewController {
             aamaalLanguage = "arabic"
         }
  
+    }
+    
+}
+extension Aamaal_And_NamazVC: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return arrLang.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return arrLang[row]
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let setLang = arrLang[row]
+        languageChangeBtn.setTitle("  \(setLang)", for: .normal)
+        UserDefaults.standard.set(setLang, forKey: "GlobalStrLang")
+        fetchURLsupportData()
+        performSupportURL()
+        pickerView.isHidden = true
+        pickerIsOn = false
     }
     
 }
