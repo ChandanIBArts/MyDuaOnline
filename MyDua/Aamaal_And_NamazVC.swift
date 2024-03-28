@@ -13,21 +13,27 @@ class Aamaal_And_NamazVC: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var languageChangeBtn: UIButton!
     @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var hijriLbl: UILabel!
     
     var aamaalLanguage: String!
     var currentTimeZone: String!
     var currentDate: String!
     var arrLang = ["عربي","English","हिंदी","ગુજરાતી"]
     var pickerIsOn = false
+    var updateDay: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        changeDate()
         fetchURLsupportData()
         UIApplication.shared.isIdleTimerDisabled = true
         performSupportURL()
         modeCheck()
         pickerviewModifi()
-        let language = UserDefaults.standard.string(forKey: "GlobalStrLang")
+        var language = UserDefaults.standard.string(forKey: "GlobalStrLang")
+        if language == nil {
+            language = "عربي"
+        }
         languageChangeBtn.setTitle("  \(language!)", for: .normal)
     }
     
@@ -89,24 +95,18 @@ class Aamaal_And_NamazVC: UIViewController {
     
     private func performSupportURL(){
         let url = URL(string: "https://mydua.online/amaal-namaz-app-page/?dd=\(currentDate!)&tz=\(currentTimeZone!)&lang=\(aamaalLanguage!)")!
-        //let url = URL(string: "https://mydua.online/aamaal-and-namaz/")!
         webView.load(URLRequest(url: url))
     }
     
     
     func fetchURLsupportData(){
         
+        
+        currentDate = UserDefaults.standard.string(forKey: "UpdateDate")
+        
         let timeZone = TimeZone.current
         currentTimeZone = timeZone.identifier
-     
-        
-        let date = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy.MM.dd"
-        let formattedDate = dateFormatter.string(from: date)
-        currentDate = String(formattedDate)
-        
-        
+
         let language = UserDefaults.standard.string(forKey: "GlobalStrLang")
         if language == "English" {
             aamaalLanguage = "english"
@@ -118,6 +118,73 @@ class Aamaal_And_NamazVC: UIViewController {
             aamaalLanguage = "arabic"
         }
  
+    }
+    
+    
+    func changeDate(){
+        updateDay = UserDefaults.standard.integer(forKey: "UpdateDate")
+        if updateDay == nil || updateDay == 0 {
+            
+            setTimeZone(day: 0)
+            
+        } else {
+            setTimeZone(day: updateDay!)
+        }
+        
+    }
+    
+    func setTimeZone(day: Int){
+        
+        let objSingleton = SingletonApi()
+        objSingleton.hijriTimeZoneChange(day: day, onSuccess: { response in
+            
+            DispatchQueue.main.async {
+                let hijriText = response["hijri_date"].stringValue
+                var testText = response["event"].stringValue
+                var eventColor = response["event_color"].stringValue
+   
+                if testText == "" {
+                    testText = testText
+                } else {
+                    testText = "(\(testText))"
+                }
+                //MARK: make attributedString
+                var attributedString = NSMutableAttributedString(string: "\(hijriText) \n \(testText)")
+                let range = NSString(string: "\(hijriText) \n \(testText)").range(of: "\(testText)", options: String.CompareOptions.caseInsensitive)
+                
+                let changeColor = self.hexStringToUIColor(hex: eventColor)
+                
+                attributedString.addAttributes([NSAttributedString.Key.foregroundColor: changeColor], range: range)
+                self.hijriLbl.attributedText = attributedString
+                
+            }
+            
+        }, onError: { message in
+            print(message as Any)
+        })
+    
+    }
+    
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+
+        var rgbValue:UInt64 = 0
+        Scanner(string: cString).scanHexInt64(&rgbValue)
+
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
     }
     
 }
