@@ -1801,6 +1801,7 @@ extension ZiyaratVC{
                 if self.strLang == "English"{
                     self.duaList.removeAll()
                     self.duaList.append(contentsOf: response.english_ziyarat ?? [])
+                    print(response.english_ziyarat)
                     if !(self.duaList.isEmpty){
                         if self.musicIdx<self.duaList.count{
                             let txt  = self.duaList[self.musicIdx].name as? String ?? ""
@@ -1992,12 +1993,12 @@ extension ZiyaratVC{
                     if self.musicIdx<self.Gujrati_duaList.count{
                         self.ButtonPlay.setImage(UIImage(named: "audio_play"), for: UIControl.State.normal)
                         for i in 0..<self.Gujrati_duaList.count{
-                            if self.strPlayName == self.Arabic_duaList[i].name as? String ?? ""{
-                                let txt  = self.Arabic_duaList[i].name as? String ?? ""
+                            if self.strPlayName == self.Gujrati_duaList[i].name as? String ?? ""{
+                                let txt  = self.Gujrati_duaList[i].name as? String ?? ""
                                 self.musicLbl.text = txt
                                 self.musicIdx = i
                                 self.strPlayName = txt
-                                self.setupMusicUI(url: self.Arabic_duaList[i].file as? String ?? "", str: txt)
+                                self.setupMusicUI(url: self.Gujrati_duaList[i].file as? String ?? "", str: txt)
                                 self.ziyaratTableView.reloadData()
                                 break
                             }
@@ -2492,7 +2493,8 @@ extension ZiyaratVC{
 extension ZiyaratVC{
  
     func setupMusicUI(url:String,str:String) {
-        var fetchedUrl = url
+        var fetchedUrl = ""
+        fetchedUrl = url
         guard let url = URL(string: fetchedUrl) else { return }
         let playerItem:AVPlayerItem = AVPlayerItem(url: url)
         player = AVPlayer(playerItem: playerItem)

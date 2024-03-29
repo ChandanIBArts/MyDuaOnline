@@ -538,6 +538,8 @@ extension EventVC {
     
             var strLng = UserDefaults.standard.string(forKey: "GlobalStrLang")
      
+                print(response["arabic_dua"])
+                
             if strLng == "عربي" {
                 
                 if  !(response["arabic_dua"].arrayValue.isEmpty ){

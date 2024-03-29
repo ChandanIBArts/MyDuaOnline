@@ -1657,8 +1657,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2912"
-            endingLineNumber = "2912"
+            startingLineNumber = "2916"
+            endingLineNumber = "2916"
             landmarkName = "playBack()"
             landmarkType = "7">
             <Locations>
@@ -1930,8 +1930,8 @@
             filePath = "MyDua/DuaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2914"
-            endingLineNumber = "2914"
+            startingLineNumber = "2918"
+            endingLineNumber = "2918"
             landmarkName = "playBack()"
             landmarkType = "7">
             <Locations>
@@ -3073,8 +3073,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3180"
-            endingLineNumber = "3180"
+            startingLineNumber = "3182"
+            endingLineNumber = "3182"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -3151,8 +3151,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3173"
-            endingLineNumber = "3173"
+            startingLineNumber = "3175"
+            endingLineNumber = "3175"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -3229,8 +3229,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2838"
-            endingLineNumber = "2838"
+            startingLineNumber = "2840"
+            endingLineNumber = "2840"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>
@@ -3367,8 +3367,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2849"
-            endingLineNumber = "2849"
+            startingLineNumber = "2851"
+            endingLineNumber = "2851"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>

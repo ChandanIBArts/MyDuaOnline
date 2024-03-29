@@ -615,20 +615,22 @@ extension DailyDuaVC{
         var url = ""
         let objSingleton = SingletonApi()
         objSingleton.dailyDuaListAPI(onSuccess: {response in
-            print("Got Respose")
-            print(response)
-            print(response[0]["english_dua"].count)
             UserDefaults.standard.set(idx, forKey: "DailyDuaIndex")
+            
+            print(response["gujrati_dua"].count)
+            
             DispatchQueue.main.async {
                 if response != nil {
                       
                     if self.strLang == "English"{
-                        var arrdua = response[0]["english_dua"].arrayValue
+                        var arrdua = response["english_dua"].arrayValue
                         print(arrdua.count)
                         if idx<arrdua.count{
+                            url = arrdua[idx]["file"].stringValue
                             self.ButtonPlay.setImage(UIImage(named: "audio_play"), for: UIControl.State.normal)
-                            let txt  = arrdua[idx]["audio"]["title"].stringValue as? String ?? ""
+                            let txt  = arrdua[idx]["name"].stringValue as? String ?? ""
                             self.setupMusicUI(url: url, str: txt)
+                            self.audioLbl.text = txt
                         }
                         else{
                             self.musicIdx = arrdua.count-1
@@ -666,8 +668,8 @@ extension DailyDuaVC{
                         }
 
 
-                    }else{
-                        var arrdua = response[0]["gujarati_dua"].arrayValue
+                    } else if self.strLang == "ગુજરાતી" {
+                        var arrdua = response["gujrati_dua"].arrayValue
                         if idx<arrdua.count-1{
                             url = arrdua[idx]["file"].stringValue
                             self.ButtonPlay.setImage(UIImage(named: "audio_play"), for: UIControl.State.normal)
@@ -715,8 +717,9 @@ extension DailyDuaVC{
                                 self.ButtonPlay.setImage(UIImage(named: "pause"), for: UIControl.State.normal)
                                 self.isCellMusicPlaying = true
                                 cell.playButton.setImage(UIImage(named: "pause"), for: UIControl.State.normal)
+                                url = arrdua[idx]["file"].stringValue as? String ?? "0"
                                 let txt  = arrdua[idx]["name"].stringValue as? String ?? ""
-                                self.setupMusicUI(url: arrdua[idx]["file"].stringValue, str: txt)
+                                self.setupMusicUI(url: url, str: txt)
                                 self.audioLbl.text = txt
                                 self.dailyDuaTableView.reloadData()
                                 self.spiner.isHidden = true
@@ -730,8 +733,9 @@ extension DailyDuaVC{
                                 self.ButtonPlay.setImage(UIImage(named: "pause"), for: UIControl.State.normal)
                                 self.isCellMusicPlaying = true
                                 cell.playButton.setImage(UIImage(named: "pause"), for: UIControl.State.normal)
+                                url = arrdua[idx]["file"].stringValue as? String ?? "0"
                                 let txt  = arrdua[idx]["name"].stringValue as? String ?? ""
-                                self.setupMusicUI(url: arrdua[idx]["file"].stringValue, str: txt)
+                                self.setupMusicUI(url: url, str: txt)
                                 self.audioLbl.text = txt
                                 self.dailyDuaTableView.reloadData()
                                 self.spiner.isHidden = true
@@ -779,7 +783,7 @@ extension DailyDuaVC{
 
 
                     }else{
-                        var arrdua = response["gujarati_dua"].arrayValue
+                        var arrdua = response["gujrati_dua"].arrayValue
                         if idx<arrdua.count-1{
                             url = arrdua[idx]["file"].stringValue
                             self.ButtonPlay.setImage(UIImage(named: "audio_play"), for: UIControl.State.normal)
@@ -1138,14 +1142,17 @@ extension DailyDuaVC {
     
     func playNext(){
         DispatchQueue.main.async { [self] in
-            print(musicIdx)
             self.musicIdx += 1
             self.spiner.isHidden = false
             self.spiner.startAnimating()
             self.isTapSound = true
             self.isPlayingOutside = true
-            print(musicIdx)
+            
             self.fetchMusicUrl(with: self.musicIdx)
+            
+//            let url = arrdua[musicIdx]["file"].stringValue as? String ?? "0"
+//            let txt  = arrdua[musicIdx]["name"].stringValue as? String ?? ""
+//            self.setupMusicUI(url: url, str: txt)
         }
     }
  

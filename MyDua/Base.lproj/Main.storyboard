@@ -4892,7 +4892,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyI-H1-RkF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-86" y="3122"/>
+            <point key="canvasLocation" x="12734" y="3063"/>
         </scene>
         <!--Our Radio-->
         <scene sceneID="ypL-Ad-OWs">
@@ -5507,7 +5507,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7e-Y2-TBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3208" y="3903"/>
+            <point key="canvasLocation" x="15033" y="3903"/>
         </scene>
         <!--Audio DetailVC-->
         <scene sceneID="KGg-nj-KJS">
@@ -5721,7 +5721,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJH-0L-uJL" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5051" y="3903"/>
+            <point key="canvasLocation" x="16569" y="3903"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="W8k-ru-aWt">
@@ -5748,7 +5748,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pyz-LV-tMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4120" y="3903"/>
+            <point key="canvasLocation" x="15802" y="3903"/>
         </scene>
         <!--MyFavouriteDetailsVC-->
         <scene sceneID="fyb-Bi-YNg">
@@ -6047,7 +6047,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJx-dV-AmY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1908" y="3903"/>
+            <point key="canvasLocation" x="11198" y="3903"/>
         </scene>
         <!--Event-->
         <scene sceneID="G5E-8u-nCm">
@@ -6909,7 +6909,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1k-Xz-b6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-987" y="3903"/>
+            <point key="canvasLocation" x="11975" y="3903"/>
         </scene>
         <!--ZiyaratFavVC-->
         <scene sceneID="3BB-Rq-g1y">
@@ -7166,7 +7166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Szt-nQ-VGj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-85" y="3903"/>
+            <point key="canvasLocation" x="12735" y="3903"/>
         </scene>
         <!--SurahFavVC-->
         <scene sceneID="1P7-fY-yfa">
@@ -7423,7 +7423,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uyb-2d-6fA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="3903"/>
+            <point key="canvasLocation" x="13497" y="3903"/>
         </scene>
         <!--AllFavVC-->
         <scene sceneID="5rx-hP-mMJ">
@@ -7680,7 +7680,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q6Z-5t-7Ji" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755" y="3903"/>
+            <point key="canvasLocation" x="14269" y="3903"/>
         </scene>
         <!--Aamaal And NamazVC-->
         <scene sceneID="PgL-la-oxw">
@@ -8262,7 +8262,7 @@
         <image name="dua" width="25" height="25"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="envelope" catalog="system" width="128" height="85"/>
-        <image name="favourite" width="30" height="30"/>
+        <image name="favourite" width="20" height="20"/>
         <image name="forward" catalog="system" width="128" height="77"/>
         <image name="forward_sec" width="30" height="30"/>
         <image name="ic_orchadio_bacward_sec" width="34" height="34"/>
@@ -8291,10 +8291,10 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -8303,22 +8303,22 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

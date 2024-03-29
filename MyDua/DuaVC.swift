@@ -2053,12 +2053,12 @@ extension DuaVC{
                     if self.musicIdx<self.Gujrati_duaList.count{
                         self.ButtonPlay.setImage(UIImage(named: "audio_play"), for: UIControl.State.normal)
                         for i in 0..<self.Gujrati_duaList.count{
-                            if self.strPlayName == self.Arabic_duaList[i].name as? String ?? ""{
-                                let txt  = self.Arabic_duaList[i].name as? String ?? ""
+                            if self.strPlayName == self.Gujrati_duaList[i].name as? String ?? ""{
+                                let txt  = self.Gujrati_duaList[i].name as? String ?? ""
                                 self.audioLbl.text = txt
                                 self.musicIdx = i
                                 self.strPlayName = txt
-                                self.setupMusicUI(url: self.Arabic_duaList[i].file as? String ?? "", str: txt)
+                                self.setupMusicUI(url: self.Gujrati_duaList[i].file as? String ?? "", str: txt)
                                 self.duaTableView.reloadData()
                                 break
                             }
@@ -2882,6 +2882,10 @@ extension DuaVC {
                     self.searching = false
                     self.searchArrAra.removeAll()
                     self.isCameFomSearchPlaying = false
+//                    let url = dualist[self.musicIdx]["file"].stringValue as? String ?? ""
+//                    musicName = dualist[self.musicIdx]["name"].stringValue as? String ?? ""
+//                    setupMusicUI(url: url, txtLng: musicName)
+                    
                     self.fetchMusicUrl(with: self.musicIdx)
                 }
                 else{
