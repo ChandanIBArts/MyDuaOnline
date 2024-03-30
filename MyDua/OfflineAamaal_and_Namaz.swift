@@ -6,24 +6,78 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class OfflineAamaal_and_Namaz: UIViewController {
+    
+    let objSingleTonAPi = AamaalNamazSingleTonAPI()
+    var arabicAamaal: [JSON] = []
+    var englishAamaal: [JSON] = []
+    var hindiAamaal: [JSON] = []
+    var gujaratiAamaal: [JSON] = []
+    
+    @IBOutlet weak var tableview: UITableView!
+    
+    
+    var testModel = ArabicAamaall.myAamaallArray
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        callAPI()
+        tableview.dataSource = self
+        tableview.delegate = self
+        tableview.reloadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnTapBack(_ sender: UIButton) {
+        
+        self.navigationController?.popViewController(animated: true)
+        
     }
-    */
+    
+    
+    func callAPI(){
+        objSingleTonAPi.AamaalNamazApi(date: "0", timeZone: "Asia/kolkata", onSuccess: { response in
+            DispatchQueue.main.async {
+                
+                //self.arabicAamaal = response["arabic"].arrayValue
+                self.englishAamaal = response["english"].arrayValue
+                self.tableview.reloadData()
+//                self.hindiAamaal = response["hindi"].arrayValue
+//                self.gujaratiAamaal = response["gujarati"].arrayValue
+//                print(self.gujaratiAamaal)
+                
+            }
+
+        }, onError: { massage in
+        print(massage as Any)
+        })
+    }
+
+    
 
 }
+extension OfflineAamaal_and_Namaz: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return testModel.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HeadingTVCell", for: indexPath) as! HeadingTVCell
+        cell.titleLbl.text = testModel[indexPath.row].aamaal_type
+        cell.arrRecord = testModel[indexPath.row].amalRecord
+        cell.selectionStyle = .none
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 500
+    }
+    
+    
+}
+

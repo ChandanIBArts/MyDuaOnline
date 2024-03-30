@@ -42,6 +42,8 @@ class DetailsFabVC: UIViewController {
     var index = 0
     var audio_Name: String?
     var shared = SingletonRemotControl.shareAPIdata
+    var isHandlingNextButtonPress = false
+    var isHandlingBackButtonPress = false
     
     
     override func viewDidLoad() {
@@ -329,8 +331,37 @@ class DetailsFabVC: UIViewController {
         }
     
     func playNext() {
+        
+        guard !isHandlingNextButtonPress else {
+            return
+        }
+        isHandlingNextButtonPress = true
+        DispatchQueue.main.async { [self] in
+            print(index)
+            self.index += 1
+            
+            if index >= arrFavList.count {
+                self.spiner.isHidden = false
+                self.spiner.startAnimating()
+                self.isTapSound = true
+                self.isPlayingOutside = true
+                self.index = 0
+            }
+            
+            let url = arrFavList[index]["file"].stringValue
+            let str = arrFavList[index]["name"].stringValue
+            self.playMusicfromUrl(url: url, str: str)
+            
+            print(index)
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.isHandlingNextButtonPress = false
+        }
+        
+        /*
             DispatchQueue.main.async { [self] in
-                
+                print(index)
                 self.index += 1
                 if index >= arrFavList.count {
                     self.spiner.isHidden = false
@@ -341,6 +372,7 @@ class DetailsFabVC: UIViewController {
                     let url = arrFavList[index]["file"].stringValue
                     let str = arrFavList[index]["name"].stringValue
                     self.playMusicfromUrl(url:url,str:str)
+                    print(index)
                     //self.fetchMusicUrl(with: 0)
                 } else {
                     self.spiner.isHidden = false
@@ -355,10 +387,42 @@ class DetailsFabVC: UIViewController {
                 }
             
             }
+         */
       }
     
     func plaxBack(){
         
+        guard !isHandlingBackButtonPress else {
+                return
+            }
+        isHandlingBackButtonPress = true
+        DispatchQueue.main.async { [self] in
+            spiner.isHidden = false
+            spiner.startAnimating()
+            index -= 1
+            
+            if index >= 0 {
+                isTapSound = true
+                isPlayingOutside = true
+                let url = arrFavList[index]["file"].stringValue
+                let str = arrFavList[index]["name"].stringValue
+                playMusicfromUrl(url: url, str: str)
+            } else {
+                isPlayingOutside = true
+                isTapSound = true
+                index = 0
+                let url = arrFavList[index]["file"].stringValue
+                let str = arrFavList[index]["name"].stringValue
+                playMusicfromUrl(url: url, str: str)
+                print("Less than Zero")
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.isHandlingBackButtonPress = false
+        }
+        
+        /*
         DispatchQueue.main.async { [self] in
             self.spiner.isHidden = false
             self.spiner.startAnimating()
@@ -370,7 +434,6 @@ class DetailsFabVC: UIViewController {
                 let str = arrFavList[index]["name"].stringValue
                 self.playMusicfromUrl(url:url,str:str)
                 //self.fetchMusicUrl(with: index)
-               
             }else{
                 self.isPlayingOutside = true
                 self.isTapSound = true
@@ -382,7 +445,7 @@ class DetailsFabVC: UIViewController {
             }
             
         }
-        
+        */
     }
     
     

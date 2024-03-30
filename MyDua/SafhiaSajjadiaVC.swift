@@ -72,6 +72,9 @@ class SafhiaSajjadiaVC: UIViewController {
     var updateDay: Int?
     var audio_Name: String?
     
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.isNavigationBarHidden = true

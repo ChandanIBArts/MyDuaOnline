@@ -63,6 +63,18 @@
 		F75C1B582B61443F008D24F5 /* FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75C1B572B61443F008D24F5 /* FeedbackVC.swift */; };
 		F75CE4A82B7B6B3B00DEEA97 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75CE4A72B7B6B3B00DEEA97 /* TimeModel.swift */; };
 		F75CE4AA2B7B824A00DEEA97 /* DailyDuaAzanTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75CE4A92B7B824A00DEEA97 /* DailyDuaAzanTVCell.swift */; };
+		F75D175C2BB7E84900921851 /* OfflineAamaal_and_Namaz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D175B2BB7E84900921851 /* OfflineAamaal_and_Namaz.swift */; };
+		F75D175E2BB7EBC800921851 /* AamaalandNamazSingleTonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D175D2BB7EBC800921851 /* AamaalandNamazSingleTonAPI.swift */; };
+		F75D17632BB80C2100921851 /* Arabic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17622BB80C2100921851 /* Arabic.swift */; };
+		F75D17692BB80C3000921851 /* AamaalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17642BB80C3000921851 /* AamaalData.swift */; };
+		F75D176A2BB80C3000921851 /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17652BB80C3000921851 /* English.swift */; };
+		F75D176B2BB80C3000921851 /* Audio_file.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17662BB80C3000921851 /* Audio_file.swift */; };
+		F75D176C2BB80C3000921851 /* Gujarati.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17672BB80C3000921851 /* Gujarati.swift */; };
+		F75D176D2BB80C3000921851 /* Pdf_content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17682BB80C3000921851 /* Pdf_content.swift */; };
+		F75D176F2BB80CA200921851 /* Hindi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D176E2BB80CA200921851 /* Hindi.swift */; };
+		F75D17722BB81F3700921851 /* HeadingTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17712BB81F3700921851 /* HeadingTVCell.swift */; };
+		F75D17742BB81F7900921851 /* PdfTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17732BB81F7900921851 /* PdfTVCell.swift */; };
+		F75D17762BB8259400921851 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17752BB8259400921851 /* Struct.swift */; };
 		F78542E52B3EB72C00B4202C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F78542E42B3EB72C00B4202C /* GoogleService-Info.plist */; };
 		F797C99B2AFC9DB700B2506D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797C99A2AFC9DB700B2506D /* Constant.swift */; };
 		F797C99E2AFC9ECB00B2506D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F797C99D2AFC9ECB00B2506D /* SwiftyJSON */; };
@@ -179,6 +191,18 @@
 		F75C1B572B61443F008D24F5 /* FeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
 		F75CE4A72B7B6B3B00DEEA97 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		F75CE4A92B7B824A00DEEA97 /* DailyDuaAzanTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDuaAzanTVCell.swift; sourceTree = "<group>"; };
+		F75D175B2BB7E84900921851 /* OfflineAamaal_and_Namaz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineAamaal_and_Namaz.swift; sourceTree = "<group>"; };
+		F75D175D2BB7EBC800921851 /* AamaalandNamazSingleTonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AamaalandNamazSingleTonAPI.swift; sourceTree = "<group>"; };
+		F75D17622BB80C2100921851 /* Arabic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arabic.swift; sourceTree = "<group>"; };
+		F75D17642BB80C3000921851 /* AamaalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AamaalData.swift; sourceTree = "<group>"; };
+		F75D17652BB80C3000921851 /* English.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = English.swift; sourceTree = "<group>"; };
+		F75D17662BB80C3000921851 /* Audio_file.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio_file.swift; sourceTree = "<group>"; };
+		F75D17672BB80C3000921851 /* Gujarati.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gujarati.swift; sourceTree = "<group>"; };
+		F75D17682BB80C3000921851 /* Pdf_content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf_content.swift; sourceTree = "<group>"; };
+		F75D176E2BB80CA200921851 /* Hindi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hindi.swift; sourceTree = "<group>"; };
+		F75D17712BB81F3700921851 /* HeadingTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingTVCell.swift; sourceTree = "<group>"; };
+		F75D17732BB81F7900921851 /* PdfTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfTVCell.swift; sourceTree = "<group>"; };
+		F75D17752BB8259400921851 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 		F78542E42B3EB72C00B4202C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F797C99A2AFC9DB700B2506D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F797C99F2AFCA2B000B2506D /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
@@ -389,6 +413,30 @@
 			path = AzanTimeDataModel;
 			sourceTree = "<group>";
 		};
+		F75D17612BB80BF900921851 /* AamalAndNamaz */ = {
+			isa = PBXGroup;
+			children = (
+				F75D17642BB80C3000921851 /* AamaalData.swift */,
+				F75D17622BB80C2100921851 /* Arabic.swift */,
+				F75D17652BB80C3000921851 /* English.swift */,
+				F75D17672BB80C3000921851 /* Gujarati.swift */,
+				F75D176E2BB80CA200921851 /* Hindi.swift */,
+				F75D17662BB80C3000921851 /* Audio_file.swift */,
+				F75D17682BB80C3000921851 /* Pdf_content.swift */,
+			);
+			path = AamalAndNamaz;
+			sourceTree = "<group>";
+		};
+		F75D17702BB81ED100921851 /* OfflineAamaal */ = {
+			isa = PBXGroup;
+			children = (
+				F75D17712BB81F3700921851 /* HeadingTVCell.swift */,
+				F75D17732BB81F7900921851 /* PdfTVCell.swift */,
+				F75D17752BB8259400921851 /* Struct.swift */,
+			);
+			name = OfflineAamaal;
+			sourceTree = "<group>";
+		};
 		F7B1BE7B2AFB58A700CDE492 = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				F7B1BEDE2AFBB84800CDE492 /* SingletonAPI.swift */,
+				F75D175D2BB7EBC800921851 /* AamaalandNamazSingleTonAPI.swift */,
 			);
 			name = APIManager;
 			sourceTree = "<group>";
@@ -444,6 +493,7 @@
 				F748E15E2B03A1E4003556BB /* Surah */,
 				F733A7BA2B04A2FE00D5C054 /* Favourite */,
 				F733A7B52B04941100D5C054 /* Language */,
+				F75D17612BB80BF900921851 /* AamalAndNamaz */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -524,6 +574,7 @@
 				F7C847AB2B7C78F600B7DF5B /* EventAzanTVCell.swift */,
 				F72A96342BAC021A00A81028 /* FavouriteTVCell.swift */,
 				F79BA4D92BAD7C29008B9365 /* DetailsFavTVCell.swift */,
+				F75D17702BB81ED100921851 /* OfflineAamaal */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -554,6 +605,7 @@
 				F73CBF972B69168C00D0693B /* QuotesVC.swift */,
 				F709E2DD2B7A0107009DF749 /* AzanVC.swift */,
 				F75BCDF52B846850008082FD /* Aamaal_And_NamazVC.swift */,
+				F75D175B2BB7E84900921851 /* OfflineAamaal_and_Namaz.swift */,
 			);
 			name = Admin;
 			sourceTree = "<group>";
@@ -683,6 +735,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75D175E2BB7EBC800921851 /* AamaalandNamazSingleTonAPI.swift in Sources */,
 				F733A7B22B0493A600D5C054 /* Arabic_ziyarat.swift in Sources */,
 				B5BD4EA62B29AE920051B681 /* MoreVC.swift in Sources */,
 				F72A96332BABF8F500A81028 /* FavouriteVC.swift in Sources */,
@@ -691,8 +744,10 @@
 				F75CE4A82B7B6B3B00DEEA97 /* TimeModel.swift in Sources */,
 				F733A7BE2B04A3F500D5C054 /* FavouriteTableViewCell.swift in Sources */,
 				B5BED0CE2B5F89A900E3DB24 /* MusicPlay.swift in Sources */,
+				F75D17632BB80C2100921851 /* Arabic.swift in Sources */,
 				F733A7AF2B0493A600D5C054 /* English_ziyarat.swift in Sources */,
 				F7B1BEDD2AFBB52800CDE492 /* DailyDuaTableViewCell.swift in Sources */,
+				F75D176C2BB80C3000921851 /* Gujarati.swift in Sources */,
 				F73A06992B0B6435002B9536 /* DefaultValue.swift in Sources */,
 				F79BA4D82BAD675E008B9365 /* DetailsFabVC.swift in Sources */,
 				F7D5655C2B47E7E200AC0933 /* NewFavCVC.swift in Sources */,
@@ -703,6 +758,7 @@
 				F709E2DE2B7A0107009DF749 /* AzanVC.swift in Sources */,
 				F733A7BC2B04A31700D5C054 /* ListOfFavourite.swift in Sources */,
 				F7B1BEAD2AFB606C00CDE492 /* DailyDuaVC.swift in Sources */,
+				F75D175C2BB7E84900921851 /* OfflineAamaal_and_Namaz.swift in Sources */,
 				F73CBF982B69168C00D0693B /* QuotesVC.swift in Sources */,
 				F733A7B72B049B9100D5C054 /* LanguageChangeVC.swift in Sources */,
 				F72A96352BAC021A00A81028 /* FavouriteTVCell.swift in Sources */,
@@ -714,6 +770,7 @@
 				5DCADAFB2B1890980082ED99 /* MyProfileButtonVC.swift in Sources */,
 				F7B1BEB92AFB6A2A00CDE492 /* LoginVC.swift in Sources */,
 				F748E1632B03A2A4003556BB /* ListOfDua.swift in Sources */,
+				F75D176D2BB80C3000921851 /* Pdf_content.swift in Sources */,
 				F75CE4AA2B7B824A00DEEA97 /* DailyDuaAzanTVCell.swift in Sources */,
 				F75C1B552B60E17E008D24F5 /* SingletonRemotControl.swift in Sources */,
 				B5BED0CB2B5F786200E3DB24 /* SahifaSajjadiaFavVC.swift in Sources */,
@@ -726,6 +783,7 @@
 				F748E1682B03A302003556BB /* Hindi_dua.swift in Sources */,
 				F75C1B582B61443F008D24F5 /* FeedbackVC.swift in Sources */,
 				F75BA5FD2B291AF200AD4568 /* Fab_dua.swift in Sources */,
+				F75D176F2BB80CA200921851 /* Hindi.swift in Sources */,
 				F748E16B2B03A309003556BB /* Arabic_dua.swift in Sources */,
 				F748E1672B03A302003556BB /* English_dua.swift in Sources */,
 				5DCADAF92B176ECB0082ED99 /* ChangePasswordVC.swift in Sources */,
@@ -745,19 +803,25 @@
 				F7B1BE8A2AFB58A700CDE492 /* SceneDelegate.swift in Sources */,
 				F7E364AC2B02028E003EC48D /* ZiyaratTableViewCell.swift in Sources */,
 				F73A06952B0B5AD0002B9536 /* MarqueeLabel.swift in Sources */,
+				F75D17742BB81F7900921851 /* PdfTVCell.swift in Sources */,
 				F7E364AA2B01E7AD003EC48D /* DuaTableViewCell.swift in Sources */,
 				F7B1BEB52AFB69DC00CDE492 /* MyFavouritesVC.swift in Sources */,
 				F748E1692B03A302003556BB /* Gujrati_dua.swift in Sources */,
 				F73A06932B0B378F002B9536 /* List_of_sahfia.swift in Sources */,
+				F75D176A2BB80C3000921851 /* English.swift in Sources */,
 				F79BA4DA2BAD7C29008B9365 /* DetailsFavTVCell.swift in Sources */,
 				F75BA5FB2B28DDD100AD4568 /* ForgotPasswordVC.swift in Sources */,
+				F75D17762BB8259400921851 /* Struct.swift in Sources */,
 				F733A7B02B0493A600D5C054 /* ListOfZiyarat.swift in Sources */,
 				F75BCDF62B846850008082FD /* Aamaal_And_NamazVC.swift in Sources */,
+				F75D17692BB80C3000921851 /* AamaalData.swift in Sources */,
 				F7C847AC2B7C78F600B7DF5B /* EventAzanTVCell.swift in Sources */,
 				F7E364B02B024901003EC48D /* CacheStore.swift in Sources */,
 				F748E1582B03732D003556BB /* ListOfSurah.swift in Sources */,
 				DAD3959B2B602AED0064D028 /* WaqfVC.swift in Sources */,
+				F75D17722BB81F3700921851 /* HeadingTVCell.swift in Sources */,
 				F748E15C2B03732D003556BB /* Arabic_surah.swift in Sources */,
+				F75D176B2BB80C3000921851 /* Audio_file.swift in Sources */,
 				F7B1BEB12AFB69B000CDE492 /* ZiyaratVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -909,12 +973,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MyDua/MyDua.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development: sanjay kumar (P2AMB39N87)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: sanjay kumar (P2AMB39N87)";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.8;
-				DEVELOPMENT_TEAM = P2AMB39N87;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3YQPP47SUL;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 3YQPP47SUL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyDua/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "My dua online";
@@ -934,11 +996,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wt.apns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Sanjay WtApns Dev V1.7";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Sanjay WtApns Dev V1.7";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -954,12 +1015,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MyDua/MyDuaRelease.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development: sanjay kumar (P2AMB39N87)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: sanjay kumar (P2AMB39N87)";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.8;
-				DEVELOPMENT_TEAM = P2AMB39N87;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3YQPP47SUL;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 3YQPP47SUL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyDua/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "My dua online";
@@ -979,11 +1038,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wt.apns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Sanjay WtApns Dev V1.7";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Sanjay WtApns Dev V1.7";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

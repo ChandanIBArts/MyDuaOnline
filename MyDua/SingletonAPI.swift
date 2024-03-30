@@ -211,8 +211,10 @@ class SingletonApi: NSObject {
     
     //MARK: - Daily Dua API
     func dailyDuaListAPI( onSuccess successBlock: ((JSON) -> Void)!, onError errorBlock: ((String?) -> Void)!){
+       
         if let day = UserDefaults.standard.value(forKey: "currentDay") {
             print(day)
+           
             var request = URLRequest(url: URL(string: baseAPIUrl + "dailydua?day=\(day)")!,timeoutInterval: Double.infinity)
             
             request.addValue("Bearer \(tokenID)", forHTTPHeaderField: "Authorization")
@@ -430,7 +432,7 @@ class SingletonApi: NSObject {
     func surah_List_API( onSuccess successBlock: ((ListOfSurah) -> Void)!, onError errorBlock: ((String?) -> Void)!){
         let userId = UserDefaults.standard.value(forKey: "UserID") as? String ?? ""
         if userId.isEmpty{
-            var request = URLRequest(url: URL(string: baseAPIUrl + "surahlist")!,timeoutInterval: Double.infinity)
+           var request = URLRequest(url: URL(string: baseAPIUrl + "surahlist")!,timeoutInterval: Double.infinity)
             request.addValue("Bearer \(tokenID)", forHTTPHeaderField: "Authorization")
             
             request.httpMethod = "GET"

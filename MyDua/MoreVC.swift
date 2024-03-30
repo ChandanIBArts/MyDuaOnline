@@ -61,7 +61,6 @@ class MoreVC: UIViewController {
         }
     }
     
-    
     @IBAction func tapSupport(_ sender: UIButton) {
         // "https://azadar.media"
         
@@ -81,15 +80,11 @@ class MoreVC: UIViewController {
         
     }
     
-    
-    
     @IBAction func tapSahifaSajjadia(_ sender: UIButton) {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SafhiaSajjadiaVC") as! SafhiaSajjadiaVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
     
     @IBAction func tapQuotes(_ sender: UIButton) {
      
@@ -117,7 +112,6 @@ class MoreVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    
     @IBAction func tapSurah(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SurahVC") as! SurahVC
         self.navigationController?.pushViewController(vc, animated: true)
@@ -144,21 +138,25 @@ class MoreVC: UIViewController {
             
         }
     }
+    
     @IBAction func tapRadio(_ sender: Any){
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "OurRadioVC") as! OurRadioVC
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
+    
     @IBAction func tapSettings(_ sender: Any){
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
+    
     @IBAction func tapLogin(_ sender: Any){
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
+    
     @IBAction func tapMyProfile(_ sender: Any){
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyProfileButtonVC") as! MyProfileButtonVC
         self.navigationController?.pushViewController(vc, animated: true)

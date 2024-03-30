@@ -14,16 +14,20 @@ class Aamaal_And_NamazVC: UIViewController {
     @IBOutlet weak var languageChangeBtn: UIButton!
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var hijriLbl: UILabel!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
     
     var aamaalLanguage: String!
     var currentTimeZone: String!
     var currentDate: String!
-    var arrLang = ["عربي","English","हिंदी","ગુજરાતી"]
+    var arrLang = ["English", "ગુજરાતી", "हिंदी", "عربي"]  //["عربي","English","हिंदी","ગુજરાતી"]
     var pickerIsOn = false
     var updateDay: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        spinner.startAnimating()
+        spinner.isHidden = false
         changeDate()
         fetchURLsupportData()
         UIApplication.shared.isIdleTimerDisabled = true
@@ -94,8 +98,32 @@ class Aamaal_And_NamazVC: UIViewController {
 
     
     private func performSupportURL(){
-        let url = URL(string: "https://mydua.online/amaal-namaz-app-page/?dd=\(currentDate!)&tz=\(currentTimeZone!)&lang=\(aamaalLanguage!)")!
-        webView.load(URLRequest(url: url))
+        
+//        let url = URL(string: "https://mydua.online/amaal-namaz-app-page/?dd=\(currentDate ?? "0")&tz=\(currentTimeZone ?? "Asia/Kolkatta")&lang=\(aamaalLanguage ?? "arabic")")!
+//        webView.load(URLRequest(url: url))
+        
+        var request = URLRequest(url: URL(string: "https://mydua.online/amaal-namaz-app-page/?dd=\(currentDate ?? "0")&tz=\(currentTimeZone ?? "Asia/Kolkatta")&lang=\(aamaalLanguage ?? "arabic")")!,timeoutInterval: Double.infinity)
+        request.httpMethod = "GET"
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          guard let data = data else {
+            print(String(describing: error))
+            return
+          }
+          print(String(data: data, encoding: .utf8)!)
+            
+            //webView.load(URLRequest(url: url))
+            DispatchQueue.main.async {
+                self.webView.loadHTMLString(String(data: data, encoding: .utf8)!, baseURL: nil)
+                self.spinner.stopAnimating()
+                self.spinner.isHidden = true
+            }
+        }
+
+        task.resume()
+
+      
+        
     }
     
     
@@ -108,6 +136,8 @@ class Aamaal_And_NamazVC: UIViewController {
         currentTimeZone = timeZone.identifier
 
         let language = UserDefaults.standard.string(forKey: "GlobalStrLang")
+        spinner.startAnimating()
+        spinner.isHidden = false
         if language == "English" {
             aamaalLanguage = "english"
         } else if language == "हिंदी" {
@@ -212,3 +242,4 @@ extension Aamaal_And_NamazVC: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
 }
+

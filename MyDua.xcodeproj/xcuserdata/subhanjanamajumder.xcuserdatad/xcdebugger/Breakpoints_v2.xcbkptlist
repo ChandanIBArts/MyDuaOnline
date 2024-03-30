@@ -429,8 +429,8 @@
             filePath = "MyDua/SurahVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "airplaybtnSet()"
             landmarkType = "7">
          </BreakpointContent>
@@ -445,8 +445,8 @@
             filePath = "MyDua/SurahVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "airplaybtnSet()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1474,8 +1474,8 @@
             filePath = "MyDua/SafhiaSajjadiaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2813"
-            endingLineNumber = "2813"
+            startingLineNumber = "2816"
+            endingLineNumber = "2816"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>
@@ -2935,8 +2935,8 @@
             filePath = "MyDua/SafhiaSajjadiaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2823"
-            endingLineNumber = "2823"
+            startingLineNumber = "2826"
+            endingLineNumber = "2826"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>
@@ -3073,8 +3073,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3182"
-            endingLineNumber = "3182"
+            startingLineNumber = "3183"
+            endingLineNumber = "3183"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -3151,8 +3151,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3175"
-            endingLineNumber = "3175"
+            startingLineNumber = "3176"
+            endingLineNumber = "3176"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -3229,8 +3229,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2840"
-            endingLineNumber = "2840"
+            startingLineNumber = "2841"
+            endingLineNumber = "2841"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>
@@ -3367,8 +3367,8 @@
             filePath = "MyDua/ZiyaratVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2851"
-            endingLineNumber = "2851"
+            startingLineNumber = "2852"
+            endingLineNumber = "2852"
             landmarkName = "playNext()"
             landmarkType = "7">
             <Locations>
@@ -3505,8 +3505,8 @@
             filePath = "MyDua/SafhiaSajjadiaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3521,8 +3521,8 @@
             filePath = "MyDua/SafhiaSajjadiaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "viewDidDisappear(_:)"
             landmarkType = "7">
             <Locations>
@@ -4793,8 +4793,8 @@
             filePath = "MyDua/SingletonAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "924"
-            endingLineNumber = "924"
+            startingLineNumber = "926"
+            endingLineNumber = "926"
             landmarkName = "eventAPIcall(day:timeZone:onSuccess:onError:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4809,8 +4809,8 @@
             filePath = "MyDua/SingletonAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "918"
-            endingLineNumber = "918"
+            startingLineNumber = "920"
+            endingLineNumber = "920"
             landmarkName = "eventAPIcall(day:timeZone:onSuccess:onError:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4876,6 +4876,22 @@
             startingLineNumber = "291"
             endingLineNumber = "291"
             landmarkName = "playNext()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BE212A4-F35B-49F4-BBD9-345D9163B224"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyDua/HeadingTVCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

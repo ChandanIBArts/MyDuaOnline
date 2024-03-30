@@ -207,6 +207,16 @@ class DailyDuaVC: UIViewController {
         que.addOperations([op,op1], waitUntilFinished: true)
     }
     
+    @IBAction func btnOfline(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "OfflineAamaal_and_Namaz") as! OfflineAamaal_and_Namaz
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
+    
+    
+    
     
     @IBAction func btnTapQr(_ sender: UIButton) {
         view.addSubview(qrView)
@@ -1474,6 +1484,8 @@ extension DailyDuaVC : CLLocationManagerDelegate {
         flag = false
         dailyDuaTableView.reloadData()
     }
+    
+    
     
 }
 

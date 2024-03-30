@@ -57,6 +57,7 @@ class SurahVC: UIViewController {
     
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hijriApiChangeDate()
