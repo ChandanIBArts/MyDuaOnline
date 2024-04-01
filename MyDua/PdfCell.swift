@@ -8,10 +8,17 @@
 import UIKit
 
 class PdfCell: UITableViewCell {
-
+    
+    @IBOutlet weak var musicView: UIView!
+    @IBOutlet weak var pdfView: UIView!
+    @IBOutlet weak var pfdLBL: UILabel!
+    @IBOutlet weak var btnPlay: UIButton!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        musicView.layer.cornerRadius = 10
+        musicView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

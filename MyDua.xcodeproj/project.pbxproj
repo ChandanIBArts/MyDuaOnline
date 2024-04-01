@@ -25,6 +25,7 @@
 		F709E2DE2B7A0107009DF749 /* AzanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F709E2DD2B7A0107009DF749 /* AzanVC.swift */; };
 		F71F79312B723EE600A20E89 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F71F79302B723EE600A20E89 /* SDWebImage */; };
 		F71F79332B723EE600A20E89 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F71F79322B723EE600A20E89 /* SDWebImageMapKit */; };
+		F729F97F2BBA74A50081D155 /* PdfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729F97E2BBA74A50081D155 /* PdfCell.swift */; };
 		F72A96332BABF8F500A81028 /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A96322BABF8F500A81028 /* FavouriteVC.swift */; };
 		F72A96352BAC021A00A81028 /* FavouriteTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A96342BAC021A00A81028 /* FavouriteTVCell.swift */; };
 		F733A7AE2B0493A600D5C054 /* Gujrati_ziyarat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733A7A92B0493A600D5C054 /* Gujrati_ziyarat.swift */; };
@@ -73,7 +74,6 @@
 		F75D176D2BB80C3000921851 /* Pdf_content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17682BB80C3000921851 /* Pdf_content.swift */; };
 		F75D176F2BB80CA200921851 /* Hindi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D176E2BB80CA200921851 /* Hindi.swift */; };
 		F75D17722BB81F3700921851 /* HeadingTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17712BB81F3700921851 /* HeadingTVCell.swift */; };
-		F75D17742BB81F7900921851 /* PdfTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17732BB81F7900921851 /* PdfTVCell.swift */; };
 		F75D17762BB8259400921851 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75D17752BB8259400921851 /* Struct.swift */; };
 		F78542E52B3EB72C00B4202C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F78542E42B3EB72C00B4202C /* GoogleService-Info.plist */; };
 		F797C99B2AFC9DB700B2506D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797C99A2AFC9DB700B2506D /* Constant.swift */; };
@@ -152,6 +152,7 @@
 		DAD395992B5D79320064D028 /* MyDua.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDua.entitlements; sourceTree = "<group>"; };
 		DAD3959A2B602AED0064D028 /* WaqfVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaqfVC.swift; sourceTree = "<group>"; };
 		F709E2DD2B7A0107009DF749 /* AzanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzanVC.swift; sourceTree = "<group>"; };
+		F729F97E2BBA74A50081D155 /* PdfCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfCell.swift; sourceTree = "<group>"; };
 		F72A96322BABF8F500A81028 /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
 		F72A96342BAC021A00A81028 /* FavouriteTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTVCell.swift; sourceTree = "<group>"; };
 		F72A96362BAC532C00A81028 /* MyDuaRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDuaRelease.entitlements; sourceTree = "<group>"; };
@@ -201,7 +202,6 @@
 		F75D17682BB80C3000921851 /* Pdf_content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf_content.swift; sourceTree = "<group>"; };
 		F75D176E2BB80CA200921851 /* Hindi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hindi.swift; sourceTree = "<group>"; };
 		F75D17712BB81F3700921851 /* HeadingTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingTVCell.swift; sourceTree = "<group>"; };
-		F75D17732BB81F7900921851 /* PdfTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfTVCell.swift; sourceTree = "<group>"; };
 		F75D17752BB8259400921851 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 		F78542E42B3EB72C00B4202C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F797C99A2AFC9DB700B2506D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -431,7 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				F75D17712BB81F3700921851 /* HeadingTVCell.swift */,
-				F75D17732BB81F7900921851 /* PdfTVCell.swift */,
+				F729F97E2BBA74A50081D155 /* PdfCell.swift */,
 				F75D17752BB8259400921851 /* Struct.swift */,
 			);
 			name = OfflineAamaal;
@@ -737,6 +737,7 @@
 			files = (
 				F75D175E2BB7EBC800921851 /* AamaalandNamazSingleTonAPI.swift in Sources */,
 				F733A7B22B0493A600D5C054 /* Arabic_ziyarat.swift in Sources */,
+				F729F97F2BBA74A50081D155 /* PdfCell.swift in Sources */,
 				B5BD4EA62B29AE920051B681 /* MoreVC.swift in Sources */,
 				F72A96332BABF8F500A81028 /* FavouriteVC.swift in Sources */,
 				F733A7C22B04CC5900D5C054 /* SignupVC.swift in Sources */,
@@ -803,7 +804,6 @@
 				F7B1BE8A2AFB58A700CDE492 /* SceneDelegate.swift in Sources */,
 				F7E364AC2B02028E003EC48D /* ZiyaratTableViewCell.swift in Sources */,
 				F73A06952B0B5AD0002B9536 /* MarqueeLabel.swift in Sources */,
-				F75D17742BB81F7900921851 /* PdfTVCell.swift in Sources */,
 				F7E364AA2B01E7AD003EC48D /* DuaTableViewCell.swift in Sources */,
 				F7B1BEB52AFB69DC00CDE492 /* MyFavouritesVC.swift in Sources */,
 				F748E1692B03A302003556BB /* Gujrati_dua.swift in Sources */,

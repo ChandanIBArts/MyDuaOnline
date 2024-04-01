@@ -14,54 +14,91 @@ import AVFoundation
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
-
+    
     var window: UIWindow?
     var audioPlayer: AVAudioPlayer?
     
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-    
-        if #available(iOS 10.0, *) {
-            // For iOS 10 display notification (sent via APNS)
-            UNUserNotificationCenter.current().delegate = self
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
             
-            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-            UNUserNotificationCenter.current().requestAuthorization(
-                options: authOptions,
-                completionHandler: { _, _ in }
-            )
-        } else {
-            let settings: UIUserNotificationSettings =
-            UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-            application.registerUserNotificationSettings(settings)
-        }
-        
-        application.registerForRemoteNotifications()
-        
-        let date = Date()
-        let df = DateFormatter()
-        df.dateFormat = "EEEE"
-        let dateString = df.string(from: date)
-        print(dateString)
-        UserDefaults.standard.set(dateString, forKey: "currentDay")
-        FirebaseApp.configure()
+         if #available(iOS 10.0, *) {
+             // For iOS 10 display notification (sent via APNS)
+             UNUserNotificationCenter.current().delegate = self
+             
+             let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+             UNUserNotificationCenter.current().requestAuthorization(
+             options: authOptions,
+             completionHandler: { _, _ in }
+            
+             )
+             
+         } else {
+             let settings: UIUserNotificationSettings =
+             UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+             application.registerUserNotificationSettings(settings)
+         }
+         
+         application.registerForRemoteNotifications()
+         
     
-        return true
-    }
+         let date = Date()
+         let df = DateFormatter()
+         df.dateFormat = "EEEE"
+         let dateString = df.string(from: date)
+         print(dateString)
+         UserDefaults.standard.set(dateString, forKey: "currentDay")
+         FirebaseApp.configure()
+         
+         return true
 
+    }
+    
+    
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+        print("Device token: \(token)")
+        // Send the device token to your server for sending notifications
+        // sendDeviceTokenToServer(token)
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("Failed to register for remote notifications with error: \(error.localizedDescription)")
+    }
+    
+    
+    
     // If the app is in the background
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         let id = response.notification.request.identifier
         print("Received notification with ID = \(id)")
         let userInfo = response.notification.request.content.userInfo
-        //playMusic()
-        // Print full message.
-        print(userInfo)
-    
+        
+        print("Received notification response: \(userInfo)")
+        
+        if let type = userInfo["type"] as? String {
+         
+        print(type)
+            
+            if type == "Event" {
+                
+                if let tabBarController = window?.rootViewController as? UITabBarController {
+                    tabBarController.selectedIndex = 2
+                }
+                
+            }
+            
+        } else {
+            print("Failed to extract 'type' from userInfo")
+        }
+        
+        
+        
+        
         //load details screen
         completionHandler()
-
+        
     }
     
     // If the app is in the foreground
@@ -74,20 +111,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     
     
     // MARK: UISceneSession Lifecycle
-
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
+    
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
+    
+    
     
     
     func playMusic() {
@@ -109,4 +146,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     
     
 }
-
+    
+    
