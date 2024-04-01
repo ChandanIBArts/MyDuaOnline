@@ -1,13 +1,13 @@
 //
-//  PdfTVCell.swift
+//  PdfCell.swift
 //  MyDua
 //
-//  Created by IB Arts Mac on 30/03/24.
+//  Created by IB Arts Mac on 01/04/24.
 //
 
 import UIKit
 
-class PdfTVCell: UITableViewCell {
+class PdfCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
